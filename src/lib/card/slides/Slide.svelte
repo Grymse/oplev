@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { EventSlide } from '$lib/slides';
 	import ImageSlide from './ImageSlide.svelte';
+	import LinksSlide from './LinksSlide.svelte';
 	import TextSlide from './TextSlide.svelte';
 	import YoutubeSlide from './YoutubeSlide.svelte';
 
@@ -12,6 +13,8 @@
 	<ImageSlide {active} {slide} />
 {:else if slide.type === 'text'}
 	<TextSlide {slide} />
+{:else if slide.type === 'links'}
+	<LinksSlide {slide} />
 {:else}
 	<YoutubeSlide {active} {slide} />
 {/if}

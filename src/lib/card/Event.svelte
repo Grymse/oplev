@@ -6,13 +6,12 @@
 	export let active: boolean = false;
 
 	// format UTZ time to Fri 16:00
-	const time = new Date(event.time).toLocaleDateString('en-US', {
+
+	$: time = new Date(event.time).toLocaleDateString('en-GB', {
 		weekday: 'short',
 		hour: '2-digit',
 		minute: '2-digit'
 	});
-
-	// Create an animation for the gradient background of the card such that it spins around the center of the card
 </script>
 
 <div class="h-full w-full relative my-gradiant shadow-md rounded-2xl overflow-hidden">

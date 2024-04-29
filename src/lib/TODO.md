@@ -3,12 +3,15 @@
   - [x] MP3
   - [x] About Artist
   - [x] Description?
-  - [ ] Links
+  - [x] Links
   - [x] Youtube
+- [x] Create stack mechanism (Like, unlike, superlike, redo) using buttons
+- [x] Create swiping mechanism
+- [ ] Fix slide-click-through on swipe
+- [ ] Set size-restriction for card 16:9
 - [ ] Elaborated Card
-- [ ] Create stack mechanism (Like, unlike, superlike, redo) using buttons
-- [ ] Create swiping mechanism (With float-away)
+- [ ] Add floating-away animation
+- [ ] Add system to keep track of likes/dislikes etc.
 - [ ] Save localstorage
 - [ ] Show list of artists
   - [ ] Sort by reaction, time, stage etc.
-  - [ ] See content card

@@ -12,8 +12,6 @@
 		}
 		isPlaying = !isPlaying;
 	}
-
-	console.log('isActive', active);
 </script>
 
 <button on:click|stopPropagation={toggleAudio} class="btn-icon variant-filled">
