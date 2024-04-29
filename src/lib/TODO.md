@@ -1,0 +1,14 @@
+- [x] Create content card
+  - [x] Image
+  - [x] MP3
+  - [x] About Artist
+  - [x] Description?
+  - [ ] Links
+  - [x] Youtube
+- [ ] Elaborated Card
+- [ ] Create stack mechanism (Like, unlike, superlike, redo) using buttons
+- [ ] Create swiping mechanism (With float-away)
+- [ ] Save localstorage
+- [ ] Show list of artists
+  - [ ] Sort by reaction, time, stage etc.
+  - [ ] See content card
