@@ -15,3 +15,6 @@
 - [ ] Save localstorage
 - [ ] Show list of artists
   - [ ] Sort by reaction, time, stage etc.
+- [ ] Add table with all results
+- [ ] Add sorting by certain attributes (Stage, time, name)
+- [ ] See table with all artists
