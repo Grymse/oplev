@@ -9,8 +9,8 @@
 - [x] Create swiping mechanism
 - [x] Fix slide-click-through on swipe
 - [x] Fix mobile-swipe
-- [ ] Set size-restriction for card 16:9
-- [ ] Make mobile-friendly
+- [x] Set size-restriction for card 16:9
+- [x] Make mobile-friendly
 - [ ] Elaborated Card
 - [ ] Add floating-away animation?
 - [ ] Add system to keep track of likes/dislikes etc.
