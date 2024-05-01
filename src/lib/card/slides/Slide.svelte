@@ -2,7 +2,7 @@
 	import type { EventSlide } from '$lib/slides';
 	import ImageSlide from './ImageSlide.svelte';
 	import LinksSlide from './LinksSlide.svelte';
-	import TextSlide from './TextSlide.svelte';
+	import SpotifySlide from './SpotifySlide.svelte';
 	import YoutubeSlide from './YoutubeSlide.svelte';
 
 	export let slide: EventSlide;
@@ -11,8 +11,8 @@
 
 {#if slide.type === 'img'}
 	<ImageSlide {active} {slide} />
-{:else if slide.type === 'text'}
-	<TextSlide {slide} />
+{:else if slide.type === 'spotify'}
+	<SpotifySlide {slide} />
 {:else if slide.type === 'links'}
 	<LinksSlide {slide} />
 {:else}

@@ -1,14 +1,9 @@
 <script lang="ts">
 	import '../app.postcss';
-	import { AppShell, AppBar, TabGroup, TabAnchor } from '@skeletonlabs/skeleton';
-
-	// Floating UI for Popups
-	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
-	import { storePopup } from '@skeletonlabs/skeleton';
-	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
-
+	import { AppShell, AppBar, TabGroup, TabAnchor, initializeStores } from '@skeletonlabs/skeleton';
+	initializeStores();
 	import { page } from '$app/stores';
-	import path from 'path';
+	import DrawerController from '$lib/drawer/DrawerController.svelte';
 
 	const pages = [
 		{
@@ -29,6 +24,8 @@
 		}
 	];
 </script>
+
+<DrawerController />
 
 <!-- App Shell -->
 <AppShell>

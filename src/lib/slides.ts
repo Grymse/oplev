@@ -17,6 +17,7 @@ type EventLinks = {
 	Facebook?: string;
 	Instagram?: string;
 	TikTok?: string;
+	Spot?: string;
 };
 
 export function spotToEvent(event: SpotEvent, index?: number): EventInfo {
@@ -35,23 +36,27 @@ export function spotToEvent(event: SpotEvent, index?: number): EventInfo {
 		audio: event.audio
 	});
 
-	slides.push({
-		type: 'text',
-		text: event.description
-	});
-
-	if (Object.keys(event.links).length > 0) {
-		slides.push({
-			type: 'links',
-			links: event.links
-		});
+	if (event.links.Spotify) {
+		const spotifyArtist = event.links.Spotify.split('artist/')[1]?.split('?')[0];
+		if (spotifyArtist)
+			slides.push({
+				type: 'spotify',
+				url: `https://open.spotify.com/embed/artist/${spotifyArtist}`
+			});
 	}
+
+	event.links.Spot = event.link;
+	slides.push({
+		type: 'links',
+		links: event.links
+	});
 
 	const time = new Date(`5 ${event.day === 'Friday' ? '3' : '4'} 2024 ${event.time}`).toISOString();
 
 	return {
 		id: index ?? Math.floor(Math.random() * 10000000),
 		time,
+		description: event.description,
 		name: event.name,
 		country: event.country || '',
 		venue: event.venue,
@@ -63,6 +68,7 @@ export function spotToEvent(event: SpotEvent, index?: number): EventInfo {
 export type EventInfo = {
 	id: number;
 	time: string;
+	description: string;
 	name: string;
 	country: string;
 	venue: string;
@@ -81,11 +87,6 @@ export type ImageEventSlide = {
 	audio?: string;
 };
 
-export type TextEventSlide = {
-	type: 'text';
-	text: string;
-};
-
 export type LinksEventSlide = {
 	type: 'links';
 	links: {
@@ -93,4 +94,9 @@ export type LinksEventSlide = {
 	};
 };
 
-export type EventSlide = YouTubeEventSlide | ImageEventSlide | TextEventSlide | LinksEventSlide;
+export type SpotifyEventSlide = {
+	type: 'spotify';
+	url: string;
+};
+
+export type EventSlide = YouTubeEventSlide | ImageEventSlide | SpotifyEventSlide | LinksEventSlide;

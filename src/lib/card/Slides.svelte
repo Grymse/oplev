@@ -26,7 +26,6 @@
 	}
 
 	function onRightSideClick(e: MouseEvent) {
-		console.log(e);
 		if (!isDrag(e)) nextSlide();
 	}
 
