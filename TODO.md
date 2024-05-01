@@ -16,8 +16,9 @@
 - [x] Add youtube loader
 - [x] Add system to keep track of likes/dislikes etc.
 - [x] Save localstorage
-- [ ] Show list of artists
+- [x] Show list of artists
   - [ ] Sort by reaction, time, stage, name etc.
 - [ ] Send email with reactions. Add link with URL containing all reactions
 - [ ] Show progression of slide-deck
 - [ ] Add Intro
+- [ ] Refactor to set Controller dependent on single slide

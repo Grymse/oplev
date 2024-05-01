@@ -8,6 +8,22 @@
 	export let event: EventInfo;
 </script>
 
-<AspectRatio ratio={9 / 16}>
-	<Event active {event} />
-</AspectRatio>
+<div
+	role="button"
+	tabindex="-1"
+	on:keypress|stopPropagation
+	class="w-full h-full"
+	on:click={drawerStore.close}
+>
+	<AspectRatio ratio={9 / 16}>
+		<div
+			role="button"
+			tabindex="-1"
+			on:keypress|stopPropagation
+			class="w-full h-full"
+			on:click|stopPropagation
+		>
+			<Event active {event} />
+		</div>
+	</AspectRatio>
+</div>

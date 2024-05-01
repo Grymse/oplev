@@ -25,7 +25,7 @@
 	<OpenSlidesButton {event}>
 		<div class="w-full h-full flex">
 			{#if event.img}
-				<img src={event.img} alt="" class="h-full" />
+				<img src={event.img} alt="" class="h-full max-w-36" />
 			{/if}
 			<div class="p-4">
 				<h2 class="h2">{event.name} ({event.country})</h2>
