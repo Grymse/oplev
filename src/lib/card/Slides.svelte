@@ -1,14 +1,37 @@
 <script lang="ts">
 	import type { EventSlide } from '$lib/slides';
 	import Slide from './slides/Slide.svelte';
+	import AudioPlayer from './slides/helpers/AudioPlayer.svelte';
 
 	export let active: boolean = false;
 	export let slides: EventSlide[];
 	let currentSlide = 0;
+	let initMousePos = { x: 0, y: 0 };
 	$: reset(slides);
 
 	function reset(slides: EventSlide[]) {
 		currentSlide = 0;
+	}
+
+	// store the initial mouse position. This is used to determine if the user is dragging the slide
+	function clickInit(e: MouseEvent) {
+		initMousePos = { x: e.clientX, y: e.clientY };
+	}
+
+	// check if the user is dragging the slide
+	function isDrag(e: MouseEvent) {
+		const x = e.clientX - initMousePos.x;
+		const y = e.clientY - initMousePos.y;
+		return 20 < Math.abs(x) || 20 < Math.abs(y);
+	}
+
+	function onRightSideClick(e: MouseEvent) {
+		console.log(e);
+		if (!isDrag(e)) nextSlide();
+	}
+
+	function onLeftSideClick(e: MouseEvent) {
+		if (!isDrag(e)) prevSlide();
 	}
 
 	function nextSlide() {
@@ -20,16 +43,16 @@
 	}
 </script>
 
-<div class="w-full h-full relative select-none">
+<div class="w-full h-full relative select-none" role="none" on:mousedown={clickInit}>
 	{#if active}
 		<div class="w-full h-full absolute flex z-10">
 			<button
 				class="w-[50%] h-full duration-100 active:bg-gradient-to-r active:from-white active:to-transparent opacity-15"
-				on:click={prevSlide}
+				on:click={onLeftSideClick}
 			/>
 			<button
 				class="w-[50%] h-full duration-100 active:bg-gradient-to-l active:from-white active:to-transparent opacity-15"
-				on:click={nextSlide}
+				on:click={onRightSideClick}
 			/>
 		</div>
 		{#if slides.length !== 1}

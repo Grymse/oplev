@@ -5,46 +5,50 @@
 	const dispatch = createEventDispatcher();
 	let divContainer: HTMLDivElement;
 
-	let offset = {
-		x: 0,
-		y: 0,
-		rot: 0
-	};
+	type Vector2 = { x: number; y: number };
+	type Vector2WithRot = { rot: number } & Vector2;
 
 	let isDragging = false;
-	let startX = 0;
-	let startY = 0;
+	let offsetPos: Vector2WithRot = { x: 0, y: 0, rot: 0 };
+	let startPos: Vector2 = { x: 0, y: 0 };
 
 	const handleMouseDown = (e: MouseEvent) => {
 		isDragging = true;
-		startX = e.clientX;
-		startY = e.clientY;
+		startPos = {
+			x: e.clientX,
+			y: e.clientY
+		};
 	};
 
-	const handleMouseMove = (e: MouseEvent) => {
+	const setDraggingStart = (pos: Vector2) => {
+		isDragging = true;
+		startPos = pos;
+	};
+
+	const setDraggingPos = (pos: Vector2) => {
 		if (isDragging) {
-			const deltaX = e.clientX - startX;
-			const deltaY = e.clientY - startY;
-			offset = {
+			const deltaX = pos.x - startPos.x;
+			const deltaY = pos.y - startPos.y;
+			offsetPos = {
 				x: deltaX,
 				y: deltaY,
 				rot: deltaX / 40
 			};
-			dispatch('dragging', offsetToPercentage(offset));
+			dispatch('dragging', offsetToPercentage(offsetPos));
 		}
 	};
 
-	const handleMouseUp = () => {
+	const handleDragEnd = () => {
 		isDragging = false;
-		dispatch('dragend', offsetToPercentage(offset));
-		offset = {
+		dispatch('dragend', offsetToPercentage(offsetPos));
+		offsetPos = {
 			x: 0,
 			y: 0,
 			rot: 0
 		};
 	};
 
-	function offsetToPercentage(offset: { x: number; y: number; rot: number }) {
+	function offsetToPercentage(offset: Vector2WithRot) {
 		return {
 			x: offset.x / divContainer.clientWidth,
 			y: offset.y / divContainer.clientHeight
@@ -54,11 +58,13 @@
 	onMount(() => {
 		if (!document) return;
 
-		document.addEventListener('mouseup', handleMouseUp);
+		document.addEventListener('mouseup', handleDragEnd);
+		document.addEventListener('touchend', handleDragEnd);
 	});
 
 	onDestroy(() => {
-		document.removeEventListener('mouseup', handleMouseUp);
+		document.removeEventListener('mouseup', handleDragEnd);
+		document.removeEventListener('touchend', handleDragEnd);
 	});
 </script>
 
@@ -68,8 +74,8 @@
 	aria-label="card"
 	tabindex="-1000"
 	class="w-full h-full relative overflow-visible"
-	on:mousemove={handleMouseMove}
-	on:mouseup={handleMouseUp}
+	on:mousemove={(e) => setDraggingPos({ x: e.clientX, y: e.clientY })}
+	on:touchmove={(e) => setDraggingPos({ x: e.touches[0].clientX, y: e.touches[0].clientY })}
 >
 	<div
 		role="button"
@@ -77,8 +83,9 @@
 		aria-label="card"
 		tabindex="0"
 		class="w-full h-full absolute"
-		style={`transform: translate(${offset.x}px, ${offset.y}px) rotate(${offset.rot}deg);`}
-		on:mousedown={handleMouseDown}
+		style={`transform: translate(${offsetPos.x}px, ${offsetPos.y}px) rotate(${offsetPos.rot}deg);`}
+		on:mousedown={(e) => setDraggingStart({ x: e.clientX, y: e.clientY })}
+		on:touchstart={(e) => setDraggingStart({ x: e.touches[0].clientX, y: e.touches[0].clientY })}
 		bind:this={divContainer}
 	>
 		<slot />

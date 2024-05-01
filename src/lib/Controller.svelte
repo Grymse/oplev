@@ -6,7 +6,7 @@
 	import { spotToEvent } from './slides';
 
 	// @ts-ignore
-	const events = eventData.map(spotToEvent);
+	const events = eventData.map(spotToEvent).sort(() => Math.random() - 0.5);
 	let index = 0;
 	$: currentEvent = events[index];
 	$: nextEvent = events[index + 1];
@@ -63,7 +63,7 @@
 	}
 </script>
 
-<div class="h-full w-full relative max-w-3xl">
+<div class="h-full w-full relative">
 	<Draggable on:dragging={onDragging} on:dragend={onDragEnd}>
 		<Event event={currentEvent} active />
 	</Draggable>

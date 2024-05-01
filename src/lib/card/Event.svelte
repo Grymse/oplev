@@ -18,7 +18,7 @@
 	<div
 		class="absolute left-0 bottom-0 h-[25%] bg-gradient-to-t from-black from-50 to-transparent to-0 w-full z-10"
 	/>
-	<div class="absolute bottom-8 left-8 z-10">
+	<div class="absolute pointer-events-none bottom-8 left-8 z-10">
 		<h2 class="h2">{event.name} ({event.country})</h2>
 		<h4 class="h4">{event.venue}</h4>
 		<p>{time}</p>

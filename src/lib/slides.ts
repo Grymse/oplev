@@ -19,7 +19,7 @@ type EventLinks = {
 	TikTok?: string;
 };
 
-export function spotToEvent(event: SpotEvent): EventInfo {
+export function spotToEvent(event: SpotEvent, index?: number): EventInfo {
 	const slides: EventSlide[] = [];
 
 	if (event.youtube) {
@@ -50,6 +50,7 @@ export function spotToEvent(event: SpotEvent): EventInfo {
 	const time = new Date(`5 ${event.day === 'Friday' ? '3' : '4'} 2024 ${event.time}`).toISOString();
 
 	return {
+		id: index ?? Math.floor(Math.random() * 10000000),
 		time,
 		name: event.name,
 		country: event.country || '',
@@ -60,6 +61,7 @@ export function spotToEvent(event: SpotEvent): EventInfo {
 }
 
 export type EventInfo = {
+	id: number;
 	time: string;
 	name: string;
 	country: string;

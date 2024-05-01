@@ -7,14 +7,16 @@
   - [x] Youtube
 - [x] Create stack mechanism (Like, unlike, superlike, redo) using buttons
 - [x] Create swiping mechanism
-- [ ] Fix slide-click-through on swipe
+- [x] Fix slide-click-through on swipe
+- [x] Fix mobile-swipe
 - [ ] Set size-restriction for card 16:9
+- [ ] Make mobile-friendly
 - [ ] Elaborated Card
-- [ ] Add floating-away animation
+- [ ] Add floating-away animation?
 - [ ] Add system to keep track of likes/dislikes etc.
 - [ ] Save localstorage
 - [ ] Show list of artists
-  - [ ] Sort by reaction, time, stage etc.
-- [ ] Add table with all results
-- [ ] Add sorting by certain attributes (Stage, time, name)
-- [ ] See table with all artists
+  - [ ] Sort by reaction, time, stage, name etc.
+- [ ] Send email with reactions. Add link with URL containing all reactions
+- [ ] Show progression of slide-deck
+- [ ] Add Spotify Slide
