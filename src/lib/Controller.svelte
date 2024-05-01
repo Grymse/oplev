@@ -1,12 +1,11 @@
 <script lang="ts">
 	import ButtonPanel from './ButtonPanel.svelte';
-	import Draggable from './card/Draggable.svelte';
-	import Event from './card/Event.svelte';
-	import eventData from './events.json';
-	import { spotToEvent } from './slides';
+	import Draggable from './event/Draggable.svelte';
+	import Event from './event/Event.svelte';
+	import { eventSystem, react } from './events';
 
-	// @ts-ignore
-	const events = eventData.map(spotToEvent).sort(() => Math.random() - 0.5);
+	$: reactedEventIds = Array.from($eventSystem.reactions.keys());
+	$: events = $eventSystem.events.filter((event) => reactedEventIds.includes(event.id) === false);
 	let index = 0;
 	$: currentEvent = events[index];
 	$: nextEvent = events[index + 1];
@@ -48,17 +47,17 @@
 	}
 
 	function like() {
-		console.log('like');
+		react(currentEvent, 'like');
 		index++;
 	}
 
 	function pass() {
-		console.log('pass');
+		react(currentEvent, 'pass');
 		index++;
 	}
 
 	function heart() {
-		console.log('heart');
+		react(currentEvent, 'heart');
 		index++;
 	}
 </script>

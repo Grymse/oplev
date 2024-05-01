@@ -1,18 +1,17 @@
 <script lang="ts">
 	import { getDrawerStore, type DrawerSettings } from '@skeletonlabs/skeleton';
-	import type { EventInfo } from './slides';
+	import type { EventInfo } from '../../slides';
 	export let event: EventInfo;
 	const drawerStore = getDrawerStore();
 
 	export function openEventDrawer() {
 		const drawerSettings: DrawerSettings = {
-			id: 'event',
+			id: 'slides',
 			meta: { event },
-			// Provide your property overrides:
-			bgDrawer: 'bg-purple-900 text-white',
-			bgBackdrop: 'bg-gradient-to-tr from-indigo-500/50 via-purple-500/50 to-pink-500/50',
 			padding: 'p-4',
-			height: 'h-[90%]',
+			bgDrawer: 'bg-transparent',
+			bgBackdrop: 'bg-gradient-to-tr from-indigo-500/50 via-purple-500/50 to-pink-500/50',
+			height: 'h-full',
 			rounded: 'rounded-xl',
 			position: 'bottom'
 		};

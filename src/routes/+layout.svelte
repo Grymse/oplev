@@ -2,8 +2,10 @@
 	import '../app.postcss';
 	import { AppShell, AppBar, TabGroup, TabAnchor, initializeStores } from '@skeletonlabs/skeleton';
 	initializeStores();
+	initializeEventSystem();
 	import { page } from '$app/stores';
 	import DrawerController from '$lib/drawer/DrawerController.svelte';
+	import { initializeEventSystem } from '$lib/events';
 
 	const pages = [
 		{

@@ -61,6 +61,7 @@ export function spotToEvent(event: SpotEvent, index?: number): EventInfo {
 		country: event.country || '',
 		venue: event.venue,
 		link: event.link,
+		img: event.img,
 		slides
 	};
 }
@@ -69,6 +70,7 @@ export type EventInfo = {
 	id: number;
 	time: string;
 	description: string;
+	img?: string;
 	name: string;
 	country: string;
 	venue: string;
@@ -100,3 +102,5 @@ export type SpotifyEventSlide = {
 };
 
 export type EventSlide = YouTubeEventSlide | ImageEventSlide | SpotifyEventSlide | LinksEventSlide;
+
+export type EventReaction = 'like' | 'pass' | 'heart';

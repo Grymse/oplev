@@ -1,5 +1,5 @@
 <script lang="ts">
-	import OpenEventButton from '$lib/OpenEventButton.svelte';
+	import OpenEventButton from '$lib/drawer/buttons/OpenEventButton.svelte';
 	import type { EventInfo } from '$lib/slides';
 	import { ISOToTimeDay } from '$lib/translations';
 	import Slides from './Slides.svelte';
@@ -13,7 +13,9 @@
 		class="absolute left-0 bottom-0 h-[25%] bg-gradient-to-t from-black from-50 to-transparent to-0 w-full z-10"
 	/>
 	<OpenEventButton {event}>
-		<div class="absolute bottom-8 select-none left-8 z-20">
+		<div
+			class="absolute bottom-8 select-none left-8 z-20 active:text-surface-600-300-token duration-50"
+		>
 			<h2 class="h2">{event.name} ({event.country})</h2>
 			<h4 class="h4">{event.venue}</h4>
 			<p>{ISOToTimeDay(event.time)}</p>

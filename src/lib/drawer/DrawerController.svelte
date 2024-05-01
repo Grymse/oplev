@@ -1,10 +1,12 @@
 <script lang="ts">
 	import { Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
 	import EventDrawer from './EventDrawer.svelte';
+	import SlidesDrawer from './SlidesDrawer.svelte';
 	const drawerStore = getDrawerStore();
 
 	const drawers = {
-		event: EventDrawer
+		event: EventDrawer,
+		slides: SlidesDrawer
 	};
 </script>
 

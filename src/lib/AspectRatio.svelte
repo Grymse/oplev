@@ -33,6 +33,6 @@
 
 <div bind:this={divContainer} class="h-full w-full flex justify-center items-center">
 	<div style={`height: ${controllerSize.height}px; width: ${controllerSize.width}px;`}>
-		<Controller />
+		<slot />
 	</div>
 </div>

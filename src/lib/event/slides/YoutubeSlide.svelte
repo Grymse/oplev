@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { YouTubeEventSlide } from '$lib/slides';
+	import { ProgressRadial } from '@skeletonlabs/skeleton';
 	import { onDestroy, onMount } from 'svelte';
 	export let slide: YouTubeEventSlide;
 	export let active: boolean = false;
@@ -22,7 +23,13 @@
 	onDestroy(() => window.removeEventListener('resize', setIframeSize));
 </script>
 
-<div class="w-full h-full pointer-events-none -z-10" bind:this={div}>
+<div
+	class="w-full h-full flex justify-center items-center pointer-events-none -z-10"
+	bind:this={div}
+>
+	<div class="absolute">
+		<ProgressRadial />
+	</div>
 	<iframe
 		bind:this={iframe}
 		width="702"
@@ -30,6 +37,7 @@
 		src={`https://www.youtube.com/embed/${youtubeId}?autoplay=${active ? 1 : 0}&controls=0`}
 		title="Embedded video"
 		frameborder="0"
+		class="z-10"
 		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 		referrerpolicy="strict-origin-when-cross-origin"
 		allowfullscreen

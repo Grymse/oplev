@@ -11,12 +11,13 @@
 - [x] Fix mobile-swipe
 - [x] Set size-restriction for card 16:9
 - [x] Make mobile-friendly
-- [ ] Elaborated Card
-- [ ] Add floating-away animation?
-- [ ] Add system to keep track of likes/dislikes etc.
-- [ ] Save localstorage
+- [x] Elaborated Card
+- [x] Add Spotify Slide
+- [x] Add youtube loader
+- [x] Add system to keep track of likes/dislikes etc.
+- [x] Save localstorage
 - [ ] Show list of artists
   - [ ] Sort by reaction, time, stage, name etc.
 - [ ] Send email with reactions. Add link with URL containing all reactions
 - [ ] Show progression of slide-deck
-- [ ] Add Spotify Slide
+- [ ] Add Intro
