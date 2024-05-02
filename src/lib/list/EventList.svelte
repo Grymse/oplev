@@ -32,7 +32,7 @@
 			...event,
 			reaction: $eventSystem.reactions.get(event.id)
 		}))
-		.filter((e) => containsName([...e.name.split(' '), ...e.venue.split(' ')], search))
+		.filter((e) => containsName([...e.name.split(' '), ...e.venue.split(' '), e.country], search))
 		.sort(sorter);
 
 	let search = '';

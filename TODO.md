@@ -21,12 +21,10 @@
 - [x] Show list of artists
 - [x] Fix mobil-url i bunden
 - [x] Refactor to set Controller dependent on single slide
-
   - [x] Add controller to list-preview
-
 - [x] Fiks Nogle gange skifter sangen ikke ved slide-skift
 - [x] Change reaction from list
-  - [ ] Sort by reaction, time, stage, name etc.
+  - [x] Sort by reaction, time, stage, name etc.
 - [x] Save using URL
 
 # NICE TO HAVE
