@@ -8,6 +8,7 @@
 
 	let div: HTMLDivElement;
 	let iframe: HTMLIFrameElement;
+	let resizeInterval: NodeJS.Timeout;
 
 	// Get size of div and set iframe to that size. Update size on window resize.
 	const setIframeSize = () => {
@@ -19,8 +20,13 @@
 	onMount(() => {
 		window.addEventListener('resize', setIframeSize);
 		setIframeSize();
+		resizeInterval = setInterval(setIframeSize, 100);
 	});
-	onDestroy(() => window.removeEventListener('resize', setIframeSize));
+
+	onDestroy(() => {
+		window.removeEventListener('resize', setIframeSize);
+		clearInterval(resizeInterval);
+	});
 </script>
 
 <div
