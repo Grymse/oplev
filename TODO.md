@@ -20,14 +20,14 @@
 - [x] Save localstorage
 - [x] Show list of artists
 - [ ] Fix mobil-url i bunden
+- [ ] Refactor to set Controller dependent on single slide
 
-- [ ] Fiks Nogle gange skifter sangen ikke ved slide-skift
+  - [ ] Add controller to list-preview
+
+- [x] Fiks Nogle gange skifter sangen ikke ved slide-skift
 - [x] Change reaction from list
   - [ ] Sort by reaction, time, stage, name etc.
 - [x] Save using URL
-
-- [ ] Refactor to set Controller dependent on single slide
-  - [ ] Add controller to list-preview
 
 # NICE TO HAVE
 
