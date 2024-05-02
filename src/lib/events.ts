@@ -2,6 +2,7 @@ import { get, writable } from 'svelte/store';
 import type { EventInfo, EventReaction } from './slides';
 import eventData from './events.json';
 import { spotToEvent } from './slides';
+import { parseURL, urlHasReactions } from './urls';
 
 type EventSystem = {
 	events: EventInfo[];
@@ -59,14 +60,22 @@ function readFromLocalStorage(): SavedReactions | null {
 export function initializeEventSystem() {
 	// @ts-expect-error - TS doesn't know about the localStorage API
 	const events = eventData.map(spotToEvent);
+
+	if (urlHasReactions(location.href)) {
+		const reactions = parseURL(location.href);
+		eventSystem.set({ events, reactions });
+		return;
+	}
 	const stored = readFromLocalStorage();
-	const newSystem = createSystem(events, stored);
-	if (!newSystem) eventSystem.set({ events, reactions: new Map() });
-	else eventSystem.set(newSystem);
+	if (stored) {
+		eventSystem.set(createSystem(events, stored));
+		return;
+	}
+
+	eventSystem.set({ events, reactions: new Map() });
 }
 
-function createSystem(events: EventInfo[], stored: SavedReactions | null) {
-	if (!stored) return;
+function createSystem(events: EventInfo[], stored: SavedReactions) {
 	const system: EventSystem = {
 		events,
 		reactions: new Map(stored.reactions)

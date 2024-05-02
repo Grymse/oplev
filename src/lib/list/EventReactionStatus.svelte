@@ -40,6 +40,10 @@
 </script>
 
 <div
+	role="button"
+	tabindex="0"
+	on:keypress|stopPropagation
+	aria-label="Reaction"
 	class="card p-4 shadow-xl"
 	data-popup={reactionPopup.target}
 	on:click|stopPropagation
@@ -61,7 +65,7 @@
 	</div>
 </div>
 
-<div on:click|stopPropagation>
+<div on:click|stopPropagation role="button" tabindex="0" on:keypress|stopPropagation>
 	<button
 		use:popup={reactionPopup}
 		class="absolute btn-icon bottom-2 right-2 text-white text-opacity-50"
