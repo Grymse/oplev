@@ -1,4 +1,4 @@
-# Alpha-0.1
+# Alpha-0.1-scrap
 
 - [x] Create content card
   - [x] Image
@@ -27,21 +27,27 @@
   - [x] Sort by reaction, time, stage, name etc.
 - [x] Save using URL
 
-# NICE TO HAVE
+# Alpha-0.2-pretty
 
-- [ ] Gradiant change
+- [ ] Youtube virker ikke på mobil
+  - [ ] Gør det muligt at klikke Youtube i-gang
+- [ ] Gradiant change on slide-change
 - [ ] Swipe i artist-navn åbner artist-tekst
 - [ ] Add Intro animation
 - [ ] List i mini-format
 - [ ] Show progression of slide-deck
-
-# Alpha-0.2
-
-Fokus på den hurtigere frasortering...
-
 - [ ] Spole i video-materiale / Start andet sted
 - [ ] Tekst i Slide / Visualiser navn-klik
 - [ ] Tilføj genre
-- [ ] Tilføj Scene-Beskrivelse
+- [ ] Tilføj Scener/Festival-Beskrivelse
 - [ ] Spotify preview - Start playing?
 - [ ] Hurtigere animationer på baggrund
+
+# Alpha-0.3-online
+
+- [ ] Lav online med Email
+- [ ] Gør det muligt at tilføje venner
+
+# Alpha-0.4-expand
+
+- [ ] Festival-menu

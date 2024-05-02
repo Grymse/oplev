@@ -51,7 +51,14 @@ export function spotToEvent(event: SpotEvent, index?: number): EventInfo {
 		links: event.links
 	});
 
-	const time = `2024-05-0${event.day === 'Friday' ? '3' : '4'}T${event.time}:00.000Z`;
+	if (Number(event.time.split(':')[0]) < 4) {
+		if (event.day === 'Friday') event.day = 'Saturday';
+		else event.day = 'Sunday';
+	}
+	const d = new Date(
+		`2024-05-0${event.day === 'Friday' ? '3' : event.day === 'Saturday' ? '4' : '5'}T${event.time}:00.000Z`
+	);
+	const time = new Date(d.getTime() - 60 * 60 * 1000 * 2).toISOString();
 
 	return {
 		id: index ?? Math.floor(Math.random() * 10000000),
