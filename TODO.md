@@ -19,18 +19,20 @@
 - [x] Add system to keep track of likes/dislikes etc.
 - [x] Save localstorage
 - [x] Show list of artists
-- [ ] Fix mobil-safari?
-- [ ] Refactor to set Controller dependent on single slide
-  - [ ] Add controller to list-preview
-- [ ] Fiks Nogle gange skifter sangen ikke ved slide-skift
+- [ ] Fix mobil-url i bunden
 
-- [ ] Swipe i artist-navn åbner artist-tekst
+- [ ] Fiks Nogle gange skifter sangen ikke ved slide-skift
 - [ ] Change reaction from list
   - [ ] Sort by reaction, time, stage, name etc.
 - [ ] Send email with reactions. Add link with URL containing all reactions
 
+- [ ] Refactor to set Controller dependent on single slide
+  - [ ] Add controller to list-preview
+
 # NICE TO HAVE
 
+- [ ] Gradiant change
+- [ ] Swipe i artist-navn åbner artist-tekst
 - [ ] Add Intro animation
 - [ ] List i mini-format
 - [ ] Show progression of slide-deck

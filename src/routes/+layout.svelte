@@ -3,6 +3,7 @@
 	import { AppShell, AppBar, TabGroup, TabAnchor, initializeStores } from '@skeletonlabs/skeleton';
 	initializeStores();
 	initializeEventSystem();
+
 	import { page } from '$app/stores';
 	import DrawerController from '$lib/drawer/DrawerController.svelte';
 	import { initializeEventSystem } from '$lib/events';
@@ -25,6 +26,11 @@
 `
 		}
 	];
+
+	// Floating UI for Popups
+	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
+	import { storePopup } from '@skeletonlabs/skeleton';
+	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
 <DrawerController />

@@ -13,7 +13,7 @@
 >
 	{#each links as link}
 		<a href={link.url} class="z-10" target="_blank" rel="noopener noreferrer">
-			<button class={`btn ${links.length === 5 ? 'btn-lg' : 'btn-xl'} w-72 variant-filled-primary`}>
+			<button class={`btn ${links.length === 5 ? 'btn-lg' : 'btn-xl'} w-60 variant-filled-primary`}>
 				<LinkIcon fill="#fff" title={link.text} />{link.text}
 			</button>
 		</a>
