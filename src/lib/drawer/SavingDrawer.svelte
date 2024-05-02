@@ -36,7 +36,7 @@
 				class="italic">Note multiple browsers will not synchronize in real-time.</span
 			>
 		</p>
-		<CodeBlock class="max-h-36" language="Link" code={url} />
+		<CodeBlock class="max-h-36 min-h-24" language="Link" code={url} />
 		<div class="w-full items-center flex flex-col gap-4 mt-2 justify-center">
 			<h2>You can also use the QR</h2>
 			<img

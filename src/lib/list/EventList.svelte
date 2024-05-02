@@ -41,7 +41,7 @@
 <div class="mb-4 flex justify-between">
 	<label class="label flex flex-col">
 		<span>Sort by</span>
-		<select class="select w-40 h-8" bind:value={sorter}>
+		<select class="select h-10 w-40" bind:value={sorter}>
 			<option value={sortByStage}>Stages</option>
 			<option selected value={sortByRank}>Your Reactions</option>
 			<option value={sortByTime}>Time</option>
@@ -50,7 +50,7 @@
 	</label>
 	<label class="label flex flex-col">
 		<span>Search</span>
-		<input type="text" class="input max-w-60 h-8" bind:value={search} />
+		<input type="text" class="input h-10 max-w-60 select" bind:value={search} />
 	</label>
 </div>
 
