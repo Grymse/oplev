@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { eventSystem } from '$lib/events';
+	import BookmarkIcon from '$lib/reactions/BookmarkIcon.svelte';
 	import HeartIcon from '$lib/reactions/HeartIcon.svelte';
 	import LikeIcon from '$lib/reactions/LikeIcon.svelte';
 	import NoneIcon from '$lib/reactions/NoneIcon.svelte';
@@ -68,11 +69,13 @@
 <div on:click|stopPropagation role="button" tabindex="0" on:keypress|stopPropagation>
 	<button
 		use:popup={reactionPopup}
-		class="absolute btn-icon bottom-2 right-2 text-white text-opacity-50"
+		class="absolute btn-icon bottom-6 right-2 text-white text-opacity-50"
 	>
 		<div class="w-full h-full">
 			{#if reaction}
 				<svelte:component this={reactions[reaction]} />
+			{:else}
+				<BookmarkIcon />
 			{/if}
 		</div>
 	</button>
