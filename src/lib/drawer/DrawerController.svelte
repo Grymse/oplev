@@ -2,11 +2,13 @@
 	import { Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
 	import EventDrawer from './EventDrawer.svelte';
 	import SlidesDrawer from './SlidesDrawer.svelte';
+	import SavingDrawer from './SavingDrawer.svelte';
 	const drawerStore = getDrawerStore();
 
 	const drawers = {
 		event: EventDrawer,
-		slides: SlidesDrawer
+		slides: SlidesDrawer,
+		saving: SavingDrawer
 	};
 </script>
 

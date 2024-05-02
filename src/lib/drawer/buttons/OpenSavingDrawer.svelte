@@ -1,20 +1,16 @@
 <script lang="ts">
 	import { getDrawerStore, type DrawerSettings } from '@skeletonlabs/skeleton';
-	import type { EventInfo } from '../../slides';
-	export let event: EventInfo;
 	const drawerStore = getDrawerStore();
 
-	function openEventDrawer() {
+	export function openSavingDrawer() {
 		const drawerSettings: DrawerSettings = {
-			id: 'event',
-			meta: { event },
-			// Provide your property overrides:
+			id: 'saving',
 			bgDrawer: 'bg-purple-900 text-white',
 			bgBackdrop: 'bg-gradient-to-tr from-indigo-500/50 via-purple-500/50 to-pink-500/50',
 			padding: 'p-4',
-			height: 'h-[90%]',
+			height: 'h-full',
 			rounded: 'rounded-xl',
-			position: 'bottom'
+			position: 'top'
 		};
 		drawerStore.open(drawerSettings);
 	}
@@ -25,7 +21,7 @@
 	tabindex="-1"
 	aria-details="Opens event modal"
 	on:keypress={console.log}
-	on:click|preventDefault={openEventDrawer}
+	on:click|preventDefault={openSavingDrawer}
 >
 	<slot />
 </div>

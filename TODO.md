@@ -22,9 +22,12 @@
 - [ ] Fix mobil-url i bunden
 
 - [ ] Fiks Nogle gange skifter sangen ikke ved slide-skift
-- [ ] Change reaction from list
+- [x] Change reaction from list
   - [ ] Sort by reaction, time, stage, name etc.
 - [ ] Send email with reactions. Add link with URL containing all reactions
+
+  - [ ] Generate email
+  - [ ] Contact email service
 
 - [ ] Refactor to set Controller dependent on single slide
   - [ ] Add controller to list-preview
