@@ -1,9 +1,18 @@
 <script lang="ts">
 	import AspectRatio from '$lib/AspectRatio.svelte';
-	import Event from '$lib/event/Event.svelte';
-	import type { EventInfo } from '$lib/slides';
+	import SwipableEvent from '$lib/SwipableEvent.svelte';
+	import { eventSystem } from '$lib/events';
+	import type { EventInfo, EventReaction } from '$lib/slides';
 	import { getDrawerStore } from '@skeletonlabs/skeleton';
 	const drawerStore = getDrawerStore();
+
+	function react(reaction: EventReaction) {
+		eventSystem.update((e) => {
+			e.reactions.set(event.id, reaction);
+			return e;
+		});
+		drawerStore.close();
+	}
 
 	export let event: EventInfo;
 </script>
@@ -23,7 +32,12 @@
 			class="w-full h-full"
 			on:click|stopPropagation
 		>
-			<Event active {event} />
+			<SwipableEvent
+				{event}
+				on:heart={() => react('heart')}
+				on:like={() => react('like')}
+				on:pass={() => react('pass')}
+			/>
 		</div>
 	</AspectRatio>
 </div>

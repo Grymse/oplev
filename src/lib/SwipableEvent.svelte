@@ -1,14 +1,12 @@
 <script lang="ts">
+	import { createEventDispatcher } from 'svelte';
 	import ButtonPanel from './ButtonPanel.svelte';
 	import Draggable from './event/Draggable.svelte';
 	import Event from './event/Event.svelte';
-	import { eventSystem, react } from './events';
+	import type { EventInfo } from './slides';
+	const dispatcher = createEventDispatcher();
 
-	$: reactedEventIds = Array.from($eventSystem.reactions.keys());
-	$: events = $eventSystem.events.filter((event) => reactedEventIds.includes(event.id) === false);
-	let index = 0;
-	$: currentEvent = events[index];
-	$: nextEvent = events[index + 1];
+	export let event: EventInfo;
 
 	function onDragging(e: CustomEvent<{ x: number; y: number }>) {
 		interactionVisualization = toInteractionPercentage(e.detail);
@@ -46,30 +44,20 @@
 		};
 	}
 
-	function like() {
-		setTimeout(() => {
-			react(currentEvent, 'like');
-			index++;
-		}, 50);
-	}
-
-	function pass() {
-		react(currentEvent, 'pass');
-		index++;
-	}
-
-	function heart() {
-		react(currentEvent, 'heart');
-		index++;
-	}
+	const like = () => {
+		dispatcher('like');
+	};
+	const heart = () => {
+		dispatcher('heart');
+	};
+	const pass = () => {
+		dispatcher('pass');
+	};
 </script>
 
 <div class="h-full w-full relative">
 	<Draggable on:dragging={onDragging} on:dragend={onDragEnd}>
-		<Event event={currentEvent} active />
+		<Event {event} active />
 	</Draggable>
-	<div class="absolute pointer-events-none -z-10 top-0 left-0 w-full h-full">
-		<Event event={nextEvent} />
-	</div>
 	<ButtonPanel {interactionVisualization} on:like={like} on:heart={heart} on:pass={pass} />
 </div>

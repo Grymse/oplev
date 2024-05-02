@@ -8,7 +8,7 @@
 		const drawerSettings: DrawerSettings = {
 			id: 'slides',
 			meta: { event },
-			padding: 'p-4',
+			padding: 'p-0',
 			bgDrawer: 'bg-transparent',
 			bgBackdrop: 'bg-gradient-to-tr from-indigo-500/50 via-purple-500/50 to-pink-500/50',
 			height: 'h-full',

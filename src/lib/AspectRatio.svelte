@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Controller from '$lib/Controller.svelte';
 	import { onDestroy, onMount } from 'svelte';
 	export let ratio: number;
 

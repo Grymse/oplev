@@ -20,9 +20,9 @@
 - [x] Save localstorage
 - [x] Show list of artists
 - [x] Fix mobil-url i bunden
-- [ ] Refactor to set Controller dependent on single slide
+- [x] Refactor to set Controller dependent on single slide
 
-  - [ ] Add controller to list-preview
+  - [x] Add controller to list-preview
 
 - [x] Fiks Nogle gange skifter sangen ikke ved slide-skift
 - [x] Change reaction from list
