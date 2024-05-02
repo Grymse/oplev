@@ -50,6 +50,4 @@
 	{/if}
 </button>
 
-<audio autoplay={active} loop bind:this={audio}>
-	<source src={source} type="audio/mpeg" />
-</audio>
+<audio autoplay={active} src={source} loop bind:this={audio}> </audio>
