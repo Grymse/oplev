@@ -51,7 +51,7 @@ export function spotToEvent(event: SpotEvent, index?: number): EventInfo {
 		links: event.links
 	});
 
-	const time = new Date(`5 ${event.day === 'Friday' ? '3' : '4'} 2024 ${event.time}`).toISOString();
+	const time = `2024-05-0${event.day === 'Friday' ? '3' : '4'}T${event.time}:00.000Z`;
 
 	return {
 		id: index ?? Math.floor(Math.random() * 10000000),

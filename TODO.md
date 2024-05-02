@@ -19,11 +19,12 @@
 - [x] Add system to keep track of likes/dislikes etc.
 - [x] Save localstorage
 - [x] Show list of artists
-- [ ] Swipe i artist-navn åbner artist-tekst
+- [ ] Fix mobil-safari?
 - [ ] Refactor to set Controller dependent on single slide
   - [ ] Add controller to list-preview
-- [ ] Fiks Youtube + Nogle gange skifter sangen ikke ved slide-skift
-- [ ] Fix mobil-safari?
+- [ ] Fiks Nogle gange skifter sangen ikke ved slide-skift
+
+- [ ] Swipe i artist-navn åbner artist-tekst
 - [ ] Change reaction from list
   - [ ] Sort by reaction, time, stage, name etc.
 - [ ] Send email with reactions. Add link with URL containing all reactions
