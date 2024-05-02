@@ -4,8 +4,8 @@
 	import Draggable from '$lib/event/Draggable.svelte';
 </script>
 
-<div class="absolute top-0 h-svh w-screen">
-	<AspectRatio ratio={9 / 16}>
+<div class="absolute -top-3 w-screen" style="height: calc(100svh + 4em);">
+	<AspectRatio ratio={10 / 16}>
 		<Controller />
 	</AspectRatio>
 </div>

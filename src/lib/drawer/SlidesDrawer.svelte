@@ -15,7 +15,7 @@
 	class="w-full h-full"
 	on:click={drawerStore.close}
 >
-	<AspectRatio ratio={9 / 16}>
+	<AspectRatio ratio={10 / 16}>
 		<div
 			role="button"
 			tabindex="-1"

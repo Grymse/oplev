@@ -19,7 +19,7 @@
 - [x] Add system to keep track of likes/dislikes etc.
 - [x] Save localstorage
 - [x] Show list of artists
-- [ ] Fix mobil-url i bunden
+- [x] Fix mobil-url i bunden
 - [ ] Refactor to set Controller dependent on single slide
 
   - [ ] Add controller to list-preview
