@@ -47,8 +47,10 @@
 	}
 
 	function like() {
-		react(currentEvent, 'like');
-		index++;
+		setTimeout(() => {
+			react(currentEvent, 'like');
+			index++;
+		}, 50);
 	}
 
 	function pass() {

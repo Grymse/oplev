@@ -24,8 +24,8 @@
 	}
 </script>
 
-<div class="relative z-10">
-	<div class="absolute flex gap-10 w-full justify-center h-16 -my-4 items-center">
+<div class="relative w-full z-10">
+	<div class="absolute flex w-full justify-center gap-6 h-16 -mt-6 items-center">
 		<!-- X / Pass -->
 		<button
 			on:click={pass}
@@ -53,7 +53,7 @@
 		<button
 			on:click={like}
 			type="button"
-			class="btn-icon btn-icon-xl h-16 variant-filled-secondary"
+			class="btn-icon btn-icon-xl duration-0 h-16 variant-filled-secondary"
 			style="transform: scale({interactionVisualization.like +
 				1}) translate({interactionVisualization.like * 50}%, {-interactionVisualization.like *
 				50}%);"

@@ -24,10 +24,7 @@
 - [ ] Fiks Nogle gange skifter sangen ikke ved slide-skift
 - [x] Change reaction from list
   - [ ] Sort by reaction, time, stage, name etc.
-- [ ] Send email with reactions. Add link with URL containing all reactions
-
-  - [ ] Generate email
-  - [ ] Contact email service
+- [x] Save using URL
 
 - [ ] Refactor to set Controller dependent on single slide
   - [ ] Add controller to list-preview

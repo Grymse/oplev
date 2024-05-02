@@ -39,8 +39,8 @@
 	};
 
 	const handleDragEnd = () => {
-		isDragging = false;
 		dispatch('dragend', offsetToPercentage(offsetPos));
+		isDragging = false;
 		offsetPos = {
 			x: 0,
 			y: 0,
