@@ -3,8 +3,10 @@
 	import Event from './event/Event.svelte';
 	import { eventSystem, react } from './events';
 
-	$: reactedEventIds = Array.from($eventSystem.reactions.keys());
-	$: events = $eventSystem.events.filter((event) => reactedEventIds.includes(event.id) === false);
+	const reactedEventIds = Array.from($eventSystem.reactions.keys());
+	const events = $eventSystem.events.filter(
+		(event) => reactedEventIds.includes(event.id) === false
+	);
 	let index = 0;
 	$: currentEvent = events[index];
 	$: nextEvent = events[index + 1];
