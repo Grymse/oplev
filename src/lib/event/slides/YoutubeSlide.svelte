@@ -29,10 +29,7 @@
 	});
 </script>
 
-<div
-	class="w-full h-full flex justify-center items-center pointer-events-none -z-10"
-	bind:this={div}
->
+<div class="w-full h-full flex justify-center items-center -z-10" bind:this={div}>
 	<div class="absolute">
 		<ProgressRadial />
 	</div>
@@ -43,7 +40,7 @@
 		src={`https://www.youtube.com/embed/${youtubeId}?autoplay=${active ? 1 : 0}&controls=0`}
 		title="Embedded video"
 		frameborder="0"
-		class="z-10"
+		class="z-[1]"
 		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 		referrerpolicy="strict-origin-when-cross-origin"
 		allowfullscreen

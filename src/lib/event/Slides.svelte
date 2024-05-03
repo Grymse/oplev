@@ -45,16 +45,14 @@
 
 <div class="w-full h-full relative select-none" role="none" on:mousedown={clickInit}>
 	{#if active}
-		<div class="w-full h-full absolute flex z-10">
-			<button
-				class="w-[50%] h-full duration-100 active:bg-gradient-to-r active:from-white active:to-transparent opacity-15"
-				on:click={onLeftSideClick}
-			/>
-			<button
-				class="w-[50%] h-full duration-100 active:bg-gradient-to-l active:from-white active:to-transparent opacity-15"
-				on:click={onRightSideClick}
-			/>
-		</div>
+		<button
+			class="w-[35%] z-10 left-0 absolute h-full duration-100 active:bg-gradient-to-r active:from-white active:to-transparent opacity-15"
+			on:click={onLeftSideClick}
+		/>
+		<button
+			class="w-[35%] z-10 right-0 absolute h-full duration-100 active:bg-gradient-to-l active:from-white active:to-transparent opacity-15"
+			on:click={onRightSideClick}
+		/>
 		{#if slides.length !== 1}
 			<div
 				class="absolute top-2 w-full z-10 grid gap-2 px-8"
