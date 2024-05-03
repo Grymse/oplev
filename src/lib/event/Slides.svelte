@@ -55,13 +55,15 @@
 		/>
 		{#if slides.length !== 1}
 			<div
-				class="absolute top-2 w-full z-10 grid gap-2 px-8"
+				class="absolute w-full z-40 grid gap-2 px-8"
 				style={`grid-template-columns: repeat(${slides.length}, minmax(0, 1fr))`}
 			>
 				{#each slides as slide, i}
-					<div
-						class={`rounded-full h-1 ${i === currentSlide ? 'bg-white' : 'bg-gray-500'} opacity-50`}
-					/>
+					<button class={`rounded-full h-5 z-40`} on:click={() => (currentSlide = i)}>
+						<div
+							class={`rounded-full w-full h-1 ${i === currentSlide ? 'bg-white' : 'bg-gray-500'} opacity-50`}
+						/>
+					</button>
 				{/each}
 			</div>
 		{/if}
