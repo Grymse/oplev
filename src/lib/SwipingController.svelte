@@ -5,9 +5,9 @@
 	import { eventSystem, react } from './events';
 
 	const reactedEventIds = Array.from($eventSystem.reactions.keys());
-	const events = $eventSystem.events
-		.filter((event) => reactedEventIds.includes(event.id) === false)
-		.filter((_, i) => i < 2);
+	const events = $eventSystem.events.filter(
+		(event) => reactedEventIds.includes(event.id) === false
+	);
 	let index = 0;
 	$: currentEvent = events[index];
 	$: nextEvent = events[index + 1];
