@@ -2,7 +2,7 @@
 
 The prototype for experiencing festival programs in a fun and interactive way. Bringing the music program to attendees in an interactive manner gives way for a ton of convenience features along with allowing the ability to explore unknown territories. Currently, the software uses a tinder-approach, which simply replicates the Tinder swiping mechanism with different content. A user can therefor dismiss, like and superlike content.
 
-![Early version of prototype](docs/img/preview.png).
+<img src="docs/img/preview.png" alt="Early version of prototype" width="400">
 
 ## Vision
 
@@ -62,13 +62,13 @@ Any contribution is always appreciated. I continuously attempt to keep issues so
 
 # Stack
 ## Design
-The design strives for absolute **simplicity**. This helps ease users into the platform. If we can borrow design elements from existing massive apps, then that is the preferred way to do it, since we do not want to redo all that work! There is no Figma, as many of the details are simply a result of prototyping. This gives way for multiple people to affect the vision, but risks contradicting visions. To save time, we have opted only for sketching privately, and then trying to implement that directly.
+The design strives for absolute **simplicity**. This helps ease users into the platform. If we can borrow design elements from existing massive apps, then that is the preferred way to do it, since we do not want to redo all that work! There is no Figma, as many of the details are simply a result of prototyping. This gives way for multiple people to affect the vision, but risks contradicting visions. To save time, we have opted only for sketching privately, and then trying to implement that directly. Stick to issues and communicate design ideas before implementing, then you should be good to go!
 
 ## Tech
 - SvelteKit
 - Tailwind
 - SkeletonUI
-- Vite
+- Vites
 
 
 
