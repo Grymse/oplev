@@ -52,7 +52,9 @@ Going forward is not yet known. For now, it is about implementing the above and 
 
 ## Head of development
 Nicolai Grymer
-Msc Computer Science
+- Msc Computer Science, Bsc IT-Product Development
+- Contact @ pronicoxd@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/nicolai-grymer-178846201/)
 
 ## Wish to contribute?
 Any contribution is always appreciated. I continuously attempt to keep issues sorted properly to make it easier to get in touch with the project. Before attacking problems that deal with the design of the software, it would be wise to get in contact with me, such that your time is best spent, and we don't develop in different directions! The creative vision is not as spelled out, and any cool feature request is ALWAYS appreciated!
