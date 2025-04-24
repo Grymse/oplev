@@ -1,4 +1,4 @@
-# Alpha-0.1-scrap
+# Alpha-0.1.0-scrap
 
 - [x] Create content card
   - [x] Image
@@ -27,7 +27,7 @@
   - [x] Sort by reaction, time, stage, name etc.
 - [x] Save using URL
 
-# Alpha-0.2-pretty
+# Alpha-0.2.0-pretty
 
 - [ ] Youtube virker ikke på mobil
   - [ ] Gør det muligt at klikke Youtube i-gang
@@ -43,7 +43,7 @@
 - [ ] Spotify preview - Start playing?
 - [ ] Hurtigere animationer på baggrund
 
-# Alpha-0.3-online
+# Alpha-0.3.0-online
 
 - [ ] Lav online med Email
 - [ ] Gør det muligt at tilføje venner
