@@ -36,6 +36,8 @@ export function spotToEvent(event: SpotEvent, index?: number): EventInfo {
 		audio: event.audio
 	});
 
+	event.links = event.links || {};
+
 	if (event.links.Spotify) {
 		const spotifyArtist = event.links.Spotify.split('artist/')[1]?.split('?')[0];
 		if (spotifyArtist)

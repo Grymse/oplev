@@ -5,9 +5,7 @@
 		AppBar,
 		TabGroup,
 		TabAnchor,
-		initializeStores,
-		type DrawerSettings,
-		getDrawerStore
+		initializeStores
 	} from '@skeletonlabs/skeleton';
 	initializeStores();
 	initializeEventSystem();
