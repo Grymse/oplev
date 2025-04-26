@@ -1,17 +1,22 @@
 <script lang="ts">
 	import type { EventSlide } from '$lib/slides';
-	import Slide from './slides/Slide.svelte';
-	import AudioPlayer from './slides/helpers/AudioPlayer.svelte';
-
+	import SlidesPageBar from './SlidesPageBar.svelte';
+	import Slide from './Slide.svelte';
+	import { createEventDispatcher } from 'svelte';
+	
 	export let active: boolean = false;
 	export let slides: EventSlide[];
 	let currentSlide = 0;
 	let initMousePos = { x: 0, y: 0 };
 	$: reset(slides);
 
+	const dispatch = createEventDispatcher();
+
 	function reset(slides: EventSlide[]) {
 		currentSlide = 0;
 	}
+
+	$: dispatch('slideChange', { index: currentSlide });
 
 	// store the initial mouse position. This is used to determine if the user is dragging the slide
 	function clickInit(e: MouseEvent) {
@@ -53,20 +58,12 @@
 			class="w-[35%] z-10 right-0 absolute h-full duration-100 active:bg-gradient-to-l active:from-white active:to-transparent opacity-15"
 			on:click={onRightSideClick}
 		/>
-		{#if slides.length !== 1}
-			<div
-				class="absolute w-full z-40 grid gap-2 px-8"
-				style={`grid-template-columns: repeat(${slides.length}, minmax(0, 1fr))`}
-			>
-				{#each slides as slide, i}
-					<button class={`rounded-full h-5 z-40`} on:click={() => (currentSlide = i)}>
-						<div
-							class={`rounded-full w-full h-1 ${i === currentSlide ? 'bg-white' : 'bg-gray-500'} opacity-50`}
-						/>
-					</button>
-				{/each}
-			</div>
-		{/if}
+
 	{/if}
+	<SlidesPageBar
+		slideCount={slides.length}
+		currentSlide={currentSlide}
+		on:barClick={(e) => (currentSlide = e.detail.index)}
+	/>
 	<Slide {active} slide={slides[currentSlide]} />
 </div>

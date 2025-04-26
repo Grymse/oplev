@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { ImageEventSlide } from '$lib/slides';
-	import AudioPlayer from './helpers/AudioPlayer.svelte';
+	import AudioPlayer from '../helpers/AudioPlayer.svelte';
 
 	export let slide: ImageEventSlide;
 	export let active: boolean = false;

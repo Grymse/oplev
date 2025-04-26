@@ -12,14 +12,6 @@
 	let offsetPos: Vector2WithRot = { x: 0, y: 0, rot: 0 };
 	let startPos: Vector2 = { x: 0, y: 0 };
 
-	const handleMouseDown = (e: MouseEvent) => {
-		isDragging = true;
-		startPos = {
-			x: e.clientX,
-			y: e.clientY
-		};
-	};
-
 	const setDraggingStart = (pos: Vector2) => {
 		isDragging = true;
 		startPos = pos;

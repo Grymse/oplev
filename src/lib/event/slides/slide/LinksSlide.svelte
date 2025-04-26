@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { LinksEventSlide } from '$lib/slides';
-	import LinkIcon from './helpers/LinkIcon.svelte';
+	import LinkIcon from '../helpers/LinkIcon.svelte';
 
 	export let slide: LinksEventSlide;
 	$: links = Object.entries(slide.links).map(([text, url]) => ({ text, url }));
