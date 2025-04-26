@@ -1,13 +1,17 @@
 <script lang="ts">
+	import { ProgressBar } from '@skeletonlabs/skeleton';
 	import SwipableEvent from './SwipableEvent.svelte';
 	import Event from './event/Event.svelte';
 	import NoMoreEvents from './event/NoMoreEvents.svelte';
 	import { eventSystem, react } from './events';
 
 	const reactedEventIds = Array.from($eventSystem.reactions.keys());
+	const reactedEventCount = reactedEventIds.length;
+
 	const events = $eventSystem.events.filter(
 		(event) => reactedEventIds.includes(event.id) === false
 	);
+
 	let index = 0;
 	$: currentEvent = events[index];
 	$: nextEvent = events[index + 1];
@@ -29,6 +33,10 @@
 		index++;
 	}
 </script>
+
+<div class="absolute -bottom-1 left-0 w-full h-0">
+	<ProgressBar value={index + reactedEventCount} max={$eventSystem.events.length} rounded="none"/>
+</div>
 
 <div class="h-full w-full relative">
 	{#if currentEvent}
