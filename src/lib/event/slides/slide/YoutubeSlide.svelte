@@ -4,7 +4,13 @@
 	import { onDestroy, onMount } from 'svelte';
 	export let slide: YouTubeEventSlide;
 	export let active: boolean = false;
-	$: youtubeId = slide.youtube.split('v=')[1].split('&')[0];
+
+	function getYoutubeId(urlString: string): string {
+		const url = new URL(urlString);
+		return url.searchParams.get('v') || url.pathname.substring(1);
+	}
+
+	$: youtubeId = getYoutubeId(slide.youtube);
 
 	let div: HTMLDivElement;
 	let iframe: HTMLIFrameElement;

@@ -1,10 +1,29 @@
 <script lang="ts">
 	import { getDrawerStore, type DrawerSettings } from '@skeletonlabs/skeleton';
 	import type { EventInfo } from '../../slides';
+	import type { Vector2 } from '../../types/vector';
+
 	export let event: EventInfo;
 	const drawerStore = getDrawerStore();
 
-	function openEventDrawer() {
+	let startPos: Vector2;
+
+	function handleStart(e: MouseEvent | TouchEvent) {
+		const point = e instanceof MouseEvent ? e : e.touches[0];
+		startPos = { x: point.clientX, y: point.clientY };
+	}
+
+	function handleEnd(e: MouseEvent | TouchEvent) {
+		const point = e instanceof MouseEvent ? e : e.changedTouches[0];
+		const deltaX = point.clientX - startPos.x;
+		const deltaY = point.clientY - startPos.y;
+		const distance = Math.sqrt(deltaX ** 2 + deltaY ** 2);
+		if (distance <= 50) {
+			openEventDrawer(e);
+		}
+	}
+
+	function openEventDrawer(e: MouseEvent | TouchEvent) {
 		const drawerSettings: DrawerSettings = {
 			id: 'event',
 			meta: { event },
@@ -25,7 +44,10 @@
 	tabindex="-1"
 	aria-details="Opens event modal"
 	on:keypress={console.log}
-	on:click|preventDefault={openEventDrawer}
+	on:mousedown={handleStart}
+	on:mouseup|preventDefault={handleEnd}
+	on:touchstart={handleStart}
+	on:touchend|preventDefault={handleEnd}
 >
 	<slot />
 </div>

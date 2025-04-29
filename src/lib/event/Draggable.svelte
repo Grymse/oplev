@@ -1,12 +1,10 @@
 <script lang="ts">
+	import type { Vector2, Vector2WithRot } from '$lib/types/vector';
 	import { onDestroy, onMount } from 'svelte';
 	import { createEventDispatcher } from 'svelte';
 
 	const dispatch = createEventDispatcher();
 	let divContainer: HTMLDivElement;
-
-	type Vector2 = { x: number; y: number };
-	type Vector2WithRot = { rot: number } & Vector2;
 
 	let isDragging = false;
 	let offsetPos: Vector2WithRot = { x: 0, y: 0, rot: 0 };
