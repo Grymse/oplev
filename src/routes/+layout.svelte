@@ -45,7 +45,7 @@
 <!-- App Shell -->
 <AppShell>
 	<svelte:fragment slot="header">
-		<AppBar background="none" class="w-screen">
+		<AppBar spacing="none" background="" class="w-screen max-h-8">
 			<TabGroup border="" justify="justify-center" class="w-screen absolute left-0">
 				{#each pages as { label, path, icon }}
 					<TabAnchor href={path} selected={path === $page.url.pathname}>

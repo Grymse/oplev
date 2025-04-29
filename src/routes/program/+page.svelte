@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { eventSystem } from '$lib/events';
 	import EventList from '$lib/list/EventList.svelte';
 </script>
 
