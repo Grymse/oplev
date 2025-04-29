@@ -5,8 +5,12 @@
 	import SpotifySlide from './slide/SpotifySlide.svelte';
 	import YoutubeSlide from './slide/YoutubeSlide.svelte';
 
-	export let slide: EventSlide;
-	export let active: boolean = false;
+	interface Props {
+		slide: EventSlide;
+		active?: boolean;
+	}
+
+	let { slide, active = false }: Props = $props();
 </script>
 
 {#if slide.type === 'img'}

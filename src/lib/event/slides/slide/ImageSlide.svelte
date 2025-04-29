@@ -2,8 +2,12 @@
 	import type { ImageEventSlide } from '$lib/slides';
 	import AudioPlayer from '../helpers/AudioPlayer.svelte';
 
-	export let slide: ImageEventSlide;
-	export let active: boolean = false;
+	interface Props {
+		slide: ImageEventSlide;
+		active?: boolean;
+	}
+
+	let { slide, active = false }: Props = $props();
 </script>
 
 {#if slide.audio}

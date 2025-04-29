@@ -1,4 +1,7 @@
 <script lang="ts">
+	import { createBubbler, stopPropagation } from 'svelte/legacy';
+
+	const bubble = createBubbler();
 	import { eventSystem } from '$lib/events';
 	import BookmarkIcon from '$lib/reactions/BookmarkIcon.svelte';
 	import HeartIcon from '$lib/reactions/HeartIcon.svelte';
@@ -6,11 +9,13 @@
 	import NoneIcon from '$lib/reactions/NoneIcon.svelte';
 	import PassIcon from '$lib/reactions/PassIcon.svelte';
 	import type { EventReaction } from '$lib/slides';
-	import { popup } from '@skeletonlabs/skeleton';
-	import type { PopupSettings } from '@skeletonlabs/skeleton';
 
-	export let reaction: EventReaction | undefined;
-	export let eventId: number;
+	interface Props {
+		reaction: EventReaction | undefined;
+		eventId: number;
+	}
+
+	let { reaction, eventId }: Props = $props();
 
 	const reactions = {
 		heart: HeartIcon,
@@ -43,37 +48,38 @@
 <div
 	role="button"
 	tabindex="0"
-	on:keypress|stopPropagation
+	onkeypress={stopPropagation(bubble('keypress'))}
 	aria-label="Reaction"
 	class="card p-4 shadow-xl"
 	data-popup={reactionPopup.target}
-	on:click|stopPropagation
-	on:touchstart|stopPropagation
+	onclick={stopPropagation(bubble('click'))}
+	ontouchstart={stopPropagation(bubble('touchstart'))}
 >
 	<div class="flex gap-4">
-		<button class="btn-icon text-primary-500" on:click={() => updateReaction('heart')}>
+		<button class="btn-icon text-primary-500" onclick={() => updateReaction('heart')}>
 			<HeartIcon />
 		</button>
-		<button class="btn-icon text-secondary-500" on:click={() => updateReaction('like')}>
+		<button class="btn-icon text-secondary-500" onclick={() => updateReaction('like')}>
 			<LikeIcon />
 		</button>
-		<button class="btn-icon text-tertiary-500" on:click={() => updateReaction('pass')}>
+		<button class="btn-icon text-tertiary-500" onclick={() => updateReaction('pass')}>
 			<PassIcon />
 		</button>
-		<button class="btn-icon" on:click={() => updateReaction(undefined)}>
+		<button class="btn-icon" onclick={() => updateReaction(undefined)}>
 			<NoneIcon />
 		</button>
 	</div>
 </div>
 
-<div on:click|stopPropagation role="button" tabindex="0" on:keypress|stopPropagation>
+<div onclick={stopPropagation(bubble('click'))} role="button" tabindex="0" onkeypress={stopPropagation(bubble('keypress'))}>
 	<button
 		use:popup={reactionPopup}
 		class="absolute btn-icon bottom-6 right-2 text-white text-opacity-50"
 	>
 		<div class="w-full h-full">
 			{#if reaction}
-				<svelte:component this={reactions[reaction]} />
+				{@const SvelteComponent = reactions[reaction]}
+				<SvelteComponent />
 			{:else}
 				<BookmarkIcon />
 			{/if}

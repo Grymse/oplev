@@ -2,8 +2,12 @@
 	import type { LinksEventSlide } from '$lib/slides';
 	import LinkIcon from '../helpers/LinkIcon.svelte';
 
-	export let slide: LinksEventSlide;
-	$: links = Object.entries(slide.links).map(([text, url]) => ({ text, url }));
+	interface Props {
+		slide: LinksEventSlide;
+	}
+
+	let { slide }: Props = $props();
+	let links = $derived(Object.entries(slide.links).map(([text, url]) => ({ text, url })));
 </script>
 
 <div
@@ -13,7 +17,7 @@
 >
 	{#each links as link}
 		<a href={link.url} class="z-10" target="_blank" rel="noopener noreferrer">
-			<button class={`btn ${links.length === 5 ? 'btn-lg' : 'btn-xl'} w-60 variant-filled-primary`}>
+			<button class={`btn ${links.length === 5 ? 'btn-lg' : 'btn-lg'} w-60 variant-filled-primary`}>
 				<LinkIcon fill="#fff" title={link.text} />{link.text}
 			</button>
 		</a>

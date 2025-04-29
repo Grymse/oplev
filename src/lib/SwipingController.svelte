@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ProgressBar } from '@skeletonlabs/skeleton';
+	import { Progress } from '@skeletonlabs/skeleton-svelte';
 	import SwipableEvent from './SwipableEvent.svelte';
 	import Event from './event/Event.svelte';
 	import NoMoreEvents from './event/NoMoreEvents.svelte';
@@ -12,9 +12,9 @@
 		(event) => reactedEventIds.includes(event.id) === false
 	);
 
-	let index = 0;
-	$: currentEvent = events[index];
-	$: nextEvent = events[index + 1];
+	let index = $state(0);
+	let currentEvent = $derived(events[index]);
+	let nextEvent = $derived(events[index + 1]);
 
 	function like() {
 		setTimeout(() => {
@@ -35,7 +35,7 @@
 </script>
 
 <div class="absolute -bottom-1 left-0 w-full h-0">
-	<ProgressBar value={index + reactedEventCount} max={$eventSystem.events.length} rounded="none"/>
+	<Progress value={index + reactedEventCount} max={$eventSystem.events.length} rounded="none"/>
 </div>
 
 <div class="h-full w-full relative">

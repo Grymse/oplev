@@ -1,7 +1,11 @@
 <script lang="ts">
-    export let max: number;
-    export let value: number;
-    export let vertical: boolean = false;
+    interface Props {
+        max: number;
+        value: number;
+        vertical?: boolean;
+    }
+
+    let { max, value, vertical = false }: Props = $props();
 </script>
 
 <div class="w-full h-full">

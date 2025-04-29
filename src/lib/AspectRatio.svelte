@@ -1,15 +1,20 @@
 <script lang="ts">
-	import { onDestroy, onMount } from 'svelte';
-	export let ratio: number;
+	import { onDestroy, onMount, type Snippet } from 'svelte';
+	interface Props {
+		ratio: number;
+		children: Snippet;
+	}
 
-	let controllerSize = { width: 0, height: 0 };
+	let { ratio, children }: Props = $props();
+
+	let controllerSize = $state({ width: 0, height: 0 });
 	let recalculateSizeInterval: NodeJS.Timeout;
-	let divContainer: HTMLDivElement;
+	let divContainer: HTMLDivElement | undefined = $state();
 
 	onMount(() => {
-		controllerSize = calculateAspectRatio();
+		if (divContainer) controllerSize = calculateAspectRatio(divContainer);
 		recalculateSizeInterval = setInterval(() => {
-			controllerSize = calculateAspectRatio();
+			if (divContainer) controllerSize = calculateAspectRatio(divContainer);
 		}, 100);
 	});
 
@@ -17,9 +22,9 @@
 		clearInterval(recalculateSizeInterval);
 	});
 
-	function calculateAspectRatio() {
-		const width = divContainer.clientWidth - 16;
-		const height = divContainer.clientHeight - 160;
+	function calculateAspectRatio(div: HTMLElement) {
+		const width = div.clientWidth - 16;
+		const height = div.clientHeight - 160;
 		const windowAspectRatio = width / height;
 
 		if (windowAspectRatio > ratio) {
@@ -32,6 +37,6 @@
 
 <div bind:this={divContainer} class="h-full w-full flex justify-center items-center">
 	<div style={`height: ${controllerSize.height}px; width: ${controllerSize.width}px;`}>
-		<slot />
+		{@render children()}
 	</div>
 </div>

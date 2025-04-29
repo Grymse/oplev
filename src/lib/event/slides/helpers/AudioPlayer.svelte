@@ -1,8 +1,14 @@
 <script lang="ts">
-	export let source: string;
-	export let active: boolean = false;
-	let isPlaying = true;
-	let audio: HTMLAudioElement;
+	import { stopPropagation } from 'svelte/legacy';
+
+	interface Props {
+		source: string;
+		active?: boolean;
+	}
+
+	let { source, active = false }: Props = $props();
+	let isPlaying = $state(true);
+	let audio: HTMLAudioElement = $state();
 
 	function toggleAudio() {
 		if (isPlaying) {
@@ -14,7 +20,7 @@
 	}
 </script>
 
-<button on:click|stopPropagation={toggleAudio} class="btn-icon variant-filled">
+<button onclick={stopPropagation(toggleAudio)} class="btn-icon preset-filled">
 	{#if isPlaying}
 		<!-- SOUND -->
 		<svg

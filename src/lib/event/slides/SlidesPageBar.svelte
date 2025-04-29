@@ -2,15 +2,19 @@
 	import { createEventDispatcher } from "svelte";
 
     const dispatcher = createEventDispatcher();
-    export let slideCount = 0;
-    export let currentSlide = 0;
+    interface Props {
+        slideCount?: number;
+        currentSlide?: number;
+    }
+
+    let { slideCount = 0, currentSlide = $bindable(0) }: Props = $props();
 
     function onBarClick(index: number) {
         currentSlide = index;
         dispatcher("barClick", { index });
     }
 
-    $: indexArray = Array.from({ length: slideCount }, (_, i) => i);
+    let indexArray = $derived(Array.from({ length: slideCount }, (_, i) => i));
 </script>
 
 {#if 2 <= slideCount}
@@ -19,10 +23,10 @@
     style={`grid-template-columns: repeat(${slideCount}, minmax(0, 1fr))`}
 >
     {#each indexArray as i}
-        <button class={`rounded-full h-5 z-40`} on:click={() => onBarClick(i)}>
+        <button class={`rounded-full h-5 z-40`} onclick={() => onBarClick(i)}>
             <div
                 class={`rounded-full w-full h-1 ${i === currentSlide ? 'bg-white' : 'bg-gray-500'} opacity-50`}
-            />
+></div>
         </button>
     {/each}
 </div>

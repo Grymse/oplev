@@ -5,11 +5,15 @@
 	import LikeIcon from './reactions/LikeIcon.svelte';
 	const dispatch = createEventDispatcher();
 
-	export let interactionVisualization: {
+	interface Props {
+		interactionVisualization: {
 		like: number;
 		pass: number;
 		heart: number;
 	};
+	}
+
+	let { interactionVisualization }: Props = $props();
 
 	function like() {
 		dispatch('like');
@@ -28,9 +32,9 @@
 	<div class="absolute flex w-full justify-center gap-6 h-16 -mt-6 items-center">
 		<!-- X / Pass -->
 		<button
-			on:click={pass}
+			onclick={pass}
 			type="button"
-			class="btn-icon btn-icon-xl h-16 variant-filled-tertiary"
+			class="btn-icon btn-icon-lg h-16 preset-filled-tertiary-500"
 			style="transform: scale({interactionVisualization.pass +
 				1}) translate({interactionVisualization.pass * -50}%, {-interactionVisualization.pass *
 				50}%);"
@@ -40,9 +44,9 @@
 
 		<!-- HEART -->
 		<button
-			on:click={heart}
+			onclick={heart}
 			type="button"
-			class="btn-icon btn-icon-xl w-20 h-20 variant-filled-primary"
+			class="btn-icon btn-icon-lg w-20 h-20 preset-filled-primary-500"
 			style="transform: scale({interactionVisualization.heart +
 				1}) translate(0%, {-interactionVisualization.heart * 75}%);"
 		>
@@ -51,9 +55,9 @@
 
 		<!-- LIKE -->
 		<button
-			on:click={like}
+			onclick={like}
 			type="button"
-			class="btn-icon btn-icon-xl duration-0 h-16 variant-filled-secondary"
+			class="btn-icon btn-icon-lg duration-0 h-16 preset-filled-secondary-500"
 			style="transform: scale({interactionVisualization.like +
 				1}) translate({interactionVisualization.like * 50}%, {-interactionVisualization.like *
 				50}%);"

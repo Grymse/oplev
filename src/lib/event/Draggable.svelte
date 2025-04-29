@@ -2,12 +2,17 @@
 	import type { Vector2, Vector2WithRot } from '$lib/types/vector';
 	import { onDestroy, onMount } from 'svelte';
 	import { createEventDispatcher } from 'svelte';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 
 	const dispatch = createEventDispatcher();
-	let divContainer: HTMLDivElement;
+	let divContainer: HTMLDivElement = $state();
 
 	let isDragging = false;
-	let offsetPos: Vector2WithRot = { x: 0, y: 0, rot: 0 };
+	let offsetPos: Vector2WithRot = $state({ x: 0, y: 0, rot: 0 });
 	let startPos: Vector2 = { x: 0, y: 0 };
 
 	const setDraggingStart = (pos: Vector2) => {
@@ -64,8 +69,8 @@
 	aria-label="card"
 	tabindex="-1000"
 	class="w-full h-full relative overflow-visible"
-	on:mousemove={(e) => setDraggingPos({ x: e.clientX, y: e.clientY })}
-	on:touchmove={(e) => setDraggingPos({ x: e.touches[0].clientX, y: e.touches[0].clientY })}
+	onmousemove={(e) => setDraggingPos({ x: e.clientX, y: e.clientY })}
+	ontouchmove={(e) => setDraggingPos({ x: e.touches[0].clientX, y: e.touches[0].clientY })}
 >
 	<div
 		role="button"
@@ -74,10 +79,10 @@
 		tabindex="0"
 		class="w-full h-full absolute"
 		style={`transform: translate(${offsetPos.x}px, ${offsetPos.y}px) rotate(${offsetPos.rot}deg);`}
-		on:mousedown={(e) => setDraggingStart({ x: e.clientX, y: e.clientY })}
-		on:touchstart={(e) => setDraggingStart({ x: e.touches[0].clientX, y: e.touches[0].clientY })}
+		onmousedown={(e) => setDraggingStart({ x: e.clientX, y: e.clientY })}
+		ontouchstart={(e) => setDraggingStart({ x: e.touches[0].clientX, y: e.touches[0].clientY })}
 		bind:this={divContainer}
 	>
-		<slot />
+		{@render children?.()}
 	</div>
 </div>

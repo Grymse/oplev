@@ -1,6 +1,10 @@
 <script lang="ts">
-	export let title: string;
-	export let fill: string = '#000000';
+	interface Props {
+		title: string;
+		fill?: string;
+	}
+
+	let { title, fill = '#000000' }: Props = $props();
 </script>
 
 {#if title === 'Facebook'}

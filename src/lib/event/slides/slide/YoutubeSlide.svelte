@@ -1,19 +1,23 @@
 <script lang="ts">
 	import type { YouTubeEventSlide } from '$lib/slides';
-	import { ProgressRadial } from '@skeletonlabs/skeleton';
+	import { ProgressRing } from '@skeletonlabs/skeleton-svelte';
 	import { onDestroy, onMount } from 'svelte';
-	export let slide: YouTubeEventSlide;
-	export let active: boolean = false;
+	interface Props {
+		slide: YouTubeEventSlide;
+		active?: boolean;
+	}
+
+	let { slide, active = false }: Props = $props();
 
 	function getYoutubeId(urlString: string): string {
 		const url = new URL(urlString);
 		return url.searchParams.get('v') || url.pathname.substring(1);
 	}
 
-	$: youtubeId = getYoutubeId(slide.youtube);
+	let youtubeId = $derived(getYoutubeId(slide.youtube));
 
-	let div: HTMLDivElement;
-	let iframe: HTMLIFrameElement;
+	let div: HTMLDivElement = $state();
+	let iframe: HTMLIFrameElement = $state();
 	let resizeInterval: NodeJS.Timeout;
 
 	// Get size of div and set iframe to that size. Update size on window resize.
@@ -37,7 +41,7 @@
 
 <div class="w-full h-full flex justify-center items-center -z-10" bind:this={div}>
 	<div class="absolute">
-		<ProgressRadial />
+		<ProgressRing />
 	</div>
 	<iframe
 		bind:this={iframe}
@@ -50,5 +54,5 @@
 		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 		referrerpolicy="strict-origin-when-cross-origin"
 		allowfullscreen
-	/>
+	></iframe>
 </div>

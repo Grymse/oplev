@@ -1,17 +1,9 @@
 <script lang="ts">
-	import '../app.postcss';
-	import {
-		AppShell,
-		AppBar,
-		TabGroup,
-		TabAnchor,
-		initializeStores
-	} from '@skeletonlabs/skeleton';
-	initializeStores();
+	import '../app.css';
+	import { AppBar, Tabs } from '@skeletonlabs/skeleton-svelte';
 	initializeEventSystem();
 
-	import { page } from '$app/stores';
-	import DrawerController from '$lib/drawer/DrawerController.svelte';
+	import { page } from '$app/state';
 	import { initializeEventSystem } from '$lib/events';
 
 	const pages = [
@@ -34,48 +26,56 @@
 	];
 
 	// Floating UI for Popups
-	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
-	import { storePopup } from '@skeletonlabs/skeleton';
-	import OpenSavingDrawer from '$lib/drawer/buttons/OpenSavingDrawer.svelte';
-	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+	
+	import OpenSavingDrawer from '$lib/modal/buttons/OpenSavingDrawer.svelte';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
+	import { pushState } from '$app/navigation';
+	import SavingDrawer from '$lib/modal/SavingDrawer.svelte';
+	// storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
-<DrawerController />
-
 <!-- App Shell -->
-<AppShell>
-	<svelte:fragment slot="header">
-		<AppBar spacing="none" background="" class="w-screen max-h-8">
-			<TabGroup border="" justify="justify-center" class="w-screen absolute left-0">
-				{#each pages as { label, path, icon }}
-					<TabAnchor href={path} selected={path === $page.url.pathname}>
-						<div class="flex gap-1">
-							{@html icon}<span>{label}</span>
-						</div>
-					</TabAnchor>
-				{/each}
-			</TabGroup>
-			<OpenSavingDrawer>
-				<div class="btn flex-col text-surface-500-400-token absolute right-2 top-2">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="2"
-						stroke="currentColor"
-						class="w-6 h-6"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
-						/>
-					</svg>
-					Save
-				</div>
-			</OpenSavingDrawer>
-		</AppBar>
-	</svelte:fragment>
+<!-- {@render header()} -->
 
-	<slot />
-</AppShell>
+<AppBar background="">
+	<Tabs value={page.url.pathname} onValueChange={(value) => pushState(value.value, page.state)}>
+		{#snippet list()}
+			{#each pages as { label, path, icon }}
+				<Tabs.Control value={path}>
+					<div class="flex gap-1">
+						{@html icon}<span>{label}</span>
+					</div>
+				</Tabs.Control>
+			{/each}
+		{/snippet}
+	  </Tabs>
+	{#snippet trail()}
+	<SavingDrawer>
+		{#snippet trigger()}
+			<button class="btn flex-col text-surface-600-400 absolute right-2 top-2">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="2"
+					stroke="currentColor"
+					class="w-6 h-6"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+					/>
+				</svg>
+				Save
+			</button>
+		{/snippet}
+	</SavingDrawer>
+	{/snippet}
+</AppBar>
+	
+{@render children?.()}

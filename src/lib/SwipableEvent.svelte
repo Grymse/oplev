@@ -6,7 +6,11 @@
 	import type { EventInfo } from './slides';
 	const dispatcher = createEventDispatcher();
 
-	export let event: EventInfo;
+	interface Props {
+		event: EventInfo;
+	}
+
+	let { event }: Props = $props();
 
 	function onDragging(e: CustomEvent<{ x: number; y: number }>) {
 		interactionVisualization = toInteractionPercentage(e.detail);
@@ -30,11 +34,11 @@
 		};
 	}
 
-	let interactionVisualization = {
+	let interactionVisualization = $state({
 		like: 0,
 		pass: 0,
 		heart: 0
-	};
+	});
 
 	function toInteractionPercentage(displacement: { x: number; y: number }) {
 		return {

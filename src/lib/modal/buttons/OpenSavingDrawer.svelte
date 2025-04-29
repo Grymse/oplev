@@ -1,8 +1,13 @@
 <script lang="ts">
-	import { getDrawerStore, type DrawerSettings } from '@skeletonlabs/skeleton';
-	const drawerStore = getDrawerStore();
+	import { preventDefault } from 'svelte/legacy';
 
-	export function openSavingDrawer() {
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
+
+	/* export function openSavingDrawer() {
 		const drawerSettings: DrawerSettings = {
 			id: 'saving',
 			bgDrawer: 'bg-purple-900 text-white',
@@ -13,15 +18,14 @@
 			position: 'top'
 		};
 		drawerStore.open(drawerSettings);
-	}
+	} */
 </script>
 
 <div
 	role="button"
 	tabindex="-1"
 	aria-details="Opens event modal"
-	on:keypress={console.log}
-	on:click|preventDefault={openSavingDrawer}
+	onkeypress={console.log}
 >
-	<slot />
+	{@render children?.()}
 </div>

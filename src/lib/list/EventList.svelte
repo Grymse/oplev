@@ -25,17 +25,17 @@
 	const sortByTime = (a: EventInfoWithReaction, b: EventInfoWithReaction) =>
 		new Date(a.time).getTime() - new Date(b.time).getTime();
 
-	let sorter = sortByRank;
+	let sorter = $state(sortByRank);
 
-	$: reactedEvents = $eventSystem.events
+
+	let search = $state('');
+	let reactedEvents = $derived($eventSystem.events
 		.map((event) => ({
 			...event,
 			reaction: $eventSystem.reactions.get(event.id)
 		}))
 		.filter((e) => containsName([...e.name.split(' '), ...e.venue.split(' '), e.country], search))
-		.sort(sorter);
-
-	let search = '';
+		.sort(sorter));
 </script>
 
 <div class="mb-4 flex justify-between">
