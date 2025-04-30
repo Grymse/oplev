@@ -1,8 +1,8 @@
 <script lang="ts">
-	import PassIcon from './icons/PassIcon.svelte';
-	import HeartIcon from './icons/HeartIcon.svelte';
-	import LikeIcon from './icons/LikeIcon.svelte';
-	import type { EventReaction } from './utils/slides';
+	import PassIcon from '$lib/icons/PassIcon.svelte';
+	import HeartIcon from '$lib/icons/HeartIcon.svelte';
+	import LikeIcon from '$lib/icons/LikeIcon.svelte';
+	import type { EventReaction } from '$lib/utils/slides';
 
 	type Props = {
 		buttonScaling: {

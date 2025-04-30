@@ -1,9 +1,9 @@
 <script lang="ts">
 	import ButtonPanel from './ButtonPanel.svelte';
-	import Draggable from './event/Draggable.svelte';
-	import Event from './event/Event.svelte';
-	import type { EventInfo, EventReaction } from './utils/slides';
-	import type { Vector2 } from './utils/vectors';
+	import Draggable from './Draggable.svelte';
+	import Event from './Event.svelte';
+	import type { EventInfo, EventReaction } from '$lib/utils/slides';
+	import type { Vector2 } from '$lib/utils/vectors';
 
 	type Props = {
 		event: EventInfo;

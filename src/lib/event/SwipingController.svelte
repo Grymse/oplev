@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { Progress } from '@skeletonlabs/skeleton-svelte';
 	import SwipableEvent from './SwipableEvent.svelte';
-	import Event from './event/Event.svelte';
-	import NoMoreEvents from './event/NoMoreEvents.svelte';
-	import { eventSystem, react } from './utils/events';
-	import type { EventReaction } from './utils/slides';
+	import Event from './Event.svelte';
+	import NoMoreEvents from './NoMoreEvents.svelte';
+	import { eventSystem, react } from '$lib/utils/events';
+	import type { EventReaction } from '$lib/utils/slides';
 
 	const reactedEventIds = Array.from($eventSystem.reactions.keys());
 	const reactedEventCount = reactedEventIds.length;

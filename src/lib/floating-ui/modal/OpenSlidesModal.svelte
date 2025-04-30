@@ -1,12 +1,12 @@
 <script lang="ts">
 	import AspectRatio from '$lib/ui/AspectRatio.svelte';
-	import SwipableEvent from '$lib/SwipableEvent.svelte';
+	import SwipableEvent from '$lib/event/SwipableEvent.svelte';
 	import { eventSystem } from '$lib/utils/events';
 	import type { EventInfo, EventReaction } from '$lib/utils/slides';
 	import type { Snippet } from 'svelte';
 	import ModalBase from '../ModalBase.svelte';
 
-	function react(reaction: EventReaction) {
+	function onreact(reaction: EventReaction) {
 		eventSystem.update((e) => {
 			e.reactions.set(event.id, reaction);
 			return e;
@@ -45,9 +45,7 @@ background="none"
 			>
 				<SwipableEvent
 					{event}
-					on:heart={() => react('heart')}
-					on:like={() => react('like')}
-					on:pass={() => react('pass')}
+					{onreact}
 				/>
 			</div>
 		</AspectRatio>
