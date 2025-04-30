@@ -3,9 +3,11 @@
 	type Props = {
 		ratio: number;
 		children: Snippet;
+		offsetMaxHeight?: number;
+		offsetMaxWidth?: number;
 	}
 
-	let { ratio, children }: Props = $props();
+	let { ratio, children, offsetMaxHeight = 0, offsetMaxWidth = 0 }: Props = $props();
 
 	let controllerSize = $state({ width: 0, height: 0 });
 	let recalculateSizeInterval: NodeJS.Timeout;
@@ -23,8 +25,8 @@
 	});
 
 	function calculateAspectRatio(div: HTMLElement) {
-		const width = div.clientWidth;
-		const height = div.clientHeight;
+		const width = div.clientWidth + offsetMaxWidth;
+		const height = div.clientHeight + offsetMaxHeight;
 		const windowAspectRatio = width / height;
 
 		if (windowAspectRatio > ratio) {
