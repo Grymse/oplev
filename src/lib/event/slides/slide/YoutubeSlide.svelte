@@ -15,7 +15,6 @@
 	}
 
 	let youtubeId = $derived(getYoutubeId(slide.youtube));
-
 	let div: HTMLDivElement | undefined = $state();
 	let iframe: HTMLIFrameElement | undefined = $state();
 	let resizeInterval: NodeJS.Timeout;
@@ -45,14 +44,13 @@
 	</div>
 	<iframe
 		bind:this={iframe}
-		width="702"
-		height="395"
+		width="1600"
+		height="900"
 		src={`https://www.youtube.com/embed/${youtubeId}?autoplay=${active ? 1 : 0}&controls=0`}
 		title="Embedded artist video"
 		frameborder="0"
 		class="z-[1]"
 		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 		referrerpolicy="strict-origin-when-cross-origin"
-		allowfullscreen
 	></iframe>
 </div>

@@ -52,8 +52,8 @@
 				<div class="flex gap-4">
 					{#each Object.entries(links) as [text, url]}
 						<a href={String(url)} class="z-10" target="_blank" rel="noopener noreferrer">
-							<button class="btn-icon btn-icon-lg preset-filled-primary-500">
-								<LinkIcon fill="#fff" title={text} />
+							<button class="btn-icon btn-icon-lg p-1 h-10 w-10 preset-filled-primary-500">
+								<LinkIcon title={text} />
 							</button>
 						</a>
 					{/each}

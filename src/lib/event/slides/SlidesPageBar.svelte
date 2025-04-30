@@ -19,8 +19,8 @@
             aria-label="Slide"    
         class={`rounded-full h-5 z-40`} onclick={() => currentSlide = i}>
             <div
-                class={`rounded-full w-full h-1 ${i === currentSlide ? 'bg-white' : 'bg-gray-500'} opacity-50`}
-></div>
+                class={`rounded-full w-full h-1 ${i === currentSlide ? 'bg-white' : 'bg-gray-500'} opacity-50`}>
+            </div>
         </button>
     {/each}
 </div>
