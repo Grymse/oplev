@@ -1,10 +1,11 @@
 @import 'tailwindcss';
-@import "@skeletonlabs/skeleton";
-@import "@skeletonlabs/skeleton/optional/presets";
-@import "@skeletonlabs/skeleton/themes/nosh";
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton/optional/presets';
+@import '@skeletonlabs/skeleton/themes/nosh';
+@plugin '@tailwindcss/typography';
 @source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
 
 html,
 body {
-	@apply h-full overflow-hidden preset-filled-surface-100-900;
+	@apply preset-filled-surface-100-900 h-full overflow-hidden;
 }

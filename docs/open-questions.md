@@ -1,4 +1,5 @@
 # Open Questions
+
 Keeping track of open questions acknowledges and keeps track of them. This way we can plan around these, and understand which questions should urgently be answered and which ones we do not have to stress about.
 
 1. Once the front-end is finished, which customer segment, should I start focusing on?

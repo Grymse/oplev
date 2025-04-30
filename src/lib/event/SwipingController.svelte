@@ -25,17 +25,17 @@
 	}
 </script>
 
-<div class="absolute -bottom-1 left-0 w-full h-0">
-	<Progress value={index + reactedEventCount} max={$eventSystem.events.length} rounded="none"/>
+<div class="absolute -bottom-1 left-0 h-0 w-full">
+	<Progress value={index + reactedEventCount} max={$eventSystem.events.length} rounded="none" />
 </div>
 
-<div class="h-full w-full relative">
+<div class="relative h-full w-full">
 	{#if currentEvent}
 		<SwipableEvent event={currentEvent} {onreact} />
 	{:else}
 		<NoMoreEvents />
 	{/if}
-	<div class="absolute pointer-events-none -z-10 top-0 left-0 w-full h-full">
+	<div class="pointer-events-none absolute top-0 left-0 -z-10 h-full w-full">
 		{#if nextEvent}
 			<Event event={nextEvent} />
 		{:else if currentEvent}

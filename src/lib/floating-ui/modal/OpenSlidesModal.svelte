@@ -16,39 +16,31 @@
 	type Props = {
 		event: EventInfo;
 		trigger: Snippet;
-	}
+	};
 
 	let { event, trigger }: Props = $props();
 </script>
 
-
-
-<ModalBase
-trigger={trigger}
-background="none"
->
-{#snippet content(closeDrawer)}
-	<div
-		role="button"
-		tabindex="-1"
-		onkeypress={(e) => e.stopPropagation()}
-		class="w-full h-full"
-		onclick={closeDrawer}
-	>
-		<AspectRatio ratio={10 / 16}>
-			<div
-				role="button"
-				tabindex="-1"
-				onkeypress={(e) => e.stopPropagation()}
-				class="w-full h-full"
-				onclick={(e) => e.stopPropagation()}
-			>
-				<SwipableEvent
-					{event}
-					{onreact}
-				/>
-			</div>
-		</AspectRatio>
-	</div>
-{/snippet}
+<ModalBase {trigger} background="none">
+	{#snippet content(closeDrawer)}
+		<div
+			role="button"
+			tabindex="-1"
+			onkeypress={(e) => e.stopPropagation()}
+			class="h-full w-full"
+			onclick={closeDrawer}
+		>
+			<AspectRatio ratio={10 / 16}>
+				<div
+					role="button"
+					tabindex="-1"
+					onkeypress={(e) => e.stopPropagation()}
+					class="h-full w-full"
+					onclick={(e) => e.stopPropagation()}
+				>
+					<SwipableEvent {event} {onreact} />
+				</div>
+			</AspectRatio>
+		</div>
+	{/snippet}
 </ModalBase>

@@ -5,14 +5,14 @@
 	type Props = {
 		slide: ImageEventSlide;
 		active?: boolean;
-	}
+	};
 
 	let { slide, active = false }: Props = $props();
 </script>
 
 {#if slide.audio}
-	<div class="absolute z-10 right-4 top-6">
+	<div class="absolute top-6 right-4 z-10">
 		<AudioPlayer {active} source={slide.audio} />
 	</div>
 {/if}
-<img src={slide.img} alt="Event" class="object-cover pointer-events-none h-full w-full" />
+<img src={slide.img} alt="Event" class="pointer-events-none h-full w-full object-cover" />

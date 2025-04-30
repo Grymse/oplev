@@ -5,9 +5,9 @@
 	type Props = {
 		children: Snippet;
 		maxDragPx?: number;
-	}
+	};
 
-	let { children, maxDragPx=50 }: Props = $props();
+	let { children, maxDragPx = 50 }: Props = $props();
 
 	let startPos: Vector2;
 
@@ -23,14 +23,14 @@
 	function handleEnd(e: MouseEvent | TouchEvent) {
 		e.stopPropagation();
 		const dragDistance = distance(getPoint(e), startPos);
-		
+
 		if (maxDragPx < dragDistance) return;
-		
-		openEventDrawer(e);
+
+		openEventDrawer();
 	}
 
-	function openEventDrawer(e: MouseEvent | TouchEvent) {
-		console.log("Opening event drawer");
+	function openEventDrawer() {
+		console.log('Opening event drawer');
 	}
 </script>
 

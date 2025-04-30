@@ -8,7 +8,7 @@
 	type Props = {
 		event: EventInfo;
 		onreact: (reaction: EventReaction) => void;
-	}
+	};
 
 	let { event, onreact }: Props = $props();
 
@@ -49,7 +49,7 @@
 	}
 </script>
 
-<div class="h-full w-full relative">
+<div class="relative h-full w-full">
 	<Draggable {ondragging} {ondragEnd}>
 		<Event {event} active />
 	</Draggable>

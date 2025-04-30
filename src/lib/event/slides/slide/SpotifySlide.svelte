@@ -4,20 +4,23 @@
 
 	type Props = {
 		slide: SpotifyEventSlide;
-	}
+	};
 
 	let { slide }: Props = $props();
 	let spotifyUrl = $derived(slide.url.split('?')[0] + '?theme=0');
 </script>
 
-<div class="w-full h-full flex justify-center items-center pb-20">
+<div class="flex h-full w-full items-center justify-center pb-20">
 	<div
 		role="button"
 		tabindex="-1"
-		onkeypress={e => e.stopPropagation()}
+		onkeypress={(e) => e.stopPropagation()}
 		aria-details="Spotify preview of artist"
-		onclick={e => {e.stopPropagation(); e.preventDefault()}}
-		class="z-30 bg-[#242424] rounded-xl w-[75%] min-h-[375px] h-[60%] flex justify-center items-center"
+		onclick={(e) => {
+			e.stopPropagation();
+			e.preventDefault();
+		}}
+		class="z-30 flex h-[60%] min-h-[375px] w-[75%] items-center justify-center rounded-xl bg-[#242424]"
 	>
 		<iframe
 			title="Spotify preview of artist"
@@ -28,7 +31,7 @@
 			frameBorder="0"
 			allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 		></iframe>
-		<div class="absolute scale-50 h-full justify-center items-center transition">
+		<div class="absolute h-full scale-50 items-center justify-center transition">
 			<ProgressRing />
 		</div>
 	</div>

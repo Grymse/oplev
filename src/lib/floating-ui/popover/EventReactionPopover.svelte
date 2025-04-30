@@ -11,10 +11,9 @@
 	type Props = {
 		reaction: EventReaction | undefined;
 		eventId: number;
-	}
+	};
 
 	let { reaction, eventId }: Props = $props();
-	let openState = $state(false);
 
 	const reactions = {
 		heart: HeartIcon,
@@ -23,7 +22,7 @@
 	};
 
 	function updateReaction(reaction: EventReaction | undefined) {
-		eventSystem.update(e => {
+		eventSystem.update((e) => {
 			if (!reaction) {
 				e.reactions.delete(eventId);
 			} else {
@@ -34,31 +33,29 @@
 	}
 </script>
 
-<PopoverBase
-	positioning={{ placement: 'right' }}
->
-{#snippet trigger()}
-	{#if reaction}
-		{@const SvelteComponent = reactions[reaction]}
-		<SvelteComponent />
-	{:else}
-		<BookmarkIcon />
-	{/if}
-{/snippet}
-{#snippet content()}
-	<div class="flex gap-4">
-		<button class="btn-icon text-primary-500" onclick={() => updateReaction('heart')}>
-			<HeartIcon />
-		</button>
-		<button class="btn-icon text-secondary-500" onclick={() => updateReaction('like')}>
-			<LikeIcon />
-		</button>
-		<button class="btn-icon text-tertiary-500" onclick={() => updateReaction('pass')}>
-			<PassIcon />
-		</button>
-		<button class="btn-icon" onclick={() => updateReaction(undefined)}>
-			<NoneIcon />
-		</button>
-	</div>
-{/snippet}
+<PopoverBase positioning={{ placement: 'right' }}>
+	{#snippet trigger()}
+		{#if reaction}
+			{@const SvelteComponent = reactions[reaction]}
+			<SvelteComponent />
+		{:else}
+			<BookmarkIcon />
+		{/if}
+	{/snippet}
+	{#snippet content()}
+		<div class="flex gap-4">
+			<button class="btn-icon text-primary-500" onclick={() => updateReaction('heart')}>
+				<HeartIcon />
+			</button>
+			<button class="btn-icon text-secondary-500" onclick={() => updateReaction('like')}>
+				<LikeIcon />
+			</button>
+			<button class="btn-icon text-tertiary-500" onclick={() => updateReaction('pass')}>
+				<PassIcon />
+			</button>
+			<button class="btn-icon" onclick={() => updateReaction(undefined)}>
+				<NoneIcon />
+			</button>
+		</div>
+	{/snippet}
 </PopoverBase>

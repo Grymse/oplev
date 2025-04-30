@@ -5,7 +5,7 @@
 		children: Snippet;
 		offsetMaxHeight?: number;
 		offsetMaxWidth?: number;
-	}
+	};
 
 	let { ratio, children, offsetMaxHeight = 0, offsetMaxWidth = 0 }: Props = $props();
 
@@ -37,7 +37,7 @@
 	}
 </script>
 
-<div bind:this={divContainer} class="h-full w-full flex justify-center items-center">
+<div bind:this={divContainer} class="flex h-full w-full items-center justify-center">
 	<div style={`height: ${controllerSize.height}px; width: ${controllerSize.width}px;`}>
 		{@render children()}
 	</div>

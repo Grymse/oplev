@@ -8,7 +8,7 @@
 	type Props = {
 		slide: EventSlide;
 		active?: boolean;
-	}
+	};
 
 	let { slide, active = false }: Props = $props();
 </script>

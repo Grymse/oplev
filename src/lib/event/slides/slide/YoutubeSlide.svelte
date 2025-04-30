@@ -5,7 +5,7 @@
 	type Props = {
 		slide: YouTubeEventSlide;
 		active?: boolean;
-	}
+	};
 
 	let { slide, active = false }: Props = $props();
 
@@ -38,7 +38,7 @@
 	});
 </script>
 
-<div class="w-full h-full flex justify-center items-center -z-10" bind:this={div}>
+<div class="-z-10 flex h-full w-full items-center justify-center" bind:this={div}>
 	<div class="absolute">
 		<ProgressRing />
 	</div>
