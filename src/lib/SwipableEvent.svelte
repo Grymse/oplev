@@ -12,8 +12,14 @@
 
 	let { event, onreact }: Props = $props();
 
+	let buttonScaling = $state({
+		like: 0,
+		pass: 0,
+		heart: 0
+	});
+
 	function ondragging(vector: Vector2) {
-		interactionVisualization = toInteractionPercentage(vector);
+		buttonScaling = toInteractionPercentage(vector);
 	}
 
 	function ondragEnd(vector: Vector2) {
@@ -27,18 +33,12 @@
 			onreact('heart');
 		}
 
-		interactionVisualization = {
+		buttonScaling = {
 			like: 0,
 			pass: 0,
 			heart: 0
 		};
 	}
-
-	let interactionVisualization = $state({
-		like: 0,
-		pass: 0,
-		heart: 0
-	});
 
 	function toInteractionPercentage(displacement: { x: number; y: number }) {
 		return {
@@ -53,5 +53,5 @@
 	<Draggable {ondragging} {ondragEnd}>
 		<Event {event} active />
 	</Draggable>
-	<ButtonPanel {interactionVisualization} {onreact} />
+	<ButtonPanel {buttonScaling} {onreact} />
 </div>
