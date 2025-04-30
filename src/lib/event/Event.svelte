@@ -1,5 +1,5 @@
 <script lang="ts">
-	import OpenEventButton from '$lib/modal/buttons/OpenEventButton.svelte';
+	import OpenEventDrawerButton from '$lib/floating-ui/drawer/OpenEventDrawerButton.svelte';
 	import type { EventInfo } from '$lib/utils/slides';
 	import { ISOToTimeDay } from '$lib/utils/translations';
 	import type { Vector2 } from '$lib/types/vector';
@@ -29,7 +29,7 @@
 	<div
 		class="absolute left-0 bottom-0 h-[25%] bg-gradient-to-t from-black from-50 to-transparent to-0 w-full z-10"
 	></div>
-	<OpenEventButton {event}>
+	<OpenEventDrawerButton {event}>
 		<div
 			class="absolute bottom-8 select-none left-8 z-20 active:text-surface-700-300 duration-50"
 		>
@@ -37,7 +37,7 @@
 			<h4 class="h4">{event.venue}</h4>
 			<p>{ISOToTimeDay(event.time)}</p>
 		</div>
-	</OpenEventButton>
+	</OpenEventDrawerButton>
 
 	<Slides slides={event.slides} {active} on:slideChange={randomizeBackgroundColor} />
 </div>

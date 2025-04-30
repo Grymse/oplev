@@ -1,15 +1,13 @@
 <script lang="ts">
-	import { preventDefault } from 'svelte/legacy';
-	import type { EventInfo } from '../../utils/slides';
-	import type { Vector2 } from '../../types/vector';
-	import EventDrawer from '../EventDrawer.svelte';
+	import type { Vector2 } from '$lib/types/vector';
+	import type { Snippet } from 'svelte';
 
 	type Props = {
-		event: EventInfo;
-		children?: Snippet;
+		children: Snippet;
+		maxDragPx?: number;
 	}
 
-	let { event, children }: Props = $props();
+	let { children, maxDragPx=50 }: Props = $props();
 
 	let startPos: Vector2;
 
@@ -24,7 +22,7 @@
 		const deltaX = point.clientX - startPos.x;
 		const deltaY = point.clientY - startPos.y;
 		const distance = Math.sqrt(deltaX ** 2 + deltaY ** 2);
-		if (distance <= 50) {
+		if (distance <= maxDragPx) {
 			openEventDrawer(e);
 		}
 	}
@@ -34,19 +32,14 @@
 	}
 </script>
 
-<EventDrawer event={event}>
-	{#snippet trigger()}
-		<div
-			role="button"
-			tabindex="-1"
-			aria-details="Opens event modal"
-			onkeypress={console.log}
-			onmousedown={handleStart}
-			onmouseup={handleEnd}
-			ontouchstart={handleStart}
-			ontouchend={handleEnd}
-		>
-			{@render children?.()}
-		</div>
-	{/snippet}
-</EventDrawer>
+<div
+	role="button"
+	tabindex="-1"
+	aria-details="Opens event modal"
+	onmousedown={handleStart}
+	onmouseup={handleEnd}
+	ontouchstart={handleStart}
+	ontouchend={handleEnd}
+>
+	{@render children?.()}
+</div>

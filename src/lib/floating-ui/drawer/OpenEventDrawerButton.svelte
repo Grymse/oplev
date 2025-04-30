@@ -3,19 +3,19 @@
 	import type { EventInfo } from '$lib/utils/slides';
 	import { ISOToTimeDay } from '$lib/utils/translations';
 	import type { Snippet } from 'svelte';
-    import Drawer from './Drawer.svelte';
+    import DrawerBase from '../DrawerBase.svelte';
 
 	type Props = {
 		event: EventInfo;
-		trigger: Snippet;
+		children: Snippet
 	}
 
-	let { event, trigger }: Props = $props();
+	let { event, children }: Props = $props();
 
 	let links = $derived(event.slides.find((slide) => slide.type === 'links')?.links);
 </script>
 
-<Drawer {trigger}>
+<DrawerBase trigger={children}>
 	{#snippet content(closeDrawer)}
 	<div class="relative h-full max-h-full w-full overflow-hidden">
 		<div class="absolute bottom-0 z-10 w-full p-4">
@@ -63,4 +63,4 @@
 		</div>
 	</div>
 	{/snippet}
-</Drawer>
+</DrawerBase>

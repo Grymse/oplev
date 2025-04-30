@@ -51,9 +51,11 @@
 	const like = () => {
 		dispatcher('like');
 	};
+	
 	const heart = () => {
 		dispatcher('heart');
 	};
+
 	const pass = () => {
 		dispatcher('pass');
 	};

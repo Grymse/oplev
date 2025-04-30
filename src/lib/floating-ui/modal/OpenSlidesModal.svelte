@@ -3,8 +3,8 @@
 	import SwipableEvent from '$lib/SwipableEvent.svelte';
 	import { eventSystem } from '$lib/utils/events';
 	import type { EventInfo, EventReaction } from '$lib/utils/slides';
-	import { Modal } from '@skeletonlabs/skeleton-svelte';
 	import type { Snippet } from 'svelte';
+	import ModalBase from '../ModalBase.svelte';
 
 	function react(reaction: EventReaction) {
 		eventSystem.update((e) => {
@@ -12,8 +12,6 @@
 			return e;
 		});
 	}
-
-	let drawerState = $state(false);
 
 	type Props = {
 		event: EventInfo;
@@ -25,21 +23,17 @@
 
 
 
-<Modal
-open={drawerState}
-onOpenChange={(e) => (drawerState = e.open)}
-triggerBase="w-full h-full"
-contentBase="bg-surface-100-900 w-full h-full bg-transparent"
-positionerClasses="flex items-end"
+<ModalBase
 trigger={trigger}
+background="none"
 >
-{#snippet content()}
+{#snippet content(closeDrawer)}
 	<div
 		role="button"
 		tabindex="-1"
 		onkeypress={(e) => e.stopPropagation()}
 		class="w-full h-full"
-		onclick={() => {drawerState = false}}
+		onclick={closeDrawer}
 	>
 		<AspectRatio ratio={10 / 16}>
 			<div
@@ -59,4 +53,4 @@ trigger={trigger}
 		</AspectRatio>
 	</div>
 {/snippet}
-</Modal>
+</ModalBase>

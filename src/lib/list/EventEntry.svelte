@@ -1,8 +1,8 @@
 <script lang="ts">
-	import OpenSlidesModal from '$lib/modal/OpenSlidesModal.svelte';
+	import OpenSlidesModal from '$lib/floating-ui/modal/OpenSlidesModal.svelte';
 	import type { EventInfo, EventReaction } from '$lib/utils/slides';
 	import { ISOToTimeDay } from '$lib/utils/translations';
-	import EventReactionStatus from './EventReactionStatus.svelte';
+	import EventReactionPopover from '../floating-ui/popover/EventReactionPopover.svelte';
 	type Props = {
 		event: EventInfo;
 		reaction: EventReaction | undefined;
@@ -31,7 +31,7 @@
 					<p class="text-amber-500">{ISOToTimeDay(event.time)}</p>
 				</div>
 			</div>
-			<EventReactionStatus eventId={event.id} {reaction} />
+			<EventReactionPopover eventId={event.id} {reaction} />
 		</div>
 		{/snippet}
 	</OpenSlidesModal>

@@ -2,19 +2,19 @@
 	import { eventSystem } from '$lib/utils/events';
 	import { generateURL } from '$lib/utils/urls';
 	import { get } from 'svelte/store';
-    import Drawer from './Drawer.svelte';
+    import Drawer from '../DrawerBase.svelte';
 	import type { Snippet } from 'svelte';
 
 	type Props = {
-		trigger: Snippet
+		children: Snippet
 	}
 
-	const { trigger}: Props = $props();
+	const { children}: Props = $props();
 
 	const url = generateURL(get(eventSystem).reactions);
 </script>
 
-<Drawer {trigger}>
+<Drawer trigger={children}>
 	{#snippet content(closeDrawer)}
 		<div class="relative h-full max-h-full w-full overflow-hidden">
 			<div class="absolute bottom-0 z-10 w-full p-4">

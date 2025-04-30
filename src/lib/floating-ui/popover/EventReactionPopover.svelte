@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { Popover } from '@skeletonlabs/skeleton-svelte';
 	import { eventSystem } from '$lib/utils/events';
 	import BookmarkIcon from '$lib/icons/BookmarkIcon.svelte';
 	import HeartIcon from '$lib/icons/HeartIcon.svelte';
@@ -7,7 +6,7 @@
 	import NoneIcon from '$lib/icons/NoneIcon.svelte';
 	import PassIcon from '$lib/icons/PassIcon.svelte';
 	import type { EventReaction } from '$lib/utils/slides';
-	import { stopPropagation } from 'svelte/legacy';
+	import PopoverBase from '../PopoverBase.svelte';
 
 	type Props = {
 		reaction: EventReaction | undefined;
@@ -40,41 +39,18 @@
 	}
 </script>
 
-<Popover
-  open={openState}
-  onOpenChange={(e) => (openState = e.open)}
-  positioning={{ placement: 'right' }}
-  triggerBase="btn-icon text-white text-opacity-50"
-  contentBase="card bg-surface-200-800 p-4 space-y-4 max-w-[320px]"
-  arrow
-  arrowBackground="!bg-surface-200 dark:!bg-surface-800"
+<PopoverBase
+	positioning={{ placement: 'right' }}
 >
 {#snippet trigger()}
-<div class="w-full h-full"
-  role="button"
-  tabindex="0"
-onkeypress={openPopover}
-onclick={openPopover}
-ontouchstart={openPopover}
->
 	{#if reaction}
 		{@const SvelteComponent = reactions[reaction]}
 		<SvelteComponent />
 	{:else}
 		<BookmarkIcon />
 	{/if}
-</div>
 {/snippet}
 {#snippet content()}
-<div
-	role="button"
-	tabindex="0"
-	onkeypress={e => e.stopPropagation()}
-	onclick={e => e.stopPropagation()}
-	ontouchstart={e => e.stopPropagation()}
-	aria-label="Reaction"
-	class="card p-4 shadow-xl"
->
 	<div class="flex gap-4">
 		<button class="btn-icon text-primary-500" onclick={() => updateReaction('heart')}>
 			<HeartIcon />
@@ -89,8 +65,5 @@ ontouchstart={openPopover}
 			<NoneIcon />
 		</button>
 	</div>
-</div>
 {/snippet}
-</Popover>
-
-
+</PopoverBase>

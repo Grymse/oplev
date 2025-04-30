@@ -16,16 +16,6 @@
     }
   </script>
   
-  <!--
-  Tips for Drawer modals:
-  - Use `contentBase` to set styles, including height/width
-  - Set justify-start to align to the left
-  - Clear the align and padding styles
-  - Use `positionerClasses` to set the
-  - Set transition.x values that matches content width in pixels
-  -->
-  
-
   <Modal
     open={drawerState}
     onOpenChange={(e) => (drawerState = e.open)}
