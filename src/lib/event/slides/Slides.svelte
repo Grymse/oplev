@@ -7,10 +7,9 @@
 	type Props = {
 		active?: boolean;
 		slides: EventSlide[];
-		onslideChange: (index: number) => void;
 	}
 
-	let { active = false, slides, onslideChange }: Props = $props();
+	let { active = false, slides }: Props = $props();
 	let currentSlide = $state(0);
 	let initMousePos : Vector2 = { x: 0, y: 0 };
 
@@ -45,10 +44,6 @@
 	$effect(() => {
 		slides; // include to enforce reactivity
 		currentSlide = 0;
-	});
-
-	$effect(() => {
-		onslideChange(currentSlide);
 	});
 </script>
 

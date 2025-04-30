@@ -23,8 +23,8 @@
 	});
 
 	function calculateAspectRatio(div: HTMLElement) {
-		const width = div.clientWidth - 16;
-		const height = div.clientHeight - 160;
+		const width = div.clientWidth;
+		const height = div.clientHeight;
 		const windowAspectRatio = width / height;
 
 		if (windowAspectRatio > ratio) {

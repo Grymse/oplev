@@ -68,19 +68,17 @@
 </script>
 
 <div
-	role="button"
-	aria-roledescription="card"
-	aria-label="card"
-	tabindex="-1000"
+	role="application"
 	class="w-full h-full relative overflow-visible"
 	onmousemove={(e) => setDraggingPos({ x: e.clientX, y: e.clientY })}
 	ontouchmove={(e) => setDraggingPos({ x: e.touches[0].clientX, y: e.touches[0].clientY })}
 >
 	<div
-		role="button"
+		role="slider"
 		aria-roledescription="card"
 		aria-label="card"
 		tabindex="0"
+		aria-valuenow={offsetPos.x}
 		class="w-full h-full absolute"
 		style={`transform: translate(${offsetPos.x}px, ${offsetPos.y}px) rotate(${offsetPos.rot}deg);`}
 		onmousedown={(e) => setDraggingStart({ x: e.clientX, y: e.clientY })}

@@ -17,7 +17,7 @@
 		onkeypress={e => e.stopPropagation()}
 		aria-details="Spotify preview of artist"
 		onclick={e => {e.stopPropagation(); e.preventDefault()}}
-		class="z-30 bg-[#242424] rounded-xl w-[75%] h-[60%] flex justify-center items-center"
+		class="z-30 bg-[#242424] rounded-xl w-[75%] min-h-[375px] h-[60%] flex justify-center items-center"
 	>
 		<iframe
 			title="Spotify preview of artist"
@@ -28,7 +28,7 @@
 			frameBorder="0"
 			allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 		></iframe>
-		<div class="absolute scale-50 top-24 transition">
+		<div class="absolute scale-50 h-full justify-center items-center transition">
 			<ProgressRing />
 		</div>
 	</div>

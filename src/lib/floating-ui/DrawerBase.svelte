@@ -14,16 +14,16 @@
     function closeDrawer() {
       drawerState = false;
     }
-  </script>
-  
-  <Modal
-    open={drawerState}
-    onOpenChange={(e) => (drawerState = e.open)}
-    contentBase="bg-surface-100-900 p-4 w-full h-fit rounded-xl shadow-xl"
-    positionerClasses="p-4 flex items-end"
-    transitionsPositionerIn={{ y: 350, duration: 200 }}
-    transitionsPositionerOut={{ y: 350, duration: 200 }}
-    trigger={trigger}
-  >
-    {#snippet content()}{@render innerContent(closeDrawer)}{/snippet}
-  </Modal>
+</script>
+
+<Modal
+  open={drawerState}
+  onOpenChange={(e) => (drawerState = e.open)}
+  contentBase="bg-surface-100-900 w-full h-fit max-h-full overflow-hidden rounded-t-container shadow-xl"
+  positionerClasses="flex items-end px-0 pb-0"
+  transitionsPositionerIn={{ y: 350, duration: 200 }}
+  transitionsPositionerOut={{ y: 350, duration: 200 }}
+  trigger={trigger}
+>
+  {#snippet content()}{@render innerContent(closeDrawer)}{/snippet}
+</Modal>

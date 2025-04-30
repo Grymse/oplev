@@ -17,7 +17,9 @@
 
 <Navigation.Bar classes="max-h-16 h-16 flex justify-center items-center" tilesClasses="w-40" onValueChange={newPath => path = newPath}>
 	{#each routes as route}
-		<Navigation.Tile label={route.label} id={route.href} selected={route.href === path} href={route.href}>
+		<Navigation.Tile
+            classes={path === route.href ? 'text-primary-500' :''}
+        label={route.label} id={route.href} href={route.href}>
 			{@html route.icon}
 		</Navigation.Tile>
 	{/each}

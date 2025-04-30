@@ -1,17 +1,10 @@
 @import 'tailwindcss';
 @import "@skeletonlabs/skeleton";
 @import "@skeletonlabs/skeleton/optional/presets";
-@import "@skeletonlabs/skeleton/themes/modern";
+@import "@skeletonlabs/skeleton/themes/nosh";
 @source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
 
 html,
 body {
-	@apply h-full overflow-hidden;
-}
-
-/* modern theme */
-@font-face {
-	font-family: 'Quicksand';
-	src: url('/fonts/Quicksand.ttf');
-	font-display: swap;
+	@apply h-full overflow-hidden preset-filled-surface-100-900;
 }

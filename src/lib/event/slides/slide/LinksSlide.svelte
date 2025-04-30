@@ -2,7 +2,7 @@
 	import type { LinksEventSlide } from '$lib/utils/slides';
 	import LinkIcon from '../helpers/LinkIcon.svelte';
 
-	type Props = {
+	interface Props {
 		slide: LinksEventSlide;
 	}
 
@@ -17,8 +17,8 @@
 >
 	{#each links as link}
 		<a href={link.url} class="z-10" target="_blank" rel="noopener noreferrer">
-			<button class={`btn ${links.length === 5 ? 'btn-lg' : 'btn-lg'} w-60 variant-filled-primary`}>
-				<LinkIcon fill="#fff" title={link.text} />{link.text}
+			<button class={`btn btn-lg w-60 preset-filled-primary-500`}>
+				<LinkIcon title={link.text} />{link.text}
 			</button>
 		</a>
 	{/each}

@@ -77,7 +77,7 @@
 </SavingDrawer> -->
 
 <div class="grid grid-rows-[1fr_auto] h-svh w-screen">
-	<main class="overflow-y-scroll p-2">
+	<main class="overflow-y-scroll overflow-x-hidden">
 		{@render children?.()}
 	</main>
 	<NavigationBar routes={routes} />

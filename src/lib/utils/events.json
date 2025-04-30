@@ -1,7 +1,7 @@
 [
     {
         "time": "12:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5935/pictures/MAD%20MAGPIE_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5935/pictures/MAD%20MAGPIE_0_large.jpg",
         "name": "MAD MAGPIE",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -16,7 +16,7 @@
     },
     {
         "time": "12:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5937/pictures/ABSURD_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5937/pictures/ABSURD_0_large.jpg",
         "name": "ABSURD",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -45,7 +45,7 @@
     },
     {
         "time": "13:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6052/pictures/Det%20norske%20Day%20Party_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6052/pictures/Det%20norske%20Day%20Party_0_large.jpg",
         "name": "The Norwegian Day Party",
         "country": "NO",
         "venue": "Volume Village",
@@ -60,7 +60,7 @@
     },
     {
         "time": "14:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5936/pictures/Kryster_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5936/pictures/Kryster_0_large.jpg",
         "name": "Kryster",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -70,7 +70,7 @@
     },
     {
         "time": "14:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5849/pictures/Sille%20Trolle_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5849/pictures/Sille%20Trolle_0_large.jpg",
         "name": "Sille Trolle",
         "country": "DK",
         "venue": "A Huset - Institut for (X)",
@@ -86,7 +86,7 @@
     },
     {
         "time": "14:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5994/pictures/Downtown%20July_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5994/pictures/Downtown%20July_0_large.jpg",
         "name": "Downtown July",
         "country": "DK",
         "venue": "Aarhus Congress Center, Pink Stage",
@@ -101,7 +101,7 @@
     },
     {
         "time": "14:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5938/pictures/Lykke_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5938/pictures/Lykke_0_large.jpg",
         "name": "Lykke",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -111,7 +111,7 @@
     },
     {
         "time": "14:44",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5998/pictures/Wantate_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5998/pictures/Wantate_0_large.jpg",
         "name": "Wantate",
         "country": "DK",
         "venue": "Aarhus Congress Center, Pink Stage",
@@ -126,7 +126,7 @@
     },
     {
         "time": "14:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6040/pictures/Aarhus%20Sinfonietta_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6040/pictures/Aarhus%20Sinfonietta_0_large.jpg",
         "name": "\u00c5rhus Sinfonietta",
         "country": "DK",
         "venue": "Rytmisk Sal, Musikhuset",
@@ -136,7 +136,7 @@
     },
     {
         "time": "14:58",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6000/pictures/EMI%20LIA_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6000/pictures/EMI%20LIA_0_large.jpg",
         "name": "EMI LIA",
         "country": "DK",
         "venue": "Aarhus Congress Center, Pink Stage",
@@ -146,7 +146,7 @@
     },
     {
         "time": "15:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5864/pictures/IDIDIT_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5864/pictures/IDIDIT_0_large.jpg",
         "name": "IDIDIT",
         "country": "DK",
         "venue": "All\u00e9scenen",
@@ -160,7 +160,7 @@
     },
     {
         "time": "15:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5986/pictures/Merry_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5986/pictures/Merry_0_large.jpg",
         "name": "Merry",
         "country": "DK",
         "venue": "Musikkens Bus",
@@ -174,7 +174,7 @@
     },
     {
         "time": "15:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6004/pictures/Slow%20Meetup_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6004/pictures/Slow%20Meetup_0_large.jpg",
         "name": "Slow Meetup",
         "country": "DK",
         "venue": "Palmehaven",
@@ -184,7 +184,7 @@
     },
     {
         "time": "15:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5863/pictures/Folky_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5863/pictures/Folky_0_large.jpg",
         "name": "The Folky Day Party",
         "country": "DK",
         "venue": "\u00c5bne Scene, Godsbanen",
@@ -194,7 +194,7 @@
     },
     {
         "time": "15:10",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5971/pictures/Theo_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5971/pictures/Theo_0_large.jpg",
         "name": "Theo.",
         "country": "DK",
         "venue": "Drivhuset",
@@ -208,7 +208,7 @@
     },
     {
         "time": "15:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5889/pictures/Bison%20Rouge_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5889/pictures/Bison%20Rouge_0_large.jpg",
         "name": "Bison Rouge",
         "country": "PL",
         "venue": "Havescenen - Institut for (X)",
@@ -222,7 +222,7 @@
     },
     {
         "time": "15:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6065/pictures/Talk_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6065/pictures/Talk_0_large.jpg",
         "name": "Talk: Hvad er god koncertstil?",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -232,7 +232,7 @@
     },
     {
         "time": "15:37",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6003/pictures/Natascha%20Imani_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6003/pictures/Natascha%20Imani_0_large.jpg",
         "name": "Natasha Imani",
         "country": "DK",
         "venue": "Aarhus Congress Center, Pink Stage",
@@ -246,7 +246,7 @@
     },
     {
         "time": "15:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5773/pictures/SPEEDRUN_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5773/pictures/SPEEDRUN_0_large.jpg",
         "name": "SPEEDRUN",
         "country": "DK",
         "venue": "Lille Sal, Musikhuset",
@@ -259,7 +259,7 @@
     },
     {
         "time": "15:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5733/pictures/Tarick_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5733/pictures/Tarick_0_large.jpg",
         "name": "Tarick",
         "venue": "Parkscenen",
         "link": "https://spotfestival.dk/program/tarick/",
@@ -275,7 +275,7 @@
     },
     {
         "time": "15:51",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6001/pictures/Ida%20Lilja_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6001/pictures/Ida%20Lilja_0_large.jpg",
         "name": "Ida Lilja",
         "country": "DK",
         "venue": "Aarhus Congress Center, Pink Stage",
@@ -289,7 +289,7 @@
     },
     {
         "time": "16:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5765/pictures/11_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5765/pictures/11_0_large.jpg",
         "name": "Julie Ellinor",
         "country": "DK",
         "venue": "Volume Village",
@@ -306,7 +306,7 @@
     },
     {
         "time": "16:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5900/pictures/Mud%20Grief_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5900/pictures/Mud%20Grief_0_large.jpg",
         "name": "Mud Grief",
         "country": "SE",
         "venue": "HeadQuarters",
@@ -321,7 +321,7 @@
     },
     {
         "time": "16:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5829/pictures/Udsyn_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5829/pictures/Udsyn_0_large.jpg",
         "name": "Udsyn",
         "country": "DK",
         "venue": "turkis",
@@ -337,7 +337,7 @@
     },
     {
         "time": "16:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5987/pictures/Aah%20Buster_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5987/pictures/Aah%20Buster_0_large.jpg",
         "name": "\u00c5h Buster",
         "country": "DK",
         "venue": "Musikkens Bus",
@@ -367,7 +367,7 @@
     },
     {
         "time": "16:19",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6002/pictures/Junior%20Brown_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6002/pictures/Junior%20Brown_0_large.jpg",
         "name": "Junior Brown",
         "country": "DK",
         "venue": "Aarhus Congress Center, Pink Stage",
@@ -382,7 +382,7 @@
     },
     {
         "time": "16:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5887/pictures/Karen%20Juhl_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5887/pictures/Karen%20Juhl_0_large.jpg",
         "name": "Karen Juhl",
         "country": "DK",
         "venue": "A Huset - Institut for (X)",
@@ -397,7 +397,7 @@
     },
     {
         "time": "16:40",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5972/pictures/Lauraforevigt_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5972/pictures/Lauraforevigt_0_large.jpg",
         "name": "Laura4evigt",
         "country": "DK",
         "venue": "Drivhuset",
@@ -412,7 +412,7 @@
     },
     {
         "time": "16:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5786/pictures/Fine_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5786/pictures/Fine_0_large.jpg",
         "name": "Fine",
         "country": "DK",
         "venue": "Store Sal, Musikhuset",
@@ -426,7 +426,7 @@
     },
     {
         "time": "16:58",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5995/pictures/ETVA_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5995/pictures/ETVA_0_large.jpg",
         "name": "ETVA",
         "country": "DK",
         "venue": "Aarhus Congress Center, Pink Stage",
@@ -441,7 +441,7 @@
     },
     {
         "time": "17:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6039/pictures/Damkapellet_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6039/pictures/Damkapellet_0_large.jpg",
         "name": "Damkapellet",
         "country": "DK",
         "venue": "Rytmisk Sal, Musikhuset",
@@ -451,7 +451,7 @@
     },
     {
         "time": "17:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5988/pictures/Schaefer_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5988/pictures/Schaefer_0_large.jpg",
         "name": "Sch\u00e6fer",
         "country": "DK",
         "venue": "Musikkens Bus",
@@ -467,7 +467,7 @@
     },
     {
         "time": "17:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5902/pictures/Synvilla_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5902/pictures/Synvilla_0_large.jpg",
         "name": "Synvilla",
         "country": "SE",
         "venue": "HeadQuarters",
@@ -483,7 +483,7 @@
     },
     {
         "time": "17:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5868/pictures/Velvy_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5868/pictures/Velvy_0_large.jpg",
         "name": "Velvy",
         "country": "DK",
         "venue": "All\u00e9scenen",
@@ -498,7 +498,7 @@
     },
     {
         "time": "17:12",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5999/pictures/DEEJADE_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5999/pictures/DEEJADE_0_large.jpg",
         "name": "DEEJADE",
         "country": "DK",
         "venue": "Aarhus Congress Center, Pink Stage",
@@ -513,7 +513,7 @@
     },
     {
         "time": "17:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5770/pictures/2_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5770/pictures/2_0_large.jpg",
         "name": "Hjalte Ross",
         "country": "DK",
         "venue": "VoxHall",
@@ -530,7 +530,7 @@
     },
     {
         "time": "17:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5838/pictures/Sheebaba_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5838/pictures/Sheebaba_0_large.jpg",
         "name": "Sheebaba",
         "country": "LU",
         "venue": "Radar",
@@ -546,7 +546,7 @@
     },
     {
         "time": "17:26",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5996/pictures/Aland%20Z_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5996/pictures/Aland%20Z_0_large.jpg",
         "name": "Aland Z",
         "country": "DK",
         "venue": "Aarhus Congress Center, Pink Stage",
@@ -561,7 +561,7 @@
     },
     {
         "time": "17:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5726/pictures/Anna%20Roemer_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5726/pictures/Anna%20Roemer_0_large.jpg",
         "name": "Anna Roemer with Strings",
         "country": "DK",
         "venue": "Lille Sal, Musikhuset",
@@ -592,7 +592,7 @@
     },
     {
         "time": "17:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5848/pictures/Gunge_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5848/pictures/Gunge_0_large.jpg",
         "name": "Gunge",
         "country": "DK",
         "venue": "Volume Village",
@@ -608,7 +608,7 @@
     },
     {
         "time": "17:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5769/pictures/Familien_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5769/pictures/Familien_0_large.jpg",
         "name": "Familien",
         "country": "DK",
         "venue": "Parkscenen",
@@ -622,7 +622,7 @@
     },
     {
         "time": "17:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6057/pictures/VARNA%20GL_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6057/pictures/VARNA%20GL_0_large.jpg",
         "name": "VARNA GL",
         "country": "GL",
         "venue": "turkis",
@@ -635,7 +635,7 @@
     },
     {
         "time": "18:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5928/pictures/ELJO_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5928/pictures/ELJO_0_large.jpg",
         "name": "ELJO",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -650,7 +650,7 @@
     },
     {
         "time": "18:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5989/pictures/PROPHIT%20RECORDS_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5989/pictures/PROPHIT%20RECORDS_0_large.jpg",
         "name": "PROPHIT RECORDS feat. Kasper og Nima Rezai",
         "country": "DK",
         "venue": "Musikkens Bus",
@@ -660,7 +660,7 @@
     },
     {
         "time": "18:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5901/pictures/Styva%20Linan_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5901/pictures/Styva%20Linan_0_large.jpg",
         "name": "Styva Linan",
         "country": "SE",
         "venue": "HeadQuarters",
@@ -692,7 +692,7 @@
     },
     {
         "time": "18:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5939/pictures/Martin%20Zeppelin_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5939/pictures/Martin%20Zeppelin_0_large.jpg",
         "name": "Martin Zeppelin",
         "country": "DK",
         "venue": "Aarhus Congress Center, Green Stage",
@@ -707,7 +707,7 @@
     },
     {
         "time": "18:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5888/pictures/Sanyu_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5888/pictures/Sanyu_0_large.jpg",
         "name": "Sanyu",
         "country": "NO",
         "venue": "Havescenen - Institut for (X)",
@@ -722,7 +722,7 @@
     },
     {
         "time": "18:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5866/pictures/Prize%20for%20the%20Future_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5866/pictures/Prize%20for%20the%20Future_0_large.jpg",
         "name": "Prize for the Future",
         "country": "DK",
         "venue": "All\u00e9scenen",
@@ -738,7 +738,7 @@
     },
     {
         "time": "18:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5718/pictures/Oesten_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5718/pictures/Oesten_0_large.jpg",
         "name": "\u00d8sten",
         "country": "DK",
         "venue": "Store Sal, Musikhuset",
@@ -754,7 +754,7 @@
     },
     {
         "time": "19:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5729/pictures/3_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5729/pictures/3_0_large.jpg",
         "name": "Basel\u00f8s",
         "country": "DK",
         "venue": "Volume Village",
@@ -771,7 +771,7 @@
     },
     {
         "time": "19:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5946/pictures/Darling%20Darlene_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5946/pictures/Darling%20Darlene_0_large.jpg",
         "name": "Darling Darlene",
         "country": "DK",
         "venue": "HeadQuarters",
@@ -785,7 +785,7 @@
     },
     {
         "time": "19:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5795/pictures/Forraeder_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5795/pictures/Forraeder_0_large.jpg",
         "name": "Forr\u00e6der",
         "country": "DK",
         "venue": "Klubscenen, Musikhuset",
@@ -798,7 +798,7 @@
     },
     {
         "time": "19:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5717/pictures/Girl%20Scout_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5717/pictures/Girl%20Scout_0_large.jpg",
         "name": "Girl Scout",
         "country": "SE",
         "venue": "Radar",
@@ -815,7 +815,7 @@
     },
     {
         "time": "19:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5739/pictures/KOYA_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5739/pictures/KOYA_0_large.jpg",
         "name": "Koya",
         "country": "DK",
         "venue": "TRAIN",
@@ -831,7 +831,7 @@
     },
     {
         "time": "19:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5758/pictures/ORA_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5758/pictures/ORA_0_large.jpg",
         "name": "ORA",
         "country": "DK",
         "venue": "VoxHall",
@@ -846,7 +846,7 @@
     },
     {
         "time": "19:14",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6048/pictures/Ethel%20prisen_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6048/pictures/Ethel%20prisen_0_large.jpg",
         "name": "Ethel-Prisen",
         "country": "DK",
         "venue": "",
@@ -856,7 +856,7 @@
     },
     {
         "time": "19:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5715/pictures/Laura%20Ziani_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5715/pictures/Laura%20Ziani_0_large.jpg",
         "name": "Laura Ziani",
         "country": "DK",
         "venue": "Lille Sal, Musikhuset",
@@ -874,7 +874,7 @@
     },
     {
         "time": "19:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5926/pictures/Collision_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5926/pictures/Collision_0_large.jpg",
         "name": "Collision",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -889,7 +889,7 @@
     },
     {
         "time": "19:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5831/pictures/Hilal%20Kaya%20-%20JannickBoerlum_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5831/pictures/Hilal%20Kaya%20-%20JannickBoerlum_0_large.jpg",
         "name": "Hilal Kaya",
         "country": "DK",
         "venue": "turkis",
@@ -906,7 +906,7 @@
     },
     {
         "time": "19:40",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5974/pictures/BUKURU_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5974/pictures/BUKURU_0_large.jpg",
         "name": "BUKURU",
         "country": "DK",
         "venue": "Drivhuset",
@@ -921,7 +921,7 @@
     },
     {
         "time": "19:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5790/pictures/BBYBITES_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5790/pictures/BBYBITES_0_large.jpg",
         "name": "BBYBITES",
         "country": "DK",
         "venue": "Parkscenen",
@@ -937,7 +937,7 @@
     },
     {
         "time": "19:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5744/pictures/School%20of%20X_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5744/pictures/School%20of%20X_0_large.jpg",
         "name": "School of X",
         "country": "DK",
         "venue": "Aarhus Congress Center, Pink Stage",
@@ -952,7 +952,7 @@
     },
     {
         "time": "19:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5768/pictures/Sira%20Jovina_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5768/pictures/Sira%20Jovina_0_large.jpg",
         "name": "Sira Jovina",
         "country": "DK",
         "venue": "Rytmisk Sal, Musikhuset",
@@ -969,7 +969,7 @@
     },
     {
         "time": "19:55",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5753/pictures/Terrorpy_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5753/pictures/Terrorpy_0_large.jpg",
         "name": "Terrorpy",
         "venue": "TRAIN",
         "audio": "https://spotfestival-files.s3.eu-central-1.amazonaws.com/music/Terrorpy+-+Gorging+On+Pus.mp3",
@@ -984,7 +984,7 @@
     },
     {
         "time": "20:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6018/pictures/efteraar_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6018/pictures/efteraar_0_large.jpg",
         "name": "efteraar",
         "country": "DK",
         "venue": "Palmehaven",
@@ -1000,7 +1000,7 @@
     },
     {
         "time": "20:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5929/pictures/gubbi_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5929/pictures/gubbi_0_large.jpg",
         "name": "gubbi",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -1014,7 +1014,7 @@
     },
     {
         "time": "20:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5947/pictures/Inventory_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5947/pictures/Inventory_0_large.jpg",
         "name": "Inventory",
         "country": "DK",
         "venue": "HeadQuarters",
@@ -1029,7 +1029,7 @@
     },
     {
         "time": "20:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5813/pictures/Krammer_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5813/pictures/Krammer_0_large.jpg",
         "name": "Krammer",
         "country": "DK",
         "venue": "Katapult, Godsbanen",
@@ -1041,7 +1041,7 @@
     },
     {
         "time": "20:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5793/pictures/Local%20Hero_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5793/pictures/Local%20Hero_0_large.jpg",
         "name": "Local Hero",
         "country": "DK",
         "venue": "Klubscenen, Musikhuset",
@@ -1054,7 +1054,7 @@
     },
     {
         "time": "20:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5725/pictures/Skt%20DeLarge_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5725/pictures/Skt%20DeLarge_0_large.jpg",
         "name": "Skt. DeLarge",
         "country": "DK",
         "venue": "A Huset - Institut for (X)",
@@ -1071,7 +1071,7 @@
     },
     {
         "time": "20:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5815/pictures/Elle%20Ace_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5815/pictures/Elle%20Ace_0_large.jpg",
         "name": "Elle Ace",
         "country": "DK",
         "venue": "Katapult, Godsbanen",
@@ -1086,7 +1086,7 @@
     },
     {
         "time": "20:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5782/pictures/Majke%20Voss_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5782/pictures/Majke%20Voss_0_large.jpg",
         "name": "Majke Voss",
         "country": "DK",
         "venue": "Volume Village",
@@ -1101,7 +1101,7 @@
     },
     {
         "time": "20:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5865/pictures/miav_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5865/pictures/miav_0_large.jpg",
         "name": "miaw",
         "country": "DK",
         "venue": "All\u00e9scenen",
@@ -1116,7 +1116,7 @@
     },
     {
         "time": "20:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5777/pictures/Safario_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5777/pictures/Safario_0_large.jpg",
         "name": "Safario",
         "country": "NO",
         "venue": "Aarhus Congress Center, Green Stage",
@@ -1131,7 +1131,7 @@
     },
     {
         "time": "20:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5791/pictures/Cupid%20Girl_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5791/pictures/Cupid%20Girl_0_large.jpg",
         "name": "Cupid Girl",
         "country": "NO",
         "venue": "Radar",
@@ -1146,7 +1146,7 @@
     },
     {
         "time": "20:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5707/pictures/Ella%20Augusta_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5707/pictures/Ella%20Augusta_0_large.jpg",
         "name": "Ella Augusta",
         "country": "DK",
         "venue": "Store Sal, Musikhuset",
@@ -1163,7 +1163,7 @@
     },
     {
         "time": "20:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5741/pictures/Zoumer_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5741/pictures/Zoumer_0_large.jpg",
         "name": "Zoumer",
         "country": "DK",
         "venue": "VoxHall",
@@ -1181,7 +1181,7 @@
     },
     {
         "time": "20:50",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5748/pictures/Demolizer_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5748/pictures/Demolizer_0_large.jpg",
         "name": "Demolizer",
         "country": "DK",
         "venue": "TRAIN",
@@ -1197,7 +1197,7 @@
     },
     {
         "time": "21:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5814/pictures/Anastasia_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5814/pictures/Anastasia_0_large.jpg",
         "name": "Anastasia",
         "country": "DK",
         "venue": "Katapult, Godsbanen",
@@ -1209,7 +1209,7 @@
     },
     {
         "time": "21:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5948/pictures/EYES_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5948/pictures/EYES_0_large.jpg",
         "name": "EYES",
         "country": "DK",
         "venue": "HeadQuarters",
@@ -1223,7 +1223,7 @@
     },
     {
         "time": "21:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5794/pictures/Frida%20Baltzer_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5794/pictures/Frida%20Baltzer_0_large.jpg",
         "name": "Frida Baltzer",
         "country": "DK",
         "venue": "Klubscenen, Musikhuset",
@@ -1238,7 +1238,7 @@
     },
     {
         "time": "21:10",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5737/pictures/Inspector%20Spacetime_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5737/pictures/Inspector%20Spacetime_0_large.jpg",
         "name": "Inspector Spacetime",
         "country": "IS",
         "venue": "Havescenen - Institut for (X)",
@@ -1255,7 +1255,7 @@
     },
     {
         "time": "21:10",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5975/pictures/Niko%20Blonde_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5975/pictures/Niko%20Blonde_0_large.jpg",
         "name": "Niko Blonde",
         "country": "DK",
         "venue": "Drivhuset",
@@ -1270,7 +1270,7 @@
     },
     {
         "time": "21:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5785/pictures/SLIM0_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5785/pictures/SLIM0_0_large.jpg",
         "name": "SLIM0",
         "country": "DK",
         "venue": "Lille Sal, Musikhuset",
@@ -1285,7 +1285,7 @@
     },
     {
         "time": "21:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5830/pictures/sus_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5830/pictures/sus_0_large.jpg",
         "name": "s\u00fas",
         "country": "PT",
         "venue": "turkis",
@@ -1300,7 +1300,7 @@
     },
     {
         "time": "21:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5775/pictures/13_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5775/pictures/13_0_large.jpg",
         "name": "Emily Bowen",
         "country": "DK",
         "venue": "Rytmisk Sal, Musikhuset",
@@ -1317,7 +1317,7 @@
     },
     {
         "time": "21:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5784/pictures/Kundo_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5784/pictures/Kundo_0_large.jpg",
         "name": "Kundo",
         "country": "DK",
         "venue": "Parkscenen",
@@ -1332,7 +1332,7 @@
     },
     {
         "time": "21:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5780/pictures/LIVLOES_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5780/pictures/LIVLOES_0_large.jpg",
         "name": "LIVL\u00d8S",
         "country": "DK",
         "venue": "Aarhus Congress Center, Pink Stage",
@@ -1349,7 +1349,7 @@
     },
     {
         "time": "21:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5818/pictures/Mawne_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5818/pictures/Mawne_0_large.jpg",
         "name": "Mawne",
         "country": "DK",
         "venue": "Katapult, Godsbanen",
@@ -1361,7 +1361,7 @@
     },
     {
         "time": "21:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5751/pictures/Vulvatoriuos_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5751/pictures/Vulvatoriuos_0_large.jpg",
         "name": "Vulvatorious",
         "venue": "TRAIN",
         "audio": "https://spotfestival-files.s3.eu-central-1.amazonaws.com/music/Vulvatorious+-+02+FUCK+YOU+lNCEL.mp3",
@@ -1377,7 +1377,7 @@
     },
     {
         "time": "22:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5949/pictures/Demersal_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5949/pictures/Demersal_0_large.jpg",
         "name": "Demersal",
         "country": "DK",
         "venue": "HeadQuarters",
@@ -1392,7 +1392,7 @@
     },
     {
         "time": "22:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5816/pictures/Hungry%20Boy_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5816/pictures/Hungry%20Boy_0_large.jpg",
         "name": "Hungry Boy",
         "country": "DK",
         "venue": "Katapult, Godsbanen",
@@ -1406,7 +1406,7 @@
     },
     {
         "time": "22:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5708/pictures/ozzy_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5708/pictures/ozzy_0_large.jpg",
         "name": "ozzy",
         "country": "DK",
         "venue": "Volume Village",
@@ -1423,7 +1423,7 @@
     },
     {
         "time": "22:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5792/pictures/Sofie%20Mathiasen_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5792/pictures/Sofie%20Mathiasen_0_large.jpg",
         "name": "Sofie Mathiasen",
         "country": "DK",
         "venue": "Klubscenen, Musikhuset",
@@ -1437,7 +1437,7 @@
     },
     {
         "time": "22:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5867/pictures/Slush%20Eyes_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5867/pictures/Slush%20Eyes_0_large.jpg",
         "name": "Slush Eyes",
         "country": "DK",
         "venue": "All\u00e9scenen",
@@ -1452,7 +1452,7 @@
     },
     {
         "time": "22:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5704/pictures/Yndling_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5704/pictures/Yndling_0_large.jpg",
         "name": "Yndling",
         "country": "NO",
         "venue": "Aarhus Congress Center, Green Stage",
@@ -1469,7 +1469,7 @@
     },
     {
         "time": "22:25",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5735/pictures/CEVIL_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5735/pictures/CEVIL_0_large.jpg",
         "name": "CEVIL",
         "country": "DK",
         "venue": "A Huset - Institut for (X)",
@@ -1520,7 +1520,7 @@
     },
     {
         "time": "22:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5817/pictures/Mira%20Solis_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5817/pictures/Mira%20Solis_0_large.jpg",
         "name": "Mira Solis",
         "country": "DK",
         "venue": "Katapult, Godsbanen",
@@ -1532,7 +1532,7 @@
     },
     {
         "time": "22:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5764/pictures/Wads_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5764/pictures/Wads_0_large.jpg",
         "name": "Wads",
         "country": "DK",
         "venue": "VoxHall",
@@ -1546,7 +1546,7 @@
     },
     {
         "time": "22:40",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5976/pictures/ASTA%20NORR_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5976/pictures/ASTA%20NORR_0_large.jpg",
         "name": "ASTA NORR",
         "country": "DK",
         "venue": "Drivhuset",
@@ -1561,7 +1561,7 @@
     },
     {
         "time": "22:40",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5705/pictures/THUS_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5705/pictures/THUS_0_large.jpg",
         "name": "THUS",
         "country": "DK",
         "venue": "TRAIN",
@@ -1575,7 +1575,7 @@
     },
     {
         "time": "23:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5719/pictures/J%20Ludvig%20III_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5719/pictures/J%20Ludvig%20III_0_large.jpg",
         "name": "J. Ludvig III",
         "country": "DK",
         "venue": "Lille Sal, Musikhuset",
@@ -1591,7 +1591,7 @@
     },
     {
         "time": "23:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5934/pictures/Salon%20Noir_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5934/pictures/Salon%20Noir_0_large.jpg",
         "name": "Salon Noir",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -1605,7 +1605,7 @@
     },
     {
         "time": "23:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5833/pictures/Suare%20Virginie%20Dembele_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5833/pictures/Suare%20Virginie%20Dembele_0_large.jpg",
         "name": "Suar\u00e9 Virginie Dembele",
         "country": "ML",
         "venue": "turkis",
@@ -1621,7 +1621,7 @@
     },
     {
         "time": "23:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5885/pictures/Ana%20Juel_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5885/pictures/Ana%20Juel_0_large.jpg",
         "name": "Ana Ju\u00e9l",
         "country": "DK",
         "venue": "Havescenen - Institut for (X)",
@@ -1637,7 +1637,7 @@
     },
     {
         "time": "23:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5800/pictures/Bye%20Bye%20Brenda_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5800/pictures/Bye%20Bye%20Brenda_0_large.jpg",
         "name": "Bye Bye Brenda",
         "country": "DK",
         "venue": "Rytmisk Sal, Musikhuset",
@@ -1653,7 +1653,7 @@
     },
     {
         "time": "23:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5826/pictures/Marstein_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5826/pictures/Marstein_0_large.jpg",
         "name": "Marstein",
         "country": "NO",
         "venue": "Aarhus Congress Center, Pink Stage",
@@ -1669,7 +1669,7 @@
     },
     {
         "time": "23:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5713/pictures/18_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5713/pictures/18_0_large.jpg",
         "name": "Mekdes",
         "country": "DK",
         "venue": "Parkscenen",
@@ -1687,7 +1687,7 @@
     },
     {
         "time": "23:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5933/pictures/Rakkerpak_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5933/pictures/Rakkerpak_0_large.jpg",
         "name": "Rakkerpak",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -1702,7 +1702,7 @@
     },
     {
         "time": "23:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5730/pictures/USERS_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5730/pictures/USERS_0_large.jpg",
         "name": "USERS",
         "country": "DK",
         "venue": "Volume Village",
@@ -1720,7 +1720,7 @@
     },
     {
         "time": "00:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5895/pictures/B%20FROM%20E_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5895/pictures/B%20FROM%20E_0_large.jpg",
         "name": "B FROM E",
         "country": "DK",
         "venue": "A Huset - Institut for (X)",
@@ -1734,7 +1734,7 @@
     },
     {
         "time": "00:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5738/pictures/giddy%20goye_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5738/pictures/giddy%20goye_0_large.jpg",
         "name": "giddy goye",
         "country": "DK",
         "venue": "Aarhus Congress Center, Green Stage",
@@ -1752,7 +1752,7 @@
     },
     {
         "time": "00:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5754/pictures/Drongo_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5754/pictures/Drongo_0_large.jpg",
         "name": "Drongo",
         "country": "NO",
         "venue": "Radar",
@@ -1768,7 +1768,7 @@
     },
     {
         "time": "00:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5781/pictures/Thea%20Dora_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5781/pictures/Thea%20Dora_0_large.jpg",
         "name": "Thea Dora",
         "country": "DK",
         "venue": "VoxHall",
@@ -1784,7 +1784,7 @@
     },
     {
         "time": "00:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6025/pictures/DJ%20Melo_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6025/pictures/DJ%20Melo_0_large.jpg",
         "name": "DJ Melo",
         "country": "DK",
         "venue": "Volume Village",
@@ -1794,7 +1794,7 @@
     },
     {
         "time": "00:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5915/pictures/The%20Lazy%20Jesus_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5915/pictures/The%20Lazy%20Jesus_0_large.jpg",
         "name": "The Lazy Jesus",
         "country": "UA",
         "venue": "turkis",
@@ -1811,7 +1811,7 @@
     },
     {
         "time": "01:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5896/pictures/Gavnlig_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5896/pictures/Gavnlig_0_large.jpg",
         "name": "Gavnlig",
         "country": "DK",
         "venue": "A Huset - Institut for (X)",
@@ -1824,7 +1824,7 @@
     },
     {
         "time": "01:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5943/pictures/Tripolism_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5943/pictures/Tripolism_0_large.jpg",
         "name": "Tripolism",
         "country": "DK",
         "venue": "Aarhus Congress Center, Pink Stage",
@@ -1839,7 +1839,7 @@
     },
     {
         "time": "01:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6027/pictures/Zuloo_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6027/pictures/Zuloo_0_large.jpg",
         "name": "Zuloo",
         "country": "DK",
         "venue": "Volume Village",
@@ -1855,7 +1855,7 @@
     },
     {
         "time": "01:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6022/pictures/DJ%20Lilli%20(1)_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6022/pictures/DJ%20Lilli%20(1)_0_large.jpg",
         "name": "DJ Lilli",
         "country": "DK",
         "venue": "Volume Village",
@@ -1870,7 +1870,7 @@
     },
     {
         "time": "12:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5968/pictures/LIFT%20OFF_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5968/pictures/LIFT%20OFF_0_large.jpg",
         "name": "LIFT OFF Dayparty",
         "country": "DK",
         "venue": "Radar",
@@ -1884,7 +1884,7 @@
     },
     {
         "time": "12:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5903/pictures/Mica%20Lizio_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5903/pictures/Mica%20Lizio_0_large.jpg",
         "name": "Mica Lizio",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -1899,7 +1899,7 @@
     },
     {
         "time": "12:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5905/pictures/MONSUN_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5905/pictures/MONSUN_0_large.jpg",
         "name": "MONSUN",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -1916,7 +1916,7 @@
     },
     {
         "time": "12:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6015/pictures/UHOERT_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6015/pictures/UHOERT_0_large.jpg",
         "name": "UH\u00d8RT Day Party",
         "country": "DK",
         "venue": "The Merchant Room",
@@ -1945,7 +1945,7 @@
     },
     {
         "time": "13:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6014/pictures/We%20Do%20Music_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6014/pictures/We%20Do%20Music_0_large.jpg",
         "name": "We Do Music Day Party p\u00e5 Salling Rooftop",
         "country": "DK",
         "venue": "Salling Rooftop",
@@ -1959,7 +1959,7 @@
     },
     {
         "time": "13:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5824/pictures/Johanna%20Reine%20Nilsen_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5824/pictures/Johanna%20Reine%20Nilsen_0_large.jpg",
         "name": "Johanna Reine-Nilsen",
         "country": "NO",
         "venue": "All\u00e9scenen",
@@ -1973,7 +1973,7 @@
     },
     {
         "time": "14:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6009/pictures/Bending%20Backwards_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6009/pictures/Bending%20Backwards_0_large.jpg",
         "name": "Bending Backwards",
         "country": "DK",
         "venue": "\u00c5rhus Bowlinghal",
@@ -1986,7 +1986,7 @@
     },
     {
         "time": "14:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5801/pictures/BjergMiilmann_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5801/pictures/BjergMiilmann_0_large.jpg",
         "name": "Bjerg/Miilmann",
         "country": "DK",
         "venue": "Kammermusiksalen, Musikhuset",
@@ -1996,7 +1996,7 @@
     },
     {
         "time": "14:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5811/pictures/Emil%20Bror_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5811/pictures/Emil%20Bror_0_large.jpg",
         "name": "Emil Bror",
         "country": "DK",
         "venue": "HeadQuarters",
@@ -2011,7 +2011,7 @@
     },
     {
         "time": "14:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5766/pictures/KROGEN_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5766/pictures/KROGEN_0_large.jpg",
         "name": "KROGEN",
         "country": "DK",
         "venue": "Parkscenen",
@@ -2027,7 +2027,7 @@
     },
     {
         "time": "14:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6051/pictures/Malte%20og%20Sean_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6051/pictures/Malte%20og%20Sean_0_large.jpg",
         "name": "Live Radio med Malte Sanggaard og Sean-Poul",
         "country": "DK",
         "venue": "Drivhuset",
@@ -2037,7 +2037,7 @@
     },
     {
         "time": "14:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5906/pictures/SPRITTEDE_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5906/pictures/SPRITTEDE_0_large.jpg",
         "name": "SPRITTEDE",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -2052,7 +2052,7 @@
     },
     {
         "time": "14:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5852/pictures/Danefae%20(1)_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5852/pictures/Danefae%20(1)_0_large.jpg",
         "name": "Danefae",
         "country": "DK",
         "venue": "Aarhus Congress Center, Green Stage",
@@ -2066,7 +2066,7 @@
     },
     {
         "time": "14:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5807/pictures/Herkedal_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5807/pictures/Herkedal_0_large.jpg",
         "name": "Herkedal",
         "country": "NO",
         "venue": "Store Sal, Musikhuset",
@@ -2082,7 +2082,7 @@
     },
     {
         "time": "14:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5916/pictures/Stemmer%20i%20Voks_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5916/pictures/Stemmer%20i%20Voks_0_large.jpg",
         "name": "Stemmer i Voks",
         "country": "DK",
         "venue": "turkis",
@@ -2096,7 +2096,7 @@
     },
     {
         "time": "14:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6041/pictures/Aarhus%20Kammerorkester_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6041/pictures/Aarhus%20Kammerorkester_0_large.jpg",
         "name": "Aarhus Kammerorkester",
         "country": "DK",
         "venue": "Lille Sal, Musikhuset",
@@ -2106,7 +2106,7 @@
     },
     {
         "time": "14:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5932/pictures/Palads_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5932/pictures/Palads_0_large.jpg",
         "name": "Palads",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -2119,7 +2119,7 @@
     },
     {
         "time": "14:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5808/pictures/Sander%20Sanchez_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5808/pictures/Sander%20Sanchez_0_large.jpg",
         "name": "Sander Sanchez",
         "country": "DK",
         "venue": "HeadQuarters",
@@ -2135,7 +2135,7 @@
     },
     {
         "time": "14:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6006/pictures/Asger%20Thomsen_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6006/pictures/Asger%20Thomsen_0_large.jpg",
         "name": "Asger Thomsen",
         "country": "DK",
         "venue": "A Huset - Institut for (X)",
@@ -2145,7 +2145,7 @@
     },
     {
         "time": "15:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5810/pictures/GIMI_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5810/pictures/GIMI_0_large.jpg",
         "name": "GIMI",
         "country": "DK",
         "venue": "HeadQuarters",
@@ -2162,7 +2162,7 @@
     },
     {
         "time": "15:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5990/pictures/JOVE_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5990/pictures/JOVE_0_large.jpg",
         "name": "JOVE",
         "country": "DK",
         "venue": "Musikkens Bus",
@@ -2177,7 +2177,7 @@
     },
     {
         "time": "15:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5771/pictures/Shoom_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5771/pictures/Shoom_0_large.jpg",
         "name": "Shoom",
         "country": "NL",
         "venue": "All\u00e9scenen",
@@ -2192,7 +2192,7 @@
     },
     {
         "time": "15:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5731/pictures/5_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5731/pictures/5_0_large.jpg",
         "name": "Simone Tang",
         "country": "DK",
         "venue": "Volume Village",
@@ -2210,7 +2210,7 @@
     },
     {
         "time": "15:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5802/pictures/Zinssou%20Quartet_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5802/pictures/Zinssou%20Quartet_0_large.jpg",
         "name": "Zinssou Quartet",
         "country": "DK",
         "venue": "Kammermusiksalen, Musikhuset",
@@ -2233,7 +2233,7 @@
     },
     {
         "time": "15:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5809/pictures/maia%20maia_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5809/pictures/maia%20maia_0_large.jpg",
         "name": "maia maia",
         "country": "DK",
         "venue": "HeadQuarters",
@@ -2250,7 +2250,7 @@
     },
     {
         "time": "15:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5941/pictures/Matching%20Outfits_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5941/pictures/Matching%20Outfits_0_large.jpg",
         "name": "Matching Outfits",
         "country": "DE",
         "venue": "Radar",
@@ -2265,7 +2265,7 @@
     },
     {
         "time": "15:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6010/pictures/shinyhunt_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6010/pictures/shinyhunt_0_large.jpg",
         "name": "shinyhunt",
         "country": "DK",
         "venue": "\u00c5rhus Bowlinghal",
@@ -2280,7 +2280,7 @@
     },
     {
         "time": "15:40",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5977/pictures/SZIM_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5977/pictures/SZIM_0_large.jpg",
         "name": "SZIM",
         "country": "DK",
         "venue": "Drivhuset",
@@ -2295,7 +2295,7 @@
     },
     {
         "time": "15:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5749/pictures/9_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5749/pictures/9_0_large.jpg",
         "name": "KRYD",
         "country": "DK",
         "venue": "Parkscenen",
@@ -2331,7 +2331,7 @@
     },
     {
         "time": "15:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5891/pictures/Veronika%20Rud_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5891/pictures/Veronika%20Rud_0_large.jpg",
         "name": "Veronika Rud",
         "country": "DK",
         "venue": "Havescenen - Institut for (X)",
@@ -2345,7 +2345,7 @@
     },
     {
         "time": "16:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5917/pictures/Eir_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5917/pictures/Eir_0_large.jpg",
         "name": "Eir",
         "country": "NO",
         "venue": "turkis",
@@ -2358,7 +2358,7 @@
     },
     {
         "time": "16:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5853/pictures/Jessi%20Ka_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5853/pictures/Jessi%20Ka_0_large.jpg",
         "name": "Jessie Ka",
         "country": "DK",
         "venue": "Aarhus Congress Center, Green Stage",
@@ -2373,7 +2373,7 @@
     },
     {
         "time": "16:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5992/pictures/Lise%20Ranks_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5992/pictures/Lise%20Ranks_0_large.jpg",
         "name": "Lise Ranks",
         "country": "DK",
         "venue": "Musikkens Bus",
@@ -2389,7 +2389,7 @@
     },
     {
         "time": "16:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6042/pictures/Maja%20Kjaer%20si%20Orkester_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6042/pictures/Maja%20Kjaer%20si%20Orkester_0_large.jpg",
         "name": "Maja Kj\u00e6r si Orkester",
         "country": "DK",
         "venue": "\u00c5bne Scene, Godsbanen",
@@ -2403,7 +2403,7 @@
     },
     {
         "time": "16:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6028/pictures/Movement_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6028/pictures/Movement_0_large.jpg",
         "name": "Movement Shaped Like a Heart",
         "country": "DK",
         "venue": "\u00c5rhus Bowlinghal",
@@ -2416,7 +2416,7 @@
     },
     {
         "time": "16:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5803/pictures/Plum%20and%20I_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5803/pictures/Plum%20and%20I_0_large.jpg",
         "name": "Plum and I",
         "country": "DK",
         "venue": "Kammermusiksalen, Musikhuset",
@@ -2430,7 +2430,7 @@
     },
     {
         "time": "16:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5727/pictures/8_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5727/pictures/8_0_large.jpg",
         "name": "Astrid Schick",
         "country": "DK",
         "venue": "Volume Village",
@@ -2448,7 +2448,7 @@
     },
     {
         "time": "16:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5806/pictures/ULD_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5806/pictures/ULD_0_large.jpg",
         "name": "ULD",
         "country": "NO",
         "venue": "Lille Sal, Musikhuset",
@@ -2464,7 +2464,7 @@
     },
     {
         "time": "16:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6007/pictures/Michaela%20(1)_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6007/pictures/Michaela%20(1)_0_large.jpg",
         "name": "Michaela Turcerov\u00e1",
         "country": "SK",
         "venue": "A Huset - Institut for (X)",
@@ -2478,7 +2478,7 @@
     },
     {
         "time": "17:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5723/pictures/6_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5723/pictures/6_0_large.jpg",
         "name": "Clovis",
         "country": "DK",
         "venue": "Aarhus Congress Center, Pink Stage",
@@ -2496,7 +2496,7 @@
     },
     {
         "time": "17:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5950/pictures/Ondskyld_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5950/pictures/Ondskyld_0_large.jpg",
         "name": "Ondskyld",
         "country": "DK",
         "venue": "HeadQuarters",
@@ -2510,7 +2510,7 @@
     },
     {
         "time": "17:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5970/pictures/Xenia_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5970/pictures/Xenia_0_large.jpg",
         "name": "Xenia",
         "country": "ES",
         "venue": "All\u00e9scenen",
@@ -2524,7 +2524,7 @@
     },
     {
         "time": "17:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5804/pictures/Benjamin%20Djuurhus_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5804/pictures/Benjamin%20Djuurhus_0_large.jpg",
         "name": "\u00f6\u00f0",
         "country": "DK",
         "venue": "Kammermusiksalen, Musikhuset",
@@ -2534,7 +2534,7 @@
     },
     {
         "time": "17:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5991/pictures/OEJESTEN_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5991/pictures/OEJESTEN_0_large.jpg",
         "name": "\u00d8JESTEN",
         "country": "DK",
         "venue": "Musikkens Bus",
@@ -2550,7 +2550,7 @@
     },
     {
         "time": "17:10",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5978/pictures/Eezy_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5978/pictures/Eezy_0_large.jpg",
         "name": "Eezy",
         "country": "DK",
         "venue": "Drivhuset",
@@ -2584,7 +2584,7 @@
     },
     {
         "time": "17:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6011/pictures/Nausia_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6011/pictures/Nausia_0_large.jpg",
         "name": "Nausia",
         "country": "DK",
         "venue": "\u00c5rhus Bowlinghal",
@@ -2599,7 +2599,7 @@
     },
     {
         "time": "17:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5762/pictures/Sound%20of%20the%20Damned_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5762/pictures/Sound%20of%20the%20Damned_0_large.jpg",
         "name": "Sound of the Damned",
         "country": "GL",
         "venue": "Radar",
@@ -2613,7 +2613,7 @@
     },
     {
         "time": "17:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5851/pictures/Stella%20Darla_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5851/pictures/Stella%20Darla_0_large.jpg",
         "name": "Stella Darla",
         "country": "DK",
         "venue": "Rytmisk Sal, Musikhuset",
@@ -2627,7 +2627,7 @@
     },
     {
         "time": "17:20",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6043/pictures/Ida%20Wenoe_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6043/pictures/Ida%20Wenoe_0_large.jpg",
         "name": "Ida Wen\u00f8e",
         "country": "DK",
         "venue": "\u00c5bne Scene, Godsbanen",
@@ -2644,7 +2644,7 @@
     },
     {
         "time": "17:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5904/pictures/Min%20Veninde%20Signe_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5904/pictures/Min%20Veninde%20Signe_0_large.jpg",
         "name": "Min Veninde Signe",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -2661,7 +2661,7 @@
     },
     {
         "time": "17:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5812/pictures/Katinka_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5812/pictures/Katinka_0_large.jpg",
         "name": "Katinka",
         "country": "DK",
         "venue": "Parkscenen",
@@ -2677,7 +2677,7 @@
     },
     {
         "time": "17:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5918/pictures/KUUNATIC_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5918/pictures/KUUNATIC_0_large.jpg",
         "name": "KUUNATIC",
         "country": "JP",
         "venue": "turkis",
@@ -2693,7 +2693,7 @@
     },
     {
         "time": "17:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5854/pictures/Schaefer_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5854/pictures/Schaefer_0_large.jpg",
         "name": "Sch\u00e6fer",
         "country": "DK",
         "venue": "Aarhus Congress Center, Green Stage",
@@ -2708,7 +2708,7 @@
     },
     {
         "time": "18:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5993/pictures/Cursemaster_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5993/pictures/Cursemaster_0_large.jpg",
         "name": "Cursemaster feat. Legobygger123 og Granit",
         "country": "DK",
         "venue": "Musikkens Bus",
@@ -2721,7 +2721,7 @@
     },
     {
         "time": "18:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5734/pictures/Filuka_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5734/pictures/Filuka_0_large.jpg",
         "name": "Filuka",
         "country": "DK",
         "venue": "Havescenen - Institut for (X)",
@@ -2739,7 +2739,7 @@
     },
     {
         "time": "18:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5805/pictures/NYSTALGI_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5805/pictures/NYSTALGI_0_large.jpg",
         "name": "NYSTALGI",
         "country": "DK",
         "venue": "Kammermusiksalen, Musikhuset",
@@ -2753,7 +2753,7 @@
     },
     {
         "time": "18:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5776/pictures/SORTHANDSK_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5776/pictures/SORTHANDSK_0_large.jpg",
         "name": "SORTHANDSK",
         "country": "DK",
         "venue": "Volume Village",
@@ -2770,7 +2770,7 @@
     },
     {
         "time": "18:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5951/pictures/Stine%20Klingsten_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5951/pictures/Stine%20Klingsten_0_large.jpg",
         "name": "Stine Klingsten",
         "country": "DK",
         "venue": "HeadQuarters",
@@ -2785,7 +2785,7 @@
     },
     {
         "time": "18:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5722/pictures/12_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5722/pictures/12_0_large.jpg",
         "name": "Carlina de Place",
         "country": "DK",
         "venue": "Lille Sal, Musikhuset",
@@ -2802,7 +2802,7 @@
     },
     {
         "time": "18:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6058/pictures/Honey_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6058/pictures/Honey_0_large.jpg",
         "name": "Honey",
         "country": "DK",
         "venue": "Palmehaven",
@@ -2812,7 +2812,7 @@
     },
     {
         "time": "18:40",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5979/pictures/Ahead_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5979/pictures/Ahead_0_large.jpg",
         "name": "Ahead",
         "country": "DK",
         "venue": "Drivhuset",
@@ -2827,7 +2827,7 @@
     },
     {
         "time": "18:40",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6044/pictures/Flach%20Oesterby_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6044/pictures/Flach%20Oesterby_0_large.jpg",
         "name": "Flach | \u00d8sterby",
         "country": "DK",
         "venue": "\u00c5bne Scene, Godsbanen",
@@ -2840,7 +2840,7 @@
     },
     {
         "time": "18:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5850/pictures/WET_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5850/pictures/WET_0_large.jpg",
         "name": "100%WET",
         "country": "DK",
         "venue": "Aarhus Congress Center, Pink Stage",
@@ -2855,7 +2855,7 @@
     },
     {
         "time": "18:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5825/pictures/Healthy%20Choices_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5825/pictures/Healthy%20Choices_0_large.jpg",
         "name": "Healthy Choices",
         "country": "NO",
         "venue": "All\u00e9scenen",
@@ -2869,7 +2869,7 @@
     },
     {
         "time": "18:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6008/pictures/Ida%20Duelund_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6008/pictures/Ida%20Duelund_0_large.jpg",
         "name": "Ida Duelund",
         "country": "DK",
         "venue": "A Huset - Institut for (X)",
@@ -2883,7 +2883,7 @@
     },
     {
         "time": "19:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6012/pictures/Alba%20Akvama_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6012/pictures/Alba%20Akvama_0_large.jpg",
         "name": "Alba Akvama",
         "country": "DK",
         "venue": "\u00c5rhus Bowlinghal",
@@ -2897,7 +2897,7 @@
     },
     {
         "time": "19:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5743/pictures/Elliot_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5743/pictures/Elliot_0_large.jpg",
         "name": "Elliot",
         "country": "DK",
         "venue": "VoxHall",
@@ -2913,7 +2913,7 @@
     },
     {
         "time": "19:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5931/pictures/LAY_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5931/pictures/LAY_0_large.jpg",
         "name": "LAY",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -2927,7 +2927,7 @@
     },
     {
         "time": "19:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5837/pictures/Naked_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5837/pictures/Naked_0_large.jpg",
         "name": "Naked",
         "country": "DK",
         "venue": "Store Sal, Musikhuset",
@@ -2937,7 +2937,7 @@
     },
     {
         "time": "19:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5756/pictures/Orbits_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5756/pictures/Orbits_0_large.jpg",
         "name": "Orbits",
         "country": "NO",
         "venue": "Radar",
@@ -2951,7 +2951,7 @@
     },
     {
         "time": "19:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5952/pictures/VAKT_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5952/pictures/VAKT_0_large.jpg",
         "name": "VAKT",
         "country": "DK",
         "venue": "HeadQuarters",
@@ -2966,7 +2966,7 @@
     },
     {
         "time": "19:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5796/pictures/VELA_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5796/pictures/VELA_0_large.jpg",
         "name": "VELA",
         "country": "DK",
         "venue": "Klubscenen, Musikhuset",
@@ -2979,7 +2979,7 @@
     },
     {
         "time": "19:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5721/pictures/Karoline%20Funder_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5721/pictures/Karoline%20Funder_0_large.jpg",
         "name": "Karoline Funder",
         "country": "DK",
         "venue": "Rytmisk Sal, Musikhuset",
@@ -2997,7 +2997,7 @@
     },
     {
         "time": "19:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5919/pictures/BITOI_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5919/pictures/BITOI_0_large.jpg",
         "name": "BITOI",
         "country": "DK",
         "venue": "turkis",
@@ -3013,7 +3013,7 @@
     },
     {
         "time": "19:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5714/pictures/BAENCH_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5714/pictures/BAENCH_0_large.jpg",
         "name": "B\u00c6NCH",
         "country": "DK",
         "venue": "Volume Village",
@@ -3030,7 +3030,7 @@
     },
     {
         "time": "19:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5789/pictures/Carl%20Knast_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5789/pictures/Carl%20Knast_0_large.jpg",
         "name": "Carl Knast",
         "country": "DK",
         "venue": "Parkscenen",
@@ -3046,7 +3046,7 @@
     },
     {
         "time": "19:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5930/pictures/Kindsight_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5930/pictures/Kindsight_0_large.jpg",
         "name": "Kindsight",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -3061,7 +3061,7 @@
     },
     {
         "time": "19:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5855/pictures/Merry_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5855/pictures/Merry_0_large.jpg",
         "name": "Merry",
         "country": "DK",
         "venue": "Aarhus Congress Center, Green Stage",
@@ -3074,7 +3074,7 @@
     },
     {
         "time": "19:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5886/pictures/exgirls_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5886/pictures/exgirls_0_large.jpg",
         "name": "ex.girls",
         "country": "IS",
         "venue": "Havescenen - Institut for (X)",
@@ -3089,7 +3089,7 @@
     },
     {
         "time": "20:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5945/pictures/Blush_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5945/pictures/Blush_0_large.jpg",
         "name": "Blush",
         "country": "DK",
         "venue": "HeadQuarters",
@@ -3102,7 +3102,7 @@
     },
     {
         "time": "20:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6045/pictures/Lea%20Kampmann_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6045/pictures/Lea%20Kampmann_0_large.jpg",
         "name": "Lea Kampmann",
         "country": "DK",
         "venue": "\u00c5bne Scene, Godsbanen",
@@ -3118,7 +3118,7 @@
     },
     {
         "time": "20:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5797/pictures/Son%20af%20en%20gud_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5797/pictures/Son%20af%20en%20gud_0_large.jpg",
         "name": "S\u00f8n af en Gud",
         "country": "DK",
         "venue": "Klubscenen, Musikhuset",
@@ -3134,7 +3134,7 @@
     },
     {
         "time": "20:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5759/pictures/Oyunn_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5759/pictures/Oyunn_0_large.jpg",
         "name": "\u00d8yunn",
         "country": "DK",
         "venue": "Lille Sal, Musikhuset",
@@ -3151,7 +3151,7 @@
     },
     {
         "time": "20:10",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5980/pictures/Soren%20Karim_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5980/pictures/Soren%20Karim_0_large.jpg",
         "name": "S\u00f8ren Karim",
         "country": "DK",
         "venue": "Drivhuset",
@@ -3167,7 +3167,7 @@
     },
     {
         "time": "20:20",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5892/pictures/KNKL_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5892/pictures/KNKL_0_large.jpg",
         "name": "KNKL",
         "country": "DK",
         "venue": "A Huset - Institut for (X)",
@@ -3177,7 +3177,7 @@
     },
     {
         "time": "20:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5772/pictures/Anakin%20Justin_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5772/pictures/Anakin%20Justin_0_large.jpg",
         "name": "Anakin Justin",
         "country": "NO",
         "venue": "All\u00e9scenen",
@@ -3193,7 +3193,7 @@
     },
     {
         "time": "20:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6029/pictures/Frankly%20My%20Dear_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6029/pictures/Frankly%20My%20Dear_0_large.jpg",
         "name": "Frankly My Dear",
         "country": "DK",
         "venue": "\u00c5rhus Bowlinghal",
@@ -3223,7 +3223,7 @@
     },
     {
         "time": "20:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5716/pictures/Kayak_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5716/pictures/Kayak_0_large.jpg",
         "name": "Kayak",
         "country": "DK",
         "venue": "VoxHall",
@@ -3241,7 +3241,7 @@
     },
     {
         "time": "20:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5746/pictures/10_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5746/pictures/10_0_large.jpg",
         "name": "Rhys",
         "country": "SE",
         "venue": "Radar",
@@ -3259,7 +3259,7 @@
     },
     {
         "time": "21:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5798/pictures/Danefae_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5798/pictures/Danefae_0_large.jpg",
         "name": "Danefae",
         "country": "DK",
         "venue": "Klubscenen, Musikhuset",
@@ -3274,7 +3274,7 @@
     },
     {
         "time": "21:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5732/pictures/7_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5732/pictures/7_0_large.jpg",
         "name": "Oskar Witt",
         "country": "DK",
         "venue": "Volume Village",
@@ -3291,7 +3291,7 @@
     },
     {
         "time": "21:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5953/pictures/Pater_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5953/pictures/Pater_0_large.jpg",
         "name": "Pater",
         "country": "DK",
         "venue": "HeadQuarters",
@@ -3305,7 +3305,7 @@
     },
     {
         "time": "21:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6019/pictures/Ritmo_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6019/pictures/Ritmo_0_large.jpg",
         "name": "Ritmo Criminal x H\u00e5rd Ting",
         "country": "DK",
         "venue": "Palmehaven",
@@ -3315,7 +3315,7 @@
     },
     {
         "time": "21:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5755/pictures/Tabloid_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5755/pictures/Tabloid_0_large.jpg",
         "name": "Tabloid",
         "country": "DK",
         "venue": "Rytmisk Sal, Musikhuset",
@@ -3332,7 +3332,7 @@
     },
     {
         "time": "21:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5893/pictures/TT_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5893/pictures/TT_0_large.jpg",
         "name": "TT",
         "country": "DK",
         "venue": "A Huset - Institut for (X)",
@@ -3345,7 +3345,7 @@
     },
     {
         "time": "21:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5920/pictures/Damar_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5920/pictures/Damar_0_large.jpg",
         "name": "Damar",
         "country": "DK",
         "venue": "turkis",
@@ -3357,7 +3357,7 @@
     },
     {
         "time": "21:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5835/pictures/Siamese_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5835/pictures/Siamese_0_large.jpg",
         "name": "Siamese",
         "country": "DK",
         "venue": "Parkscenen",
@@ -3372,7 +3372,7 @@
     },
     {
         "time": "21:20",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6046/pictures/Dybfoelt_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6046/pictures/Dybfoelt_0_large.jpg",
         "name": "Dybf\u00f8lt",
         "country": "DK",
         "venue": "\u00c5bne Scene, Godsbanen",
@@ -3388,7 +3388,7 @@
     },
     {
         "time": "21:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5924/pictures/Bonjour%20Papa_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5924/pictures/Bonjour%20Papa_0_large.jpg",
         "name": "Bonjour Papa",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -3403,7 +3403,7 @@
     },
     {
         "time": "21:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5783/pictures/KATMORE_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5783/pictures/KATMORE_0_large.jpg",
         "name": "KATMORE",
         "country": "DK",
         "venue": "Aarhus Congress Center, Green Stage",
@@ -3417,7 +3417,7 @@
     },
     {
         "time": "21:35",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5890/pictures/Modou_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5890/pictures/Modou_0_large.jpg",
         "name": "Modou Traore",
         "country": "ML",
         "venue": "Havescenen - Institut for (X)",
@@ -3430,7 +3430,7 @@
     },
     {
         "time": "21:40",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5981/pictures/Skammerens%20Doetre_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5981/pictures/Skammerens%20Doetre_0_large.jpg",
         "name": "Skammerens D\u00f8tre",
         "country": "DK",
         "venue": "Drivhuset",
@@ -3445,7 +3445,7 @@
     },
     {
         "time": "21:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5742/pictures/Dork_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5742/pictures/Dork_0_large.jpg",
         "name": "Dork",
         "country": "DK",
         "venue": "Lille Sal, Musikhuset",
@@ -3460,7 +3460,7 @@
     },
     {
         "time": "22:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5954/pictures/De%20Hoje%20Haele_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5954/pictures/De%20Hoje%20Haele_0_large.jpg",
         "name": "De H\u00f8je H\u00e6le",
         "country": "DK",
         "venue": "HeadQuarters",
@@ -3475,7 +3475,7 @@
     },
     {
         "time": "22:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5799/pictures/FLAEK_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5799/pictures/FLAEK_0_large.jpg",
         "name": "FL\u00c6K",
         "country": "DK",
         "venue": "Klubscenen, Musikhuset",
@@ -3487,7 +3487,7 @@
     },
     {
         "time": "22:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5752/pictures/Soleima_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5752/pictures/Soleima_0_large.jpg",
         "name": "Soleima",
         "country": "DK",
         "venue": "Store Sal, Musikhuset",
@@ -3505,7 +3505,7 @@
     },
     {
         "time": "22:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6030/pictures/FIA_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6030/pictures/FIA_0_large.jpg",
         "name": "FIA",
         "country": "DK",
         "venue": "\u00c5rhus Bowlinghal",
@@ -3518,7 +3518,7 @@
     },
     {
         "time": "22:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5774/pictures/16_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5774/pictures/16_0_large.jpg",
         "name": "Solkur",
         "country": "DK",
         "venue": "All\u00e9scenen",
@@ -3534,7 +3534,7 @@
     },
     {
         "time": "22:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5709/pictures/Ashes%20of%20Billy_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5709/pictures/Ashes%20of%20Billy_0_large.jpg",
         "name": "Ashes of Billy",
         "country": "DK",
         "venue": "Volume Village",
@@ -3551,7 +3551,7 @@
     },
     {
         "time": "22:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5767/pictures/Faza_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5767/pictures/Faza_0_large.jpg",
         "name": "Faza",
         "country": "DK",
         "venue": "Aarhus Congress Center, Pink Stage",
@@ -3565,7 +3565,7 @@
     },
     {
         "time": "22:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5747/pictures/Sebastian%20Wegener_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5747/pictures/Sebastian%20Wegener_0_large.jpg",
         "name": "Sebastian Wegener",
         "country": "DK",
         "venue": "VoxHall",
@@ -3582,7 +3582,7 @@
     },
     {
         "time": "22:35",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5894/pictures/HUGX_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5894/pictures/HUGX_0_large.jpg",
         "name": "HUGX",
         "country": "DK",
         "venue": "A Huset - Institut for (X)",
@@ -3595,7 +3595,7 @@
     },
     {
         "time": "22:40",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6047/pictures/Danish%20Fiddle%20Quartet_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6047/pictures/Danish%20Fiddle%20Quartet_0_large.jpg",
         "name": "Danish Fiddle Quartet",
         "country": "DK",
         "venue": "\u00c5bne Scene, Godsbanen",
@@ -3611,7 +3611,7 @@
     },
     {
         "time": "23:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6038/pictures/CarlloYABOY_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6038/pictures/CarlloYABOY_0_large.jpg",
         "name": "CarlloYABOY",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -3628,7 +3628,7 @@
     },
     {
         "time": "23:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5921/pictures/Fauna_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5921/pictures/Fauna_0_large.jpg",
         "name": "Fauna",
         "country": "SE",
         "venue": "turkis",
@@ -3638,7 +3638,7 @@
     },
     {
         "time": "23:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5763/pictures/Mathias%20Ranch_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5763/pictures/Mathias%20Ranch_0_large.jpg",
         "name": "Mathias Ranch",
         "country": "DK",
         "venue": "Rytmisk Sal, Musikhuset",
@@ -3654,7 +3654,7 @@
     },
     {
         "time": "23:10",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5982/pictures/Berg_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5982/pictures/Berg_0_large.jpg",
         "name": "Berg",
         "country": "DK",
         "venue": "Drivhuset",
@@ -3669,7 +3669,7 @@
     },
     {
         "time": "23:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5884/pictures/AGGi_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5884/pictures/AGGi_0_large.jpg",
         "name": "AGGi",
         "country": "DK",
         "venue": "Havescenen - Institut for (X)",
@@ -3702,7 +3702,7 @@
     },
     {
         "time": "23:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5923/pictures/BOABOA_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5923/pictures/BOABOA_0_large.jpg",
         "name": "BOABOA",
         "country": "DK",
         "venue": "Den R\u00e5 Hal, Godsbanen",
@@ -3718,7 +3718,7 @@
     },
     {
         "time": "23:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5779/pictures/14_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5779/pictures/14_0_large.jpg",
         "name": "Vilma Crow",
         "country": "DK",
         "venue": "Lille Sal, Musikhuset",
@@ -3736,7 +3736,7 @@
     },
     {
         "time": "23:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5724/pictures/17_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5724/pictures/17_0_large.jpg",
         "name": "\u00d8NDI",
         "country": "DK",
         "venue": "Aarhus Congress Center, Green Stage",
@@ -3754,7 +3754,7 @@
     },
     {
         "time": "23:45",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5944/pictures/Emil%20Kruse_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5944/pictures/Emil%20Kruse_0_large.jpg",
         "name": "Emil Kruse",
         "country": "DK",
         "venue": "Store Sal, Musikhuset",
@@ -3770,7 +3770,7 @@
     },
     {
         "time": "00:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5897/pictures/Jinsu_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5897/pictures/Jinsu_0_large.jpg",
         "name": "Jinsu",
         "country": "DK",
         "venue": "A Huset - Institut for (X)",
@@ -3783,7 +3783,7 @@
     },
     {
         "time": "00:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5778/pictures/Wicky_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5778/pictures/Wicky_0_large.jpg",
         "name": "Wicky",
         "country": "DK",
         "venue": "Volume Village",
@@ -3798,7 +3798,7 @@
     },
     {
         "time": "00:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5745/pictures/1_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5745/pictures/1_0_large.jpg",
         "name": "Daniil",
         "country": "IS",
         "venue": "Radar",
@@ -3816,7 +3816,7 @@
     },
     {
         "time": "00:15",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5761/pictures/Tarrak_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5761/pictures/Tarrak_0_large.jpg",
         "name": "Tarrak",
         "country": "GL",
         "venue": "VoxHall",
@@ -3832,7 +3832,7 @@
     },
     {
         "time": "00:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5955/pictures/Eros%20for%20you_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5955/pictures/Eros%20for%20you_0_large.jpg",
         "name": "Eros for you",
         "country": "DK",
         "venue": "Aarhus Congress Center, Pink Stage",
@@ -3858,7 +3858,7 @@
     },
     {
         "time": "01:00",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6024/pictures/MASIV_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6024/pictures/MASIV_0_large.jpg",
         "name": "MASIV",
         "country": "DK",
         "venue": "Volume Village",
@@ -3872,7 +3872,7 @@
     },
     {
         "time": "01:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5898/pictures/Phloem_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/5898/pictures/Phloem_0_large.jpg",
         "name": "Phloem",
         "country": "DK",
         "venue": "A Huset - Institut for (X)",
@@ -3885,7 +3885,7 @@
     },
     {
         "time": "01:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6026/pictures/Yo%20Johnny_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6026/pictures/Yo%20Johnny_0_large.jpg",
         "name": "Yo Johnny",
         "country": "DK",
         "venue": "Volume Village",
@@ -3901,7 +3901,7 @@
     },
     {
         "time": "02:30",
-        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6023/pictures/Emma%20Lincoln%20(1)_0_medium.jpg",
+        "img": "https://s3-eu-west-1.amazonaws.com/spotfestival/201/eventitems/6023/pictures/Emma%20Lincoln%20(1)_0_large.jpg",
         "name": "Emma Lincoln",
         "country": "DK",
         "venue": "Volume Village",

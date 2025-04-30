@@ -48,13 +48,11 @@
 		width="702"
 		height="395"
 		src={`https://www.youtube.com/embed/${youtubeId}?autoplay=${active ? 1 : 0}&controls=0`}
-		title="Embedded video"
+		title="Embedded artist video"
 		frameborder="0"
 		class="z-[1]"
-		allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 		referrerpolicy="strict-origin-when-cross-origin"
 		allowfullscreen
 	></iframe>
-
-	<!-- TODO: Add autoplay; to allow in iframe -->
 </div>

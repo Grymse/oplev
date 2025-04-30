@@ -9,6 +9,7 @@
 	let audio: HTMLAudioElement | undefined = $state();
 
 	function toggleAudio(e: MouseEvent) {
+		e.preventDefault();
 		e.stopPropagation();
 		if (isPlaying) {
 			audio?.pause();
@@ -19,7 +20,7 @@
 	}
 </script>
 
-<button onclick={toggleAudio} class="btn-icon preset-filled">
+<button onclick={toggleAudio} class="btn-icon btn-icon-lg preset-filled-surface-100-900 rounded-full">
 	{#if isPlaying}
 		<!-- SOUND -->
 		<svg

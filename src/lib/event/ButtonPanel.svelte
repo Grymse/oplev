@@ -22,7 +22,7 @@
 		<button
 			onclick={() => onreact('pass')}
 			type="button"
-			class="btn-icon btn-icon-lg h-16 preset-filled-tertiary-500"
+			class="btn-icon btn-icon-lg h-12 w-12 rounded-full preset-filled-tertiary-500"
 			style="transform: scale({buttonScaling.pass +
 				1}) translate({buttonScaling.pass * -50}%, {-buttonScaling.pass *
 				50}%);"
@@ -34,7 +34,7 @@
 		<button
 			onclick={() => onreact('heart')}
 			type="button"
-			class="btn-icon btn-icon-lg w-20 h-20 preset-filled-primary-500"
+			class="btn-icon btn-icon-lg w-20 h-20 rounded-full preset-filled-primary-500"
 			style="transform: scale({buttonScaling.heart +
 				1}) translate(0%, {-buttonScaling.heart * 75}%);"
 		>
@@ -45,7 +45,7 @@
 		<button
 			onclick={() => onreact('like')}
 			type="button"
-			class="btn-icon btn-icon-lg duration-0 h-16 preset-filled-secondary-500"
+			class="btn-icon btn-icon-lg duration-0 rounded-full h-12 w-12 preset-filled-secondary-500"
 			style="transform: scale({buttonScaling.like +
 				1}) translate({buttonScaling.like * 50}%, {-buttonScaling.like *
 				50}%);"

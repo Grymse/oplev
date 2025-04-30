@@ -17,8 +17,8 @@
 
 <DrawerBase trigger={children}>
 	{#snippet content(closeDrawer)}
-	<div class="relative h-full max-h-full w-full overflow-hidden">
-		<div class="absolute bottom-0 z-10 w-full p-4">
+	<div class="max-h-[calc(100vh-8rem)] relative overflow-hidden">
+		<div class="absolute z-10 bottom-4 w-full p-4">
 			<button class="w-full btn gap-1 preset-filled" onclick={closeDrawer}>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -37,15 +37,15 @@
 				Close
 			</button>
 		</div>
-		<div class="p-4 pb-24 relative flex flex-col gap-4 max-h-full overflow-y-scroll">
-			<div class="flex rounded-container overflow-hidden min-h-36 h-36 bg-purple-800">
+		<div class="p-4 pb-24 flex flex-col gap-4 max-h-[calc(100vh-8rem)] overflow-y-scroll">
+			<div class="flex rounded-container overflow-hidden min-h-36 h-36 preset-filled-primary-200-800">
 				{#if event.img}
 					<img src={event.img} alt="" class="h-full" />
 				{/if}
-				<div class="p-4">
-					<h2 class="h2">{event.name} ({event.country})</h2>
-					<h4 class="h4">{event.venue}</h4>
-					<p>{ISOToTimeDay(event.time)}</p>
+				<div class="p-4 space-y-1">
+					<h5 class="h5 leading-tight">{event.name} ({event.country})</h5>
+					<p class="leading-tight">{event.venue}</p>
+					<p class="text-sm">{ISOToTimeDay(event.time)}</p>
 				</div>
 			</div>
 			{#if links}
