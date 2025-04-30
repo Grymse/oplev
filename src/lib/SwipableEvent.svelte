@@ -3,7 +3,7 @@
 	import ButtonPanel from './ButtonPanel.svelte';
 	import Draggable from './event/Draggable.svelte';
 	import Event from './event/Event.svelte';
-	import type { EventInfo } from './slides';
+	import type { EventInfo } from './utils/slides';
 	const dispatcher = createEventDispatcher();
 
 	interface Props {

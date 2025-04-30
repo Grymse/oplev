@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { preventDefault } from 'svelte/legacy';
-	import type { EventInfo } from '../../slides';
+	import type { EventInfo } from '../../utils/slides';
 	import type { Vector2 } from '../../types/vector';
 	import EventDrawer from '../EventDrawer.svelte';
 

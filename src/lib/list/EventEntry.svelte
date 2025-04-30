@@ -1,7 +1,7 @@
 <script lang="ts">
 	import OpenSlidesModal from '$lib/modal/OpenSlidesModal.svelte';
-	import type { EventInfo, EventReaction } from '$lib/slides';
-	import { ISOToTimeDay } from '$lib/translations';
+	import type { EventInfo, EventReaction } from '$lib/utils/slides';
+	import { ISOToTimeDay } from '$lib/utils/translations';
 	import EventReactionStatus from './EventReactionStatus.svelte';
 	interface Props {
 		event: EventInfo;

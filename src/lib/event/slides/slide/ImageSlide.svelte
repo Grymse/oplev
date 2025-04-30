@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { ImageEventSlide } from '$lib/slides';
+	import type { ImageEventSlide } from '$lib/utils/slides';
 	import AudioPlayer from '../helpers/AudioPlayer.svelte';
 
 	interface Props {

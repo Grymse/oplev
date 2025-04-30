@@ -2,7 +2,7 @@
 	import { createBubbler, stopPropagation, preventDefault } from 'svelte/legacy';
 
 	const bubble = createBubbler();
-	import type { SpotifyEventSlide } from '$lib/slides';
+	import type { SpotifyEventSlide } from '$lib/utils/slides';
 	import { ProgressRing } from '@skeletonlabs/skeleton-svelte';
 
 	interface Props {

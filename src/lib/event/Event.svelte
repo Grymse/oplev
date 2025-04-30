@@ -1,7 +1,7 @@
 <script lang="ts">
 	import OpenEventButton from '$lib/modal/buttons/OpenEventButton.svelte';
-	import type { EventInfo } from '$lib/slides';
-	import { ISOToTimeDay } from '$lib/translations';
+	import type { EventInfo } from '$lib/utils/slides';
+	import { ISOToTimeDay } from '$lib/utils/translations';
 	import type { Vector2 } from '$lib/types/vector';
 	import Slides from './slides/Slides.svelte';
 

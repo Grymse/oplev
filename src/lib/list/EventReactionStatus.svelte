@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { Popover } from '@skeletonlabs/skeleton-svelte';
-	import { eventSystem } from '$lib/events';
-	import BookmarkIcon from '$lib/reactions/BookmarkIcon.svelte';
-	import HeartIcon from '$lib/reactions/HeartIcon.svelte';
-	import LikeIcon from '$lib/reactions/LikeIcon.svelte';
-	import NoneIcon from '$lib/reactions/NoneIcon.svelte';
-	import PassIcon from '$lib/reactions/PassIcon.svelte';
-	import type { EventReaction } from '$lib/slides';
+	import { eventSystem } from '$lib/utils/events';
+	import BookmarkIcon from '$lib/icons/BookmarkIcon.svelte';
+	import HeartIcon from '$lib/icons/HeartIcon.svelte';
+	import LikeIcon from '$lib/icons/LikeIcon.svelte';
+	import NoneIcon from '$lib/icons/NoneIcon.svelte';
+	import PassIcon from '$lib/icons/PassIcon.svelte';
+	import type { EventReaction } from '$lib/utils/slides';
 	import { stopPropagation } from 'svelte/legacy';
 
 	interface Props {

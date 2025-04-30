@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { run } from 'svelte/legacy';
 
-	import type { EventSlide } from '$lib/slides';
+	import type { EventSlide } from '$lib/utils/slides';
 	import SlidesPageBar from './SlidesPageBar.svelte';
 	import Slide from './Slide.svelte';
 	import { createEventDispatcher } from 'svelte';

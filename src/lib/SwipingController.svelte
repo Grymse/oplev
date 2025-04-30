@@ -3,7 +3,7 @@
 	import SwipableEvent from './SwipableEvent.svelte';
 	import Event from './event/Event.svelte';
 	import NoMoreEvents from './event/NoMoreEvents.svelte';
-	import { eventSystem, react } from './events';
+	import { eventSystem, react } from './utils/events';
 
 	const reactedEventIds = Array.from($eventSystem.reactions.keys());
 	const reactedEventCount = reactedEventIds.length;

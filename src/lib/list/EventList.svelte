@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { eventSystem } from '$lib/events';
-	import { containsName } from '$lib/helpers';
-	import type { EventInfo, EventReaction } from '$lib/slides';
+	import { eventSystem } from '$lib/utils/events';
+	import { containsName } from '$lib/utils/helpers';
+	import type { EventInfo, EventReaction } from '$lib/utils/slides';
 	import EventEntry from './EventEntry.svelte';
 
 	type EventInfoWithReaction = EventInfo & { reaction: EventReaction | undefined };

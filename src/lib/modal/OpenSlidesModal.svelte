@@ -1,8 +1,8 @@
 <script lang="ts">
 	import AspectRatio from '$lib/AspectRatio.svelte';
 	import SwipableEvent from '$lib/SwipableEvent.svelte';
-	import { eventSystem } from '$lib/events';
-	import type { EventInfo, EventReaction } from '$lib/slides';
+	import { eventSystem } from '$lib/utils/events';
+	import type { EventInfo, EventReaction } from '$lib/utils/slides';
 	import { Modal } from '@skeletonlabs/skeleton-svelte';
 	import type { Snippet } from 'svelte';
 

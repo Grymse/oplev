@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { EventSlide } from '$lib/slides';
+	import type { EventSlide } from '$lib/utils/slides';
 	import ImageSlide from './slide/ImageSlide.svelte';
 	import LinksSlide from './slide/LinksSlide.svelte';
 	import SpotifySlide from './slide/SpotifySlide.svelte';

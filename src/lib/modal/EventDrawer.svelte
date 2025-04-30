@@ -1,7 +1,7 @@
 <script lang="ts">
 	import LinkIcon from '$lib/event/slides/helpers/LinkIcon.svelte';
-	import type { EventInfo } from '$lib/slides';
-	import { ISOToTimeDay } from '$lib/translations';
+	import type { EventInfo } from '$lib/utils/slides';
+	import { ISOToTimeDay } from '$lib/utils/translations';
 	import type { Snippet } from 'svelte';
     import Drawer from './Drawer.svelte';
 

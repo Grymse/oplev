@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
-	import PassIcon from './reactions/PassIcon.svelte';
-	import HeartIcon from './reactions/HeartIcon.svelte';
-	import LikeIcon from './reactions/LikeIcon.svelte';
+	import PassIcon from './icons/PassIcon.svelte';
+	import HeartIcon from './icons/HeartIcon.svelte';
+	import LikeIcon from './icons/LikeIcon.svelte';
 	const dispatch = createEventDispatcher();
 
 	interface Props {

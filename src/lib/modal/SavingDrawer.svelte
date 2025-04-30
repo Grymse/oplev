@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { eventSystem } from '$lib/events';
-	import { generateURL } from '$lib/urls';
+	import { eventSystem } from '$lib/utils/events';
+	import { generateURL } from '$lib/utils/urls';
 	import { get } from 'svelte/store';
     import Drawer from './Drawer.svelte';
 	import type { Snippet } from 'svelte';
