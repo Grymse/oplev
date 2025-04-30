@@ -42,15 +42,17 @@
 	<div class="absolute">
 		<ProgressRing />
 	</div>
-	<iframe
-		bind:this={iframe}
-		width="1600"
-		height="900"
-		src={`https://www.youtube.com/embed/${youtubeId}?autoplay=${active ? 1 : 0}&controls=0`}
-		title="Embedded artist video"
-		frameborder="0"
-		class="z-[1]"
-		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-		referrerpolicy="strict-origin-when-cross-origin"
-	></iframe>
+	<div class="scale-200 transform">
+		<iframe
+			bind:this={iframe}
+			width="1600"
+			height="900"
+			src={`https://www.youtube.com/embed/${youtubeId}?autoplay=${active ? 1 : 0}&controls=0`}
+			title="Embedded artist video"
+			frameborder="0"
+			class="z-[1]"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin"
+		></iframe>
+	</div>
 </div>
