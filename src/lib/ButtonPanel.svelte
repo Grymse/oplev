@@ -5,7 +5,7 @@
 	import LikeIcon from './icons/LikeIcon.svelte';
 	const dispatch = createEventDispatcher();
 
-	interface Props {
+	type Props = {
 		interactionVisualization: {
 		like: number;
 		pass: number;

@@ -1,8 +1,9 @@
 <script lang="ts">
+	import type { Snippet } from 'svelte';
 	import { preventDefault } from 'svelte/legacy';
 
-	interface Props {
-		children?: import('svelte').Snippet;
+	type Props = {
+		children?: Snippet;
 	}
 
 	let { children }: Props = $props();

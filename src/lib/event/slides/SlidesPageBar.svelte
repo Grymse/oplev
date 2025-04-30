@@ -2,7 +2,7 @@
 	import { createEventDispatcher } from "svelte";
 
     const dispatcher = createEventDispatcher();
-    interface Props {
+    type Props = {
         slideCount?: number;
         currentSlide?: number;
     }

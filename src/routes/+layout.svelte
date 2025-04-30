@@ -1,13 +1,14 @@
 <script lang="ts">
 	import '../app.css';
 	import { initializeEventSystem } from '$lib/utils/events';
-	import SavingDrawer from '$lib/modal/SavingDrawer.svelte';
+	// import SavingDrawer from '$lib/modal/SavingDrawer.svelte';
 	import NavigationBar from '$lib/NavigationBar.svelte';
+	import type { Snippet } from 'svelte';
 
 	initializeEventSystem();
 
-	interface Props {
-		children?: import('svelte').Snippet;
+	type Props = {
+		children?: Snippet;
 	}
 
 	const routes = [

@@ -2,7 +2,7 @@
 	import type { LinksEventSlide } from '$lib/utils/slides';
 	import LinkIcon from '../helpers/LinkIcon.svelte';
 
-	interface Props {
+	type Props = {
 		slide: LinksEventSlide;
 	}
 

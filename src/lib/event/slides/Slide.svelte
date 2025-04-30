@@ -5,7 +5,7 @@
 	import SpotifySlide from './slide/SpotifySlide.svelte';
 	import YoutubeSlide from './slide/YoutubeSlide.svelte';
 
-	interface Props {
+	type Props = {
 		slide: EventSlide;
 		active?: boolean;
 	}

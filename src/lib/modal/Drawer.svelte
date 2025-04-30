@@ -2,7 +2,7 @@
     import { Modal } from '@skeletonlabs/skeleton-svelte';
 	import type { Snippet } from 'svelte';
 
-    interface Props {
+    type Props = {
         trigger: Snippet;
         content: Snippet<[() => void]>;
 	}

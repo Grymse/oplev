@@ -2,7 +2,7 @@
 	import type { ImageEventSlide } from '$lib/utils/slides';
 	import AudioPlayer from '../helpers/AudioPlayer.svelte';
 
-	interface Props {
+	type Props = {
 		slide: ImageEventSlide;
 		active?: boolean;
 	}

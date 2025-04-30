@@ -1,5 +1,5 @@
 <script lang="ts">
-    interface Props {
+    type Props = {
         max: number;
         value: number;
         vertical?: boolean;

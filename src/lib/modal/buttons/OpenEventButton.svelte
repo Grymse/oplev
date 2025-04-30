@@ -4,9 +4,9 @@
 	import type { Vector2 } from '../../types/vector';
 	import EventDrawer from '../EventDrawer.svelte';
 
-	interface Props {
+	type Props = {
 		event: EventInfo;
-		children?: import('svelte').Snippet;
+		children?: Snippet;
 	}
 
 	let { event, children }: Props = $props();

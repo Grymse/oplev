@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onDestroy, onMount, type Snippet } from 'svelte';
-	interface Props {
+	type Props = {
 		ratio: number;
 		children: Snippet;
 	}

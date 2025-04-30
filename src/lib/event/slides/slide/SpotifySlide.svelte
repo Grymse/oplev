@@ -5,7 +5,7 @@
 	import type { SpotifyEventSlide } from '$lib/utils/slides';
 	import { ProgressRing } from '@skeletonlabs/skeleton-svelte';
 
-	interface Props {
+	type Props = {
 		slide: SpotifyEventSlide;
 	}
 

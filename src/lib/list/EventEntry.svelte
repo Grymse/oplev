@@ -3,7 +3,7 @@
 	import type { EventInfo, EventReaction } from '$lib/utils/slides';
 	import { ISOToTimeDay } from '$lib/utils/translations';
 	import EventReactionStatus from './EventReactionStatus.svelte';
-	interface Props {
+	type Props = {
 		event: EventInfo;
 		reaction: EventReaction | undefined;
 	}

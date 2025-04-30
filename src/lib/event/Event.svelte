@@ -5,7 +5,7 @@
 	import type { Vector2 } from '$lib/types/vector';
 	import Slides from './slides/Slides.svelte';
 
-	interface Props {
+	type Props = {
 		event: EventInfo;
 		active?: boolean;
 	}

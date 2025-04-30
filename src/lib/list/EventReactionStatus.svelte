@@ -9,7 +9,7 @@
 	import type { EventReaction } from '$lib/utils/slides';
 	import { stopPropagation } from 'svelte/legacy';
 
-	interface Props {
+	type Props = {
 		reaction: EventReaction | undefined;
 		eventId: number;
 	}

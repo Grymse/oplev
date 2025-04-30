@@ -6,7 +6,7 @@
 	import Slide from './Slide.svelte';
 	import { createEventDispatcher } from 'svelte';
 	
-	interface Props {
+	type Props = {
 		active?: boolean;
 		slides: EventSlide[];
 	}

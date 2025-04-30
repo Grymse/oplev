@@ -5,7 +5,7 @@
 	import type { Snippet } from 'svelte';
     import Drawer from './Drawer.svelte';
 
-	interface Props {
+	type Props = {
 		event: EventInfo;
 		trigger: Snippet;
 	}

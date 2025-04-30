@@ -2,7 +2,7 @@
 	import type { YouTubeEventSlide } from '$lib/utils/slides';
 	import { ProgressRing } from '@skeletonlabs/skeleton-svelte';
 	import { onDestroy, onMount } from 'svelte';
-	interface Props {
+	type Props = {
 		slide: YouTubeEventSlide;
 		active?: boolean;
 	}

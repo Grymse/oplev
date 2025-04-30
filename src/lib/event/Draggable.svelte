@@ -2,8 +2,8 @@
 	import type { Vector2, Vector2WithRot } from '$lib/types/vector';
 	import { onDestroy, onMount } from 'svelte';
 	import { createEventDispatcher } from 'svelte';
-	interface Props {
-		children?: import('svelte').Snippet;
+	type Props = {
+		children?: Snippet;
 	}
 
 	let { children }: Props = $props();

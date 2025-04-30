@@ -6,7 +6,7 @@
 	import type { EventInfo } from './utils/slides';
 	const dispatcher = createEventDispatcher();
 
-	interface Props {
+	type Props = {
 		event: EventInfo;
 	}
 

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { stopPropagation } from 'svelte/legacy';
 
-	interface Props {
+	type Props = {
 		source: string;
 		active?: boolean;
 	}

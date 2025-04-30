@@ -1,5 +1,5 @@
 <script lang="ts">
-	import AspectRatio from '$lib/AspectRatio.svelte';
+	import AspectRatio from '$lib/ui/AspectRatio.svelte';
 	import SwipableEvent from '$lib/SwipableEvent.svelte';
 	import { eventSystem } from '$lib/utils/events';
 	import type { EventInfo, EventReaction } from '$lib/utils/slides';
@@ -15,7 +15,7 @@
 
 	let drawerState = $state(false);
 
-	interface Props {
+	type Props = {
 		event: EventInfo;
 		trigger: Snippet;
 	}
