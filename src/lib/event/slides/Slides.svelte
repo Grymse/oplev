@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { run } from 'svelte/legacy';
-
 	import type { EventSlide } from '$lib/utils/slides';
 	import SlidesPageBar from './SlidesPageBar.svelte';
 	import Slide from './Slide.svelte';
@@ -15,11 +13,6 @@
 	let { active = false, slides, onslideChange }: Props = $props();
 	let currentSlide = $state(0);
 	let initMousePos : Vector2 = { x: 0, y: 0 };
-
-	function reset(slides: EventSlide[]) {
-		currentSlide = 0;
-	}
-
 
 	// store the initial mouse position. This is used to determine if the user is dragging the slide
 	function clickInit(e: MouseEvent) {
@@ -49,10 +42,12 @@
 	function prevSlide() {
 		currentSlide = currentSlide === 0 ? 0 : currentSlide - 1;
 	}
-	run(() => {
-		reset(slides);
+	$effect(() => {
+		slides; // include to enforce reactivity
+		currentSlide = 0;
 	});
-	run(() => {
+
+	$effect(() => {
 		onslideChange(currentSlide);
 	});
 </script>
@@ -60,10 +55,12 @@
 <div class="w-full h-full relative select-none" role="none" onmousedown={clickInit}>
 	{#if active}
 		<button
+			aria-label="Previous slide"
 			class="w-[35%] z-10 left-0 absolute h-full duration-100 active:bg-gradient-to-r active:from-white active:to-transparent opacity-15"
 			onclick={onLeftSideClick}
 		></button>
 		<button
+			aria-label="Next slide"
 			class="w-[35%] z-10 right-0 absolute h-full duration-100 active:bg-gradient-to-l active:from-white active:to-transparent opacity-15"
 			onclick={onRightSideClick}
 		></button>
