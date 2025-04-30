@@ -4,6 +4,7 @@
 	import Event from './event/Event.svelte';
 	import NoMoreEvents from './event/NoMoreEvents.svelte';
 	import { eventSystem, react } from './utils/events';
+	import type { EventReaction } from './utils/slides';
 
 	const reactedEventIds = Array.from($eventSystem.reactions.keys());
 	const reactedEventCount = reactedEventIds.length;
@@ -16,21 +17,11 @@
 	let currentEvent = $derived(events[index]);
 	let nextEvent = $derived(events[index + 1]);
 
-	function like() {
+	function onreact(reaction: EventReaction) {
 		setTimeout(() => {
-			react(currentEvent, 'like');
+			react(currentEvent, reaction);
 			index++;
 		}, 50);
-	}
-
-	function pass() {
-		react(currentEvent, 'pass');
-		index++;
-	}
-
-	function heart() {
-		react(currentEvent, 'heart');
-		index++;
 	}
 </script>
 
@@ -40,7 +31,7 @@
 
 <div class="h-full w-full relative">
 	{#if currentEvent}
-		<SwipableEvent event={currentEvent} on:heart={heart} on:like={like} on:pass={pass} />
+		<SwipableEvent event={currentEvent} {onreact} />
 	{:else}
 		<NoMoreEvents />
 	{/if}

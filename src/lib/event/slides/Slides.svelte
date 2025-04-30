@@ -4,18 +4,17 @@
 	import type { EventSlide } from '$lib/utils/slides';
 	import SlidesPageBar from './SlidesPageBar.svelte';
 	import Slide from './Slide.svelte';
-	import { createEventDispatcher } from 'svelte';
+	import type { Vector2 } from '$lib/utils/vectors';
 	
 	type Props = {
 		active?: boolean;
 		slides: EventSlide[];
+		onslideChange: (index: number) => void;
 	}
 
-	let { active = false, slides }: Props = $props();
+	let { active = false, slides, onslideChange }: Props = $props();
 	let currentSlide = $state(0);
-	let initMousePos = { x: 0, y: 0 };
-
-	const dispatch = createEventDispatcher();
+	let initMousePos : Vector2 = { x: 0, y: 0 };
 
 	function reset(slides: EventSlide[]) {
 		currentSlide = 0;
@@ -54,7 +53,7 @@
 		reset(slides);
 	});
 	run(() => {
-		dispatch('slideChange', { index: currentSlide });
+		onslideChange(currentSlide);
 	});
 </script>
 
@@ -72,8 +71,7 @@
 	{/if}
 	<SlidesPageBar
 		slideCount={slides.length}
-		currentSlide={currentSlide}
-		on:barClick={(e) => (currentSlide = e.detail.index)}
+		bind:currentSlide={currentSlide}
 	/>
 	<Slide {active} slide={slides[currentSlide]} />
 </div>

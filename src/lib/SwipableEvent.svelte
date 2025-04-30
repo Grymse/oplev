@@ -1,30 +1,30 @@
 <script lang="ts">
-	import { createEventDispatcher } from 'svelte';
 	import ButtonPanel from './ButtonPanel.svelte';
 	import Draggable from './event/Draggable.svelte';
 	import Event from './event/Event.svelte';
-	import type { EventInfo } from './utils/slides';
-	const dispatcher = createEventDispatcher();
+	import type { EventInfo, EventReaction } from './utils/slides';
+	import type { Vector2 } from './utils/vectors';
 
 	type Props = {
 		event: EventInfo;
+		onreact: (reaction: EventReaction) => void;
 	}
 
-	let { event }: Props = $props();
+	let { event, onreact }: Props = $props();
 
-	function onDragging(e: CustomEvent<{ x: number; y: number }>) {
-		interactionVisualization = toInteractionPercentage(e.detail);
+	function ondragging(vector: Vector2) {
+		interactionVisualization = toInteractionPercentage(vector);
 	}
 
-	function onDragEnd(e: CustomEvent<{ x: number; y: number }>) {
-		const interaction = toInteractionPercentage(e.detail);
+	function ondragEnd(vector: Vector2) {
+		const interaction = toInteractionPercentage(vector);
 
 		if (interaction.like > 0.5) {
-			like();
+			onreact('like');
 		} else if (interaction.pass > 0.5) {
-			pass();
+			onreact('pass');
 		} else if (interaction.heart > 0.5) {
-			heart();
+			onreact('heart');
 		}
 
 		interactionVisualization = {
@@ -47,23 +47,11 @@
 			heart: Math.max(0, Math.min(1, -displacement.y * 5))
 		};
 	}
-
-	const like = () => {
-		dispatcher('like');
-	};
-	
-	const heart = () => {
-		dispatcher('heart');
-	};
-
-	const pass = () => {
-		dispatcher('pass');
-	};
 </script>
 
 <div class="h-full w-full relative">
-	<Draggable on:dragging={onDragging} on:dragend={onDragEnd}>
+	<Draggable {ondragging} {ondragEnd}>
 		<Event {event} active />
 	</Draggable>
-	<ButtonPanel {interactionVisualization} on:like={like} on:heart={heart} on:pass={pass} />
+	<ButtonPanel {interactionVisualization} {onreact} />
 </div>

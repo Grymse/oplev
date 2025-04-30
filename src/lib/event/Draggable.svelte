@@ -1,14 +1,14 @@
 <script lang="ts">
-	import type { Vector2, Vector2WithRot } from '$lib/types/vector';
-	import { onDestroy, onMount } from 'svelte';
-	import { createEventDispatcher } from 'svelte';
+	import { divide, divideVectors, type Vector2, type Vector2WithRot } from '$lib/utils/vectors';
+	import { onDestroy, onMount, type Snippet } from 'svelte';
 	type Props = {
 		children?: Snippet;
+		ondragging: (offset: Vector2) => void;
+		ondragEnd: (offset: Vector2) => void;
 	}
 
-	let { children }: Props = $props();
+	let { children, ondragEnd, ondragging }: Props = $props();
 
-	const dispatch = createEventDispatcher();
 	let divContainer: HTMLDivElement | undefined = $state();
 
 	let isDragging = false;
@@ -29,12 +29,12 @@
 				y: deltaY,
 				rot: deltaX / 40
 			};
-			dispatch('dragging', offsetToPercentage(offsetPos));
+			ondragging(offsetToPercentage(offsetPos));
 		}
 	};
 
 	const handleDragEnd = () => {
-		dispatch('dragend', offsetToPercentage(offsetPos));
+		ondragEnd(offsetToPercentage(offsetPos));
 		isDragging = false;
 		offsetPos = {
 			x: 0,
@@ -43,12 +43,15 @@
 		};
 	};
 
-	function offsetToPercentage(offset: Vector2WithRot) {
+	function offsetToPercentage(offset: Vector2WithRot) : Vector2 {
 		if (!divContainer) return { x: 0, y: 0 };
-		return {
-			x: offset.x / divContainer.clientWidth,
-			y: offset.y / divContainer.clientHeight
-		};
+
+		const clientVector = {
+			x: divContainer.clientWidth,
+			y: divContainer.clientHeight
+		}
+
+		return divideVectors(offset, clientVector);
 	}
 
 	onMount(() => {

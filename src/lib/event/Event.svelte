@@ -2,7 +2,7 @@
 	import OpenEventDrawerButton from '$lib/floating-ui/drawer/OpenEventDrawerButton.svelte';
 	import type { EventInfo } from '$lib/utils/slides';
 	import { ISOToTimeDay } from '$lib/utils/translations';
-	import type { Vector2 } from '$lib/types/vector';
+	import type { Vector2 } from '$lib/utils/vectors';
 	import Slides from './slides/Slides.svelte';
 
 	type Props = {
@@ -39,7 +39,7 @@
 		</div>
 	</OpenEventDrawerButton>
 
-	<Slides slides={event.slides} {active} on:slideChange={randomizeBackgroundColor} />
+	<Slides slides={event.slides} {active} onslideChange={randomizeBackgroundColor} />
 </div>
 
 <style>

@@ -1,38 +1,26 @@
 <script lang="ts">
-	import { createEventDispatcher } from 'svelte';
 	import PassIcon from './icons/PassIcon.svelte';
 	import HeartIcon from './icons/HeartIcon.svelte';
 	import LikeIcon from './icons/LikeIcon.svelte';
-	const dispatch = createEventDispatcher();
+	import type { EventReaction } from './utils/slides';
 
 	type Props = {
 		interactionVisualization: {
-		like: number;
-		pass: number;
-		heart: number;
-	};
+			like: number;
+			pass: number;
+			heart: number;
+		};
+		onreact: (reaction: EventReaction) => void;
 	}
 
-	let { interactionVisualization }: Props = $props();
-
-	function like() {
-		dispatch('like');
-	}
-
-	function heart() {
-		dispatch('heart');
-	}
-
-	function pass() {
-		dispatch('pass');
-	}
+	let { interactionVisualization, onreact }: Props = $props();
 </script>
 
 <div class="relative w-full z-10">
 	<div class="absolute flex w-full justify-center gap-6 h-16 -mt-6 items-center">
 		<!-- X / Pass -->
 		<button
-			onclick={pass}
+			onclick={() => onreact('pass')}
 			type="button"
 			class="btn-icon btn-icon-lg h-16 preset-filled-tertiary-500"
 			style="transform: scale({interactionVisualization.pass +
@@ -44,7 +32,7 @@
 
 		<!-- HEART -->
 		<button
-			onclick={heart}
+			onclick={() => onreact('heart')}
 			type="button"
 			class="btn-icon btn-icon-lg w-20 h-20 preset-filled-primary-500"
 			style="transform: scale({interactionVisualization.heart +
@@ -55,7 +43,7 @@
 
 		<!-- LIKE -->
 		<button
-			onclick={like}
+			onclick={() => onreact('like')}
 			type="button"
 			class="btn-icon btn-icon-lg duration-0 h-16 preset-filled-secondary-500"
 			style="transform: scale({interactionVisualization.like +

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Vector2 } from '$lib/types/vector';
+	import { type Vector2, distance } from '$lib/utils/vectors';
 	import type { Snippet } from 'svelte';
 
 	type Props = {
@@ -12,19 +12,21 @@
 	let startPos: Vector2;
 
 	function handleStart(e: MouseEvent | TouchEvent) {
-		const point = e instanceof MouseEvent ? e : e.touches[0];
-		startPos = { x: point.clientX, y: point.clientY };
+		startPos = getPoint(e);
+	}
+
+	function getPoint(e: MouseEvent | TouchEvent) {
+		const point = e instanceof MouseEvent ? e : e.changedTouches[0];
+		return { x: point.clientX, y: point.clientY };
 	}
 
 	function handleEnd(e: MouseEvent | TouchEvent) {
 		e.stopPropagation();
-		const point = e instanceof MouseEvent ? e : e.changedTouches[0];
-		const deltaX = point.clientX - startPos.x;
-		const deltaY = point.clientY - startPos.y;
-		const distance = Math.sqrt(deltaX ** 2 + deltaY ** 2);
-		if (distance <= maxDragPx) {
-			openEventDrawer(e);
-		}
+		const dragDistance = distance(getPoint(e), startPos);
+		
+		if (maxDragPx < dragDistance) return;
+		
+		openEventDrawer(e);
 	}
 
 	function openEventDrawer(e: MouseEvent | TouchEvent) {
