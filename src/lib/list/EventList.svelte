@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { eventSystem } from '$lib/events';
-	import { containsName } from '$lib/helpers';
-	import type { EventInfo, EventReaction } from '$lib/slides';
+	import { eventSystem } from '$lib/utils/events';
+	import { containsName } from '$lib/utils/helpers';
+	import type { EventInfo, EventReaction } from '$lib/utils/slides';
 	import EventEntry from './EventEntry.svelte';
 
 	type EventInfoWithReaction = EventInfo & { reaction: EventReaction | undefined };
@@ -25,17 +25,18 @@
 	const sortByTime = (a: EventInfoWithReaction, b: EventInfoWithReaction) =>
 		new Date(a.time).getTime() - new Date(b.time).getTime();
 
-	let sorter = sortByRank;
+	let sorter = $state(sortByRank);
 
-	$: reactedEvents = $eventSystem.events
-		.map((event) => ({
-			...event,
-			reaction: $eventSystem.reactions.get(event.id)
-		}))
-		.filter((e) => containsName([...e.name.split(' '), ...e.venue.split(' '), e.country], search))
-		.sort(sorter);
-
-	let search = '';
+	let search = $state('');
+	let reactedEvents = $derived(
+		$eventSystem.events
+			.map((event) => ({
+				...event,
+				reaction: $eventSystem.reactions.get(event.id)
+			}))
+			.filter((e) => containsName([...e.name.split(' '), ...e.venue.split(' '), e.country], search))
+			.sort(sorter)
+	);
 </script>
 
 <div class="mb-4 flex justify-between">
@@ -50,12 +51,12 @@
 	</label>
 	<label class="label flex flex-col">
 		<span>Search</span>
-		<input type="text" class="input h-10 max-w-60 select" bind:value={search} />
+		<input type="text" class="input select h-10 max-w-60" bind:value={search} />
 	</label>
 </div>
 
-<ul class="gap-4 flex flex-col">
-	{#each reactedEvents as event}
+<ul class="flex flex-col gap-4">
+	{#each reactedEvents as event (event.id)}
 		<EventEntry {event} reaction={event.reaction} />
 	{/each}
 </ul>

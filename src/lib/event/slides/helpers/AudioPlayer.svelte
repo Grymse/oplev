@@ -1,20 +1,29 @@
 <script lang="ts">
-	export let source: string;
-	export let active: boolean = false;
-	let isPlaying = true;
-	let audio: HTMLAudioElement;
+	type Props = {
+		source: string;
+		active?: boolean;
+	};
 
-	function toggleAudio() {
+	let { source, active = false }: Props = $props();
+	let isPlaying = $state(true);
+	let audio: HTMLAudioElement | undefined = $state();
+
+	function toggleAudio(e: MouseEvent) {
+		e.preventDefault();
+		e.stopPropagation();
 		if (isPlaying) {
-			audio.pause();
+			audio?.pause();
 		} else {
-			audio.play();
+			audio?.play();
 		}
 		isPlaying = !isPlaying;
 	}
 </script>
 
-<button on:click|stopPropagation={toggleAudio} class="btn-icon variant-filled">
+<button
+	onclick={toggleAudio}
+	class="btn-icon btn-icon-lg preset-filled-surface-100-900 rounded-full"
+>
 	{#if isPlaying}
 		<!-- SOUND -->
 		<svg
@@ -23,7 +32,7 @@
 			viewBox="0 0 24 24"
 			stroke-width="2"
 			stroke="currentColor"
-			class="w-6 h-6"
+			class="h-6 w-6"
 		>
 			<path
 				stroke-linecap="round"
@@ -39,7 +48,7 @@
 			viewBox="0 0 24 24"
 			stroke-width="2"
 			stroke="currentColor"
-			class="w-6 h-6"
+			class="h-6 w-6"
 		>
 			<path
 				stroke-linecap="round"

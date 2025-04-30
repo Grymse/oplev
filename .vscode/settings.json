@@ -1,7 +1,5 @@
 {
-	"prettier.documentSelectors": [
-		"**/*.svelte"
-	],
+	"prettier.documentSelectors": ["**/*.svelte"],
 	"tailwindCSS.classAttributes": [
 		"class",
 		"accent",
@@ -116,5 +114,10 @@
 		"transition",
 		"width",
 		"zIndex"
-	]
+	],
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "always"
+	},
+	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "svelte"]
 }

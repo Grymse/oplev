@@ -1,30 +1,39 @@
 <script lang="ts">
-	import OpenSlidesButton from '$lib/drawer/buttons/OpenSlidesButton.svelte';
-	import type { EventInfo, EventReaction } from '$lib/slides';
-	import { ISOToTimeDay } from '$lib/translations';
-	import EventReactionStatus from './EventReactionStatus.svelte';
-	export let event: EventInfo;
-	export let reaction: EventReaction | undefined;
+	import OpenSlidesModal from '$lib/floating-ui/modal/OpenSlidesModal.svelte';
+	import type { EventInfo, EventReaction } from '$lib/utils/slides';
+	import { ISOToTimeDay } from '$lib/utils/translations';
+	import EventReactionPopover from '../floating-ui/popover/EventReactionPopover.svelte';
+
+	type Props = {
+		event: EventInfo;
+		reaction: EventReaction | undefined;
+	};
+
+	let { event, reaction }: Props = $props();
 </script>
 
 <li
-	class="relative rounded-container-token overflow-hidden min-h-24 h-24"
+	class="rounded-container relative h-24 min-h-24 overflow-hidden"
 	class:bg-purple-800={!reaction}
 	class:bg-primary-800={reaction === 'heart'}
 	class:bg-secondary-800={reaction === 'like'}
 	class:bg-tertiary-800={reaction === 'pass'}
 >
-	<OpenSlidesButton {event}>
-		<div class="w-full h-full flex">
-			{#if event.img}
-				<img src={event.img} alt="" class="h-full max-w-24" />
-			{/if}
-			<div class="p-4 py-3">
-				<h3 class="h3">{event.name} ({event.country})</h3>
-				<h5 class="h5">{event.venue}</h5>
-				<p>{ISOToTimeDay(event.time)}</p>
+	<OpenSlidesModal {event}>
+		{#snippet trigger()}
+			<div class="flex h-full w-full items-center justify-between">
+				<div class="flex">
+					{#if event.img}
+						<img src={event.img} alt="" class="h-full max-w-24" />
+					{/if}
+					<div class="p-4 py-3 text-left">
+						<h5 class="h5">{event.name} ({event.country})</h5>
+						<p>{event.venue}</p>
+						<p class="text-amber-500">{ISOToTimeDay(event.time)}</p>
+					</div>
+				</div>
+				<EventReactionPopover eventId={event.id} {reaction} />
 			</div>
-		</div>
-		<EventReactionStatus eventId={event.id} {reaction} />
-	</OpenSlidesButton>
+		{/snippet}
+	</OpenSlidesModal>
 </li>

@@ -1,24 +1,18 @@
 <script lang="ts">
-	import { onDestroy, onMount } from 'svelte';
-	import { createEventDispatcher } from 'svelte';
+	import { divideVectors, type Vector2, type Vector2WithRot } from '$lib/utils/vectors';
+	import { onDestroy, onMount, type Snippet } from 'svelte';
+	type Props = {
+		children?: Snippet;
+		ondragging: (offset: Vector2) => void;
+		ondragEnd: (offset: Vector2) => void;
+	};
 
-	const dispatch = createEventDispatcher();
-	let divContainer: HTMLDivElement;
-
-	type Vector2 = { x: number; y: number };
-	type Vector2WithRot = { rot: number } & Vector2;
+	let { children, ondragEnd, ondragging }: Props = $props();
+	let divContainer: HTMLDivElement | undefined = $state();
 
 	let isDragging = false;
-	let offsetPos: Vector2WithRot = { x: 0, y: 0, rot: 0 };
+	let offsetPos: Vector2WithRot = $state({ x: 0, y: 0, rot: 0 });
 	let startPos: Vector2 = { x: 0, y: 0 };
-
-	const handleMouseDown = (e: MouseEvent) => {
-		isDragging = true;
-		startPos = {
-			x: e.clientX,
-			y: e.clientY
-		};
-	};
 
 	const setDraggingStart = (pos: Vector2) => {
 		isDragging = true;
@@ -34,12 +28,12 @@
 				y: deltaY,
 				rot: deltaX / 40
 			};
-			dispatch('dragging', offsetToPercentage(offsetPos));
+			ondragging(offsetToPercentage(offsetPos));
 		}
 	};
 
 	const handleDragEnd = () => {
-		dispatch('dragend', offsetToPercentage(offsetPos));
+		ondragEnd(offsetToPercentage(offsetPos));
 		isDragging = false;
 		offsetPos = {
 			x: 0,
@@ -48,11 +42,15 @@
 		};
 	};
 
-	function offsetToPercentage(offset: Vector2WithRot) {
-		return {
-			x: offset.x / divContainer.clientWidth,
-			y: offset.y / divContainer.clientHeight
+	function offsetToPercentage(offset: Vector2WithRot): Vector2 {
+		if (!divContainer) return { x: 0, y: 0 };
+
+		const clientVector = {
+			x: divContainer.clientWidth,
+			y: divContainer.clientHeight
 		};
+
+		return divideVectors(offset, clientVector);
 	}
 
 	onMount(() => {
@@ -69,25 +67,23 @@
 </script>
 
 <div
-	role="button"
-	aria-roledescription="card"
-	aria-label="card"
-	tabindex="-1000"
-	class="w-full h-full relative overflow-visible"
-	on:mousemove={(e) => setDraggingPos({ x: e.clientX, y: e.clientY })}
-	on:touchmove={(e) => setDraggingPos({ x: e.touches[0].clientX, y: e.touches[0].clientY })}
+	role="application"
+	class="relative h-full w-full overflow-visible"
+	onmousemove={(e) => setDraggingPos({ x: e.clientX, y: e.clientY })}
+	ontouchmove={(e) => setDraggingPos({ x: e.touches[0].clientX, y: e.touches[0].clientY })}
 >
 	<div
-		role="button"
+		role="slider"
 		aria-roledescription="card"
 		aria-label="card"
 		tabindex="0"
-		class="w-full h-full absolute"
+		aria-valuenow={offsetPos.x}
+		class="absolute h-full w-full"
 		style={`transform: translate(${offsetPos.x}px, ${offsetPos.y}px) rotate(${offsetPos.rot}deg);`}
-		on:mousedown={(e) => setDraggingStart({ x: e.clientX, y: e.clientY })}
-		on:touchstart={(e) => setDraggingStart({ x: e.touches[0].clientX, y: e.touches[0].clientY })}
+		onmousedown={(e) => setDraggingStart({ x: e.clientX, y: e.clientY })}
+		ontouchstart={(e) => setDraggingStart({ x: e.touches[0].clientX, y: e.touches[0].clientY })}
 		bind:this={divContainer}
 	>
-		<slot />
+		{@render children?.()}
 	</div>
 </div>
