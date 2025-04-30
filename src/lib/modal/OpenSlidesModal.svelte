@@ -28,6 +28,7 @@
 <Modal
 open={drawerState}
 onOpenChange={(e) => (drawerState = e.open)}
+triggerBase="w-full h-full"
 contentBase="bg-surface-100-900 w-full h-full bg-transparent"
 positionerClasses="flex items-end"
 trigger={trigger}

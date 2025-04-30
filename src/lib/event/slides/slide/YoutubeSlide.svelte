@@ -16,8 +16,8 @@
 
 	let youtubeId = $derived(getYoutubeId(slide.youtube));
 
-	let div: HTMLDivElement = $state();
-	let iframe: HTMLIFrameElement = $state();
+	let div: HTMLDivElement | undefined = $state();
+	let iframe: HTMLIFrameElement | undefined = $state();
 	let resizeInterval: NodeJS.Timeout;
 
 	// Get size of div and set iframe to that size. Update size on window resize.
@@ -51,8 +51,10 @@
 		title="Embedded video"
 		frameborder="0"
 		class="z-[1]"
-		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+		allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 		referrerpolicy="strict-origin-when-cross-origin"
 		allowfullscreen
 	></iframe>
+
+	<!-- TODO: Add autoplay; to allow in iframe -->
 </div>

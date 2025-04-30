@@ -9,7 +9,7 @@
 	let { children }: Props = $props();
 
 	const dispatch = createEventDispatcher();
-	let divContainer: HTMLDivElement = $state();
+	let divContainer: HTMLDivElement | undefined = $state();
 
 	let isDragging = false;
 	let offsetPos: Vector2WithRot = $state({ x: 0, y: 0, rot: 0 });
@@ -44,6 +44,7 @@
 	};
 
 	function offsetToPercentage(offset: Vector2WithRot) {
+		if (!divContainer) return { x: 0, y: 0 };
 		return {
 			x: offset.x / divContainer.clientWidth,
 			y: offset.y / divContainer.clientHeight

@@ -20,17 +20,19 @@
 >
 	<OpenSlidesModal {event}>
 		{#snippet trigger()}
-			<div class="w-full h-full flex">
+		<div class="w-full h-full flex items-center justify-between">
+			<div class="flex">
 				{#if event.img}
 					<img src={event.img} alt="" class="h-full max-w-24" />
 				{/if}
-				<div class="p-4 py-3">
-					<h3 class="h3">{event.name} ({event.country})</h3>
-					<h5 class="h5">{event.venue}</h5>
-					<p>{ISOToTimeDay(event.time)}</p>
+				<div class="p-4 py-3 text-left">
+					<h5 class="h5">{event.name} ({event.country})</h5>
+					<p>{event.venue}</p>
+					<p class="text-amber-500">{ISOToTimeDay(event.time)}</p>
 				</div>
 			</div>
+			<EventReactionStatus eventId={event.id} {reaction} />
+		</div>
 		{/snippet}
-		<!-- <EventReactionStatus eventId={event.id} {reaction} /> -->
 	</OpenSlidesModal>
 </li>
