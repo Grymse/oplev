@@ -1,7 +1,4 @@
 <script lang="ts">
-	import { createBubbler, stopPropagation, preventDefault } from 'svelte/legacy';
-
-	const bubble = createBubbler();
 	import type { SpotifyEventSlide } from '$lib/utils/slides';
 	import { ProgressRing } from '@skeletonlabs/skeleton-svelte';
 
@@ -17,9 +14,9 @@
 	<div
 		role="button"
 		tabindex="-1"
-		onkeypress={stopPropagation(bubble('keypress'))}
+		onkeypress={e => e.stopPropagation()}
 		aria-details="Spotify preview of artist"
-		onclick={stopPropagation(preventDefault(bubble('click')))}
+		onclick={e => {e.stopPropagation(); e.preventDefault()}}
 		class="z-30 bg-[#242424] rounded-xl w-[75%] h-[60%] flex justify-center items-center"
 	>
 		<iframe

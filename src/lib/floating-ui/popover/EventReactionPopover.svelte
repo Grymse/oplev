@@ -32,11 +32,6 @@
 			return e;
 		});
 	}
-
-	function openPopover(e: MouseEvent | KeyboardEvent | TouchEvent) {
-		e.stopPropagation();
-		openState = true;
-	}
 </script>
 
 <PopoverBase

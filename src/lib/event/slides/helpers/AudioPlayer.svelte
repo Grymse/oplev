@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { stopPropagation } from 'svelte/legacy';
-
 	type Props = {
 		source: string;
 		active?: boolean;
@@ -8,19 +6,20 @@
 
 	let { source, active = false }: Props = $props();
 	let isPlaying = $state(true);
-	let audio: HTMLAudioElement = $state();
+	let audio: HTMLAudioElement | undefined = $state();
 
-	function toggleAudio() {
+	function toggleAudio(e: MouseEvent) {
+		e.stopPropagation();
 		if (isPlaying) {
-			audio.pause();
+			audio?.pause();
 		} else {
-			audio.play();
+			audio?.play();
 		}
 		isPlaying = !isPlaying;
 	}
 </script>
 
-<button onclick={stopPropagation(toggleAudio)} class="btn-icon preset-filled">
+<button onclick={toggleAudio} class="btn-icon preset-filled">
 	{#if isPlaying}
 		<!-- SOUND -->
 		<svg
