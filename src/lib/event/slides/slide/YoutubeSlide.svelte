@@ -17,7 +17,7 @@
 	let youtubeId = $derived(getYoutubeId(slide.youtube));
 	let div: HTMLDivElement | undefined = $state();
 	let iframe: HTMLIFrameElement | undefined = $state();
-	let resizeInterval: NodeJS.Timeout;
+	let resizeInterval: ReturnType<typeof setInterval>;
 
 	// Get size of div and set iframe to that size. Update size on window resize.
 	const setIframeSize = () => {

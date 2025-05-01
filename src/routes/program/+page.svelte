@@ -1,5 +1,7 @@
 <script lang="ts">
-	import EventList from '$lib/list/EventList.svelte';
+	import EventList from '$lib/event/list/EventList.svelte';
 </script>
 
-<EventList />
+<main class="overflow-x-hidden overflow-y-scroll">
+	<EventList />
+</main>

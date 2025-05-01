@@ -48,8 +48,6 @@
 </SavingDrawer> -->
 
 <div class="grid h-svh w-screen grid-rows-[1fr_auto]">
-	<main class="overflow-x-hidden overflow-y-scroll">
-		{@render children?.()}
-	</main>
+	{@render children?.()}
 	<NavigationBar {routes} />
 </div>

@@ -1,6 +1,5 @@
 <script lang="ts">
 	import ButtonPanel from './ButtonPanel.svelte';
-	import Draggable from './Draggable.svelte';
 	import Event from './Event.svelte';
 	import type { EventInfo, EventReaction } from '$lib/utils/slides';
 	import type { Vector2 } from '$lib/utils/vectors';
@@ -50,8 +49,8 @@
 </script>
 
 <div class="relative h-full w-full">
-	<Draggable {ondragging} {ondragEnd}>
-		<Event {event} active />
-	</Draggable>
+	<!-- <Draggable {ondragging} {ondragEnd}> -->
+	<Event {event} active />
+	<!-- </Draggable> -->
 	<ButtonPanel {buttonScaling} {onreact} />
 </div>
