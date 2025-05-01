@@ -55,7 +55,7 @@
 	</label>
 </div>
 
-<ul class="flex flex-col gap-4">
+<ul class="flex flex-col gap-4 p-4">
 	{#each reactedEvents as event (event.id)}
 		<EventEntry {event} reaction={event.reaction} />
 	{/each}

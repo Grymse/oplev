@@ -3,6 +3,8 @@
 	import SwipingController from '$lib/event/SwipingController.svelte';
 </script>
 
-<AspectRatio ratio={10 / 16} offsetMaxHeight={-50}>
-	<SwipingController />
-</AspectRatio>
+<main class="overflow-x-hidden overflow-y-scroll">
+	<AspectRatio ratio={10 / 16} offsetMaxHeight={-50}>
+		<SwipingController />
+	</AspectRatio>
+</main>
