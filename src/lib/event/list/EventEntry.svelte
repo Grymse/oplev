@@ -16,13 +16,13 @@
 	<OpenSlidesModal {event}>
 		{#snippet trigger()}
 			<div class="grid h-full w-full grid-cols-[1fr_48px]">
-				<div class="flex overflow-hidden">
+				<div class="flex items-center overflow-hidden">
 					{#if event.img}
-						<img src={event.img} alt="" class="h-16 w-16 object-cover" />
+						<img src={event.img} alt="" class="h-14 w-14 object-cover" />
 					{/if}
-					<div class="p-4 py-2 text-left">
-						<p class="font-medium text-nowrap">{event.name} ({event.country})</p>
-						<p class="text-secondary-500 text-sm text-nowrap">
+					<div class="px-4 text-left">
+						<p class="text-nowrap">{event.name} ({event.country})</p>
+						<p class="text-surface-600-400 text-sm text-nowrap">
 							{ISOToTimeDay(event.time)}
 							• {event.venue}
 						</p>

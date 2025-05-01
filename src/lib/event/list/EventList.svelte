@@ -6,52 +6,41 @@
 
 	type EventInfoWithReaction = EventInfo & { reaction: EventReaction | undefined };
 
-	function getRank(event: EventInfoWithReaction): number {
-		return event.reaction === 'heart'
-			? 3
-			: event.reaction === 'like'
-				? 2
-				: event.reaction === 'pass'
-					? 1
-					: 0;
-	}
-
-	const sortByRank = (a: EventInfoWithReaction, b: EventInfoWithReaction) =>
-		getRank(b) - getRank(a);
-	const sortByName = (a: EventInfoWithReaction, b: EventInfoWithReaction) =>
-		a.name.localeCompare(b.name);
-	const sortByStage = (a: EventInfoWithReaction, b: EventInfoWithReaction) =>
-		a.venue.localeCompare(b.venue);
 	const sortByTime = (a: EventInfoWithReaction, b: EventInfoWithReaction) =>
 		new Date(a.time).getTime() - new Date(b.time).getTime();
 
-	let sorter = $state(sortByRank);
+	let day = $state('Fri');
+
+	function filterByDay(event: EventInfo) {
+		const eventDate = new Date(event.time);
+		const offsetEventDate = new Date(eventDate.getTime() - 3600 * 1000 * 3.5);
+		const dayOfWeek = offsetEventDate.toLocaleString('en-US', { weekday: 'short' });
+		return dayOfWeek === day;
+	}
 
 	let search = $state('');
 	let reactedEvents = $derived(
 		$eventSystem.events
+			.filter(filterByDay)
+			.filter((e) => containsName([...e.name.split(' '), ...e.venue.split(' '), e.country], search))
 			.map((event) => ({
 				...event,
 				reaction: $eventSystem.reactions.get(event.id)
 			}))
-			.filter((e) => containsName([...e.name.split(' '), ...e.venue.split(' '), e.country], search))
-			.sort(sorter)
+			.sort(sortByTime)
 	);
 </script>
 
-<div class="mb-4 flex justify-between">
+<div class="bg-surface-100-900 flex justify-between p-2">
 	<label class="label flex flex-col">
-		<span>Sort by</span>
-		<select class="select h-10 w-40" bind:value={sorter}>
-			<option value={sortByStage}>Stages</option>
-			<option selected value={sortByRank}>Your Reactions</option>
-			<option value={sortByTime}>Time</option>
-			<option value={sortByName}>Artist Name</option>
+		<select class="select h-10 w-40" bind:value={day}>
+			<option selected value="Fri">Friday</option>
+			<option value="Sat">Saturday</option>
 		</select>
-	</label>
-	<label class="label flex flex-col">
-		<span>Search</span>
-		<input type="text" class="input select h-10 max-w-60" bind:value={search} />
+		<!-- <label class="label flex flex-col">
+			<span>Search</span>
+			<input type="text" class="input select h-10 max-w-60" bind:value={search} />
+		</label> -->
 	</label>
 </div>
 
