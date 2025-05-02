@@ -2,6 +2,6 @@
 	import EventList from '$lib/event/list/EventList.svelte';
 </script>
 
-<main class="bg-surface-50-950 overflow-x-hidden overflow-y-scroll">
+<main class="bg-surface-50-950 h-full w-full overflow-x-hidden">
 	<EventList />
 </main>
