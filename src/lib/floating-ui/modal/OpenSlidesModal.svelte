@@ -21,7 +21,7 @@
 	let { event, trigger }: Props = $props();
 </script>
 
-<ModalBase {trigger} background="none">
+<ModalBase {trigger}>
 	{#snippet content(closeDrawer)}
 		<div
 			role="button"
