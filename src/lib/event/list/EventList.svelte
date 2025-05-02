@@ -95,7 +95,7 @@
 			name: 'stages'
 		};
 	}
-
+	/* 
 	function gotoLatestEvent() {
 		const nextEvent = visibleEvents.findLast(
 			(event) => new Date(event.time).getTime() < new Date().getTime()
@@ -105,7 +105,7 @@
 		}
 	}
 
-	$effect(gotoLatestEvent);
+	$effect(gotoLatestEvent); */
 </script>
 
 <div class="grid h-full w-full">
