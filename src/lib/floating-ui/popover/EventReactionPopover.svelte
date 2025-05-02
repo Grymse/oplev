@@ -42,18 +42,42 @@
 			<BookmarkIcon />
 		{/if}
 	{/snippet}
-	{#snippet content()}
-		<div class="flex gap-4">
-			<button class="btn-icon text-primary-500" onclick={() => updateReaction('heart')}>
+	{#snippet content(close)}
+		<div class="flex gap-4" autofocus onblur={close}>
+			<button
+				class="btn-icon text-primary-500"
+				onclick={() => {
+					updateReaction('heart');
+					close();
+				}}
+			>
 				<HeartIcon />
 			</button>
-			<button class="btn-icon text-secondary-500" onclick={() => updateReaction('like')}>
+			<button
+				class="btn-icon text-secondary-500"
+				onclick={() => {
+					updateReaction('like');
+					close();
+				}}
+			>
 				<LikeIcon />
 			</button>
-			<button class="btn-icon text-tertiary-500" onclick={() => updateReaction('pass')}>
+			<button
+				class="btn-icon text-tertiary-100 h-5 w-5"
+				onclick={() => {
+					updateReaction('pass');
+					close();
+				}}
+			>
 				<PassIcon />
 			</button>
-			<button class="btn-icon" onclick={() => updateReaction(undefined)}>
+			<button
+				class="btn-icon"
+				onclick={() => {
+					updateReaction(undefined);
+					close();
+				}}
+			>
 				<NoneIcon />
 			</button>
 		</div>
