@@ -72,6 +72,7 @@ export function initializeEventSystem() {
 		return;
 	}
 
+
 	eventSystem.set({ events, reactions: new Map() });
 }
 

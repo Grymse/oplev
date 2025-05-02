@@ -58,7 +58,7 @@ export function spotToEvent(event: SpotEvent, index?: number): EventInfo {
 		else event.day = 'Sunday';
 	}
 	const d = new Date(
-		`2024-05-0${event.day === 'Friday' ? '3' : event.day === 'Saturday' ? '4' : '5'}T${event.time}:00.000Z`
+		`2025-05-0${event.day === 'Friday' ? '2' : event.day === 'Saturday' ? '3' : '4'}T${event.time}:00.000Z`
 	);
 	const time = new Date(d.getTime() - 60 * 60 * 1000 * 2).toISOString();
 

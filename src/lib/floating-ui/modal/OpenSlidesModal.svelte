@@ -21,25 +21,17 @@
 	let { event, trigger }: Props = $props();
 </script>
 
-<ModalBase {trigger}>
+<ModalBase background="none" {trigger}>
 	{#snippet content(closeDrawer)}
 		<div
 			role="button"
 			tabindex="-1"
 			onkeypress={(e) => e.stopPropagation()}
-			class="h-full w-full"
+			class="flex h-full w-full items-center justify-center"
 			onclick={closeDrawer}
 		>
-			<AspectRatio ratio={10 / 16}>
-				<div
-					role="button"
-					tabindex="-1"
-					onkeypress={(e) => e.stopPropagation()}
-					class="h-full w-full"
-					onclick={(e) => e.stopPropagation()}
-				>
-					<SwipableEvent {event} {onreact} />
-				</div>
+			<AspectRatio ratio={10 / 16} offsetMaxHeight={50} offsetMaxWidth={50}>
+				<SwipableEvent {event} {onreact} />
 			</AspectRatio>
 		</div>
 	{/snippet}

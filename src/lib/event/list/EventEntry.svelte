@@ -10,12 +10,16 @@
 	};
 
 	let { event, reaction }: Props = $props();
+	const hasHappened = new Date(event.time).getTime() < new Date().getTime();
 </script>
 
-<li class="w-full">
+<li class="w-full" id={event.name}>
 	<OpenSlidesModal {event}>
 		{#snippet trigger()}
-			<div class="grid h-full w-full grid-cols-[1fr_48px]">
+			<div
+				class="grid h-full w-full grid-cols-[1fr_48px]"
+				class:preset-filled-tertiary-100-900={hasHappened}
+			>
 				<div class="flex items-center overflow-hidden">
 					{#if event.img}
 						<img src={event.img} alt="" class="h-14 w-14 object-cover" />
