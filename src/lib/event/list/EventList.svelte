@@ -96,8 +96,8 @@
 		};
 	}
 
-	function gotoLatestEvent(events: EventInfo[]) {
-		const nextEvent = events.findLast(
+	function gotoLatestEvent() {
+		const nextEvent = visibleEvents.findLast(
 			(event) => new Date(event.time).getTime() < new Date().getTime()
 		);
 		if (nextEvent) {
@@ -105,9 +105,7 @@
 		}
 	}
 
-	$effect(() => {
-		gotoLatestEvent(visibleEvents);
-	});
+	$effect(gotoLatestEvent);
 </script>
 
 <div class="grid h-full w-full">
